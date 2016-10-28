@@ -1,0 +1,197 @@
+/*Simple Modern Dark MSDN Library userstyle v1.2*/
+/*https://userstyles.org/styles/131684*/
+
+body {
+	color: #fff;
+	background-color: #000;
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkAgMAAAANjH3HAAAACVBMVEUaGhohISElJSUh9lebAAAB20lEQVRIx4XWuZXDMAwE0C0SAQtggIIYoAAEU+aKOHhYojTrYP2+QfOW/5QIJOih/q8HwF/pb3EX+UPIveYcQGgEHiu9hI+ihEc5Jz5KBIlRRRaJ1JtoSAl5Hw96hLB1/up1tnIXOck5jZQy+3iU2hAOKSH1JvwxHsp+5TLF5MOl1/MQXsVs1miXc+KDbYydyMeUgpPQreZ7fWidbNhkXNJSeAhc6qHmHD8AYovunYyEACWEbyIhNeB9fRrH3hFi0bGPLuEW7xCNaohw1vAlS805nfsrTspclB/hVdoqusg53eH7FWot+wjYpOViX8KbFFKTwlnzvj65P9H/vD0/hibYBGhPwlPO8TmxRsaxsNnrUmUXpNhirlJMPr6Hqq9k5Xn/8iYQHYIuQsWFC6Z87IOxLxHphSY4SpuiU87xJnJr5axfeRd+lnMExXpEWPpuZ1v7qZdNBOjiHzDREHX5fs5Zz9p6X0vVKbKKchlSl5rv+3p//FJ/PYvoKryI8vs+2G9lzRmnEKkh+BU8yDk515jDj/HAswu7CCz6U/Mxb/PnC9N41ndpU4hUU7JGk/C9PmP/M2xZYdvBW2PObyf1IUiIzoHmHW9yTncliYs9A9tVNppdShfgQaTLMf+j3X723tLeHgAAAABJRU5ErkJggg==) !important;
+}
+/* Normal text */
+
+p {
+	color: #fff;
+}
+/* Main header */
+
+h1,
+h1.title,
+.topic h1.title {
+	color: #fff;
+}
+h2 {
+	color: #2f9bd6!important;
+}
+h3 {
+	color: #4fd8f3!important;
+}
+/*Top Bar Background*/
+
+div.shell-header {
+	background: rgba(255, 255, 255, 0);
+}
+#shell-header .shell-header-nav li a {
+	color: #ffffff!important;
+}
+.shell-header-dropdown-label>a {
+	background-color: rgba(255, 255, 255, 0);
+}
+.shell-header-dropdown-label a:hover,
+.shell-header-dropdown-label a:focus,
+.shell-header-dropdown-label a:active {
+	background-color: rgba(82, 195, 232, 0.3);
+}
+div.msame_Header_name {
+	color: #fff;
+	background-color: rgba(255, 255, 255, 0);
+}
+.msame_open .msame_Header {
+	background-color: rgba(255, 255, 255, 0);}
+div#content table,
+div#content th,
+div#content td {
+	border: 1px solid #4d8fd4;
+}
+#curversion {
+	color: #89abc5;
+}
+.breadCrumb,
+.breadCrumb>span>a,
+.breadCrumb>span>a:link,
+.breadCrumb>span>a:hover,
+.breadCrumb>span>a:visited {
+	color: #fff;
+}
+/* Table Header */
+
+div.alert th {
+	background-color: #497990;
+	color: #ffffff;
+}
+th {
+	background-color: #497990;
+	color: #ffffff;
+}
+/* Collapsible headers */
+
+h1.heading,
+h2,
+h2.heading,
+h2.subheading,
+h3,
+h3.subheading,
+h4,
+h4.subheading,
+h5,
+h5.subheading,
+.LW_CollapsibleArea_Title {
+	color: #fff;
+}
+/* End: Collapsible headers */
+/* Version of .NET framework under the main header */
+
+#curversion {
+	color: #6e6e6e;
+}
+/* Links */
+
+.topic a,
+.topic a:link {
+	color: #35a9ff;
+}
+.topic a:visited,
+.topic a:active {
+	text-decoration: none;
+}
+/* Navigation links */
+
+div#leftNav a,
+div#leftNav a:link,
+div#leftNav a:visited {
+	color: #35a9ff;
+}
+/* Expanded navigation section */
+/* Current navigation section */
+
+div#tocnav div.tocselected {
+	background-color: #3a4963;
+	border-left: 3px solid #0093ff;
+	padding-left: 19px;
+}
+div#tocnav div.tocselected a,
+div#tocnav div.tocselected a:link,
+div#tocnav div.tocselected a:visited {
+	color: #35a9ff;
+	text-decoration: none;
+	padding-left: 19px;
+}
+div#tocnav div.tocunselected a,
+div#tocnav div.tocunselected a:link,
+div#tocnav div.tocunselected a:hover,
+div#tocnav div.tocunselected a:focus,
+div#tocnav div.tocunselected a:visited {
+	color: #ffffff;
+}
+div#rightNavigationMenu>div a {
+	color: #fff;
+	display: block;
+	margin-bottom: 10px;
+}
+div#rightNavigationMenu div#indoc_toc div#indoc_title {
+	color: #fff;
+	font-weight: 600;
+}
+div#rightNavigationMenu div#indoc_toc ul#indoc_toclist li {
+	color: #fff;
+	font-weight: 600;
+}
+/* Description of members of a class */
+
+td {
+	color: #dcdcdc;
+}
+/* Ordinary code color */
+
+[style*="Black"] {
+	color: #dcdcdc !important;
+}
+/* Keywords */
+
+[style*="Blue"] {
+	color: #569cd6 !important;
+}
+/* Comments */
+
+[style*="Green"] {
+	color: #57a64a !important;
+}
+/* String literals */
+
+[style*="A31515"] {
+	color: #d69d85 !important;
+}
+/* Inline code */
+
+.code {
+	color: #4ec9b0 !important;
+}
+/* Fixes Alert Box*/
+div.alert {
+    background-color:rgba(255, 255, 255, 0);
+	color: #a0dfe4 !important;
+	font-style: italic;
+}
+/* Removes Feedback Bar */
+
+.stdr-container>.stdr-vote {
+	display: none;
+}
+/* Hide Footer */
+
+div#ux-footer {
+	display: none;
+}
+/* Archive Bar */
+
+#archiveDisclaimer {
+	display: none;
+}
