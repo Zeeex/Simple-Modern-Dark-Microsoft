@@ -3,7 +3,7 @@
 # Simple Modern Dark MSDN Library
 Dark theme for MSDN Library
 
-[![GitHub Release](https://img.shields.io/badge/Build-1.3-green.svg)](https://github.com/zeeex/Simple-Modern-Dark-MSDN-Library/releases) 
+[![GitHub Release](https://img.shields.io/badge/Build-1.4-blue.svg)](https://github.com/zeeex/Simple-Modern-Dark-MSDN-Library/releases) 
 [![License](https://img.shields.io/badge/License-MIT%20License-red.svg)](https://github.com/zeeex/Simple-Modern-Dark-MSDN-Library/blob/master/LICENSE)
 
 ### How to use
@@ -14,8 +14,8 @@ Install a userstyle manager [Stylish] for your favorite browser:
 - [Safari](http://sobolev.us/stylish)
 
 ### Download
-Applies to `https://msdn.microsoft.com/..-../library/.*` 
-`https://technet.microsoft.com/..-../library/.*`
+Applies to `https://msdn.microsoft.com/.*/library/.*` 
+`https://technet.microsoft.com/.*/library/.*`
 
 Userstyles.org script: [SIMPLE MODERN DARK MSDN LIBRARY](https://userstyles.org/styles/131684/simple-modern-dark-msdn-library)
 
