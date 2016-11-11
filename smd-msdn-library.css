@@ -1,7 +1,7 @@
-@-moz-document regexp('https://msdn.microsoft.com/..-../library/.*'),regexp('https://msdn.microsoft.com/*/library/.*'),regexp('https://technet.microsoft.com/..-../library/.*') {
-/*Simple Modern Dark MSDN Library userstyle v1.3*/
-/*https://userstyles.org/styles/131684*/
-/*https://github.com/Zeeex/Simple-Modern-Dark-MSDN-Library*/
+@-moz-document regexp('https://msdn.microsoft.com/*/library/.*'),regexp('https://technet.microsoft.com/..-../library/.*') {
+/*Simple Modern Dark MSDN Library userstyle v1.4
+https://userstyles.org/styles/131684
+https://github.com/Zeeex/Simple-Modern-Dark-MSDN-Library*/
 
 body {
 	color: #fff;
@@ -54,9 +54,6 @@ div#content th,
 div#content td {
 	border: 1px solid #35ff8b;
 }
-#curversion {
-	color: #9b9b9b;
-}
 .breadCrumb,
 .breadCrumb>span>a,
 .breadCrumb>span>a:link,
@@ -73,6 +70,37 @@ div.alert th {
 th {
 	background-color: #3b3b3b;
 	color: #ffffff;
+}
+/* Right Navigation */
+
+div#rightNavigationMenu div#indoc_toc ul#indoc_toclist li.active a {
+	color: #35ff8b;
+}
+div#rightNavigationMenu div#indoc_toc ul#indoc_toclist li.active {
+	border-left: solid 3px #35ff8b;
+}
+div#rightNavigationMenu>div a:visited {
+	color: #a0a0a0;
+}
+/* Black buttons background */
+
+#navigationButtons ins.print {
+	background-color: #35ff8b;
+}
+#navigationButtons ins.export {
+	background-color: #35ff8b;
+}
+#navigationButtons ins.share {
+	background-color: #35ff8b;
+}
+#vsPanel {
+	background-color: #2d2d2d;
+}
+.LW_CollapsibleArea_TitleDiv DIV a:link,
+.LW_CollapsibleArea_TitleDiv DIV a:hover,
+.LW_CollapsibleArea_TitleDiv DIV a:visited,
+.LW_CollapsibleArea_TitleDiv DIV a:focus {
+	background-color: #35ff8b;
 }
 /* Collapsible headers */
 
@@ -93,7 +121,7 @@ h5.subheading,
 /* Version of .NET framework under the main header */
 
 #curversion {
-	color: #6e6e6e;
+	color: #9b9b9b;
 }
 /* Links */
 
@@ -101,9 +129,10 @@ h5.subheading,
 .topic a:link {
 	color: #35ff8b;
 }
-.topic a:visited, .topic a:active {
-    text-decoration: none;
-    color: #92a69b;
+.topic a:visited,
+.topic a:active {
+	text-decoration: none;
+	color: #92a69b;
 }
 /* Navigation links */
 
@@ -118,7 +147,7 @@ div#leftNav a:visited {
 div#tocnav div.tocselected {
 	background-color: #000;
 	border-left: 3px solid #35ff8b;
-	padding-left: 19px;
+	padding-left: 12px;
 	border-width: 4px;
 }
 div#tocnav div.tocselected a,
@@ -126,7 +155,7 @@ div#tocnav div.tocselected a:link,
 div#tocnav div.tocselected a:visited {
 	color: #a0a0a0;
 	text-decoration: none;
-	padding-left: 19px;
+	padding-left: 12px;
 }
 div#tocnav div.tocunselected a,
 div#tocnav div.tocunselected a:link,
