@@ -1,5 +1,5 @@
-@-moz-document regexp('https://msdn.microsoft.com/*/library/.*'),regexp('https://technet.microsoft.com/..-../library/.*') {
-/*Simple Modern Dark MSDN Library userstyle v1.4
+@-moz-document regexp('https://msdn.microsoft.com/*/library/.*'),regexp('https://((?!(social)).*)technet.microsoft.com/.*library/.*') {
+/*Simple Modern Dark MSDN Library userstyle v1.5
 https://userstyles.org/styles/131684
 https://github.com/Zeeex/Simple-Modern-Dark-MSDN-Library*/
 
@@ -123,6 +123,18 @@ h5.subheading,
 #curversion {
 	color: #9b9b9b;
 }
+/* TECHNET FIXES */
+
+.communityContentAnnotation {
+	color: #fff;
+}
+a:link {
+	color: #35ff8b;
+}
+a:hover,
+a:visited {
+	color: #92a69b;
+}
 /* Links */
 
 .topic a,
@@ -130,8 +142,8 @@ h5.subheading,
 	color: #35ff8b;
 }
 .topic a:visited,
-.topic a:active {
-	text-decoration: none;
+.topic a:active,
+.topic a:hover{
 	color: #92a69b;
 }
 /* Navigation links */
