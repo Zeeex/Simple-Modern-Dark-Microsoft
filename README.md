@@ -15,7 +15,7 @@ Install a userstyle manager [Stylish] for your favorite browser:
 
 ### Download
 Applies to `https://msdn.microsoft.com/.*/library/.*` 
-`https://((?!(social)).*)technet.microsoft.com/.*library/.*`
+`https://.*technet.microsoft.com/.*`
 
 Userstyles.org script: [SIMPLE MODERN DARK MSDN LIBRARY](https://userstyles.org/styles/131684/simple-modern-dark-msdn-library)
 
