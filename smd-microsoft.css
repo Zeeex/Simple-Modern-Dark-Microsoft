@@ -1,7 +1,7 @@
-@-moz-document regexp('https://msdn.microsoft.com/.*/library/.*'),regexp('https://.*technet.microsoft.com/.*') {
-/*Simple Modern Dark MSDN Library userstyle v1.6
+@-moz-document regexp('https://.*(msdn|technet).microsoft.com/.*') {
+/*Simple Modern Dark MSDN Library userstyle v1.7
 https://userstyles.org/styles/131684
-https://github.com/Zeeex/Simple-Modern-Dark-MSDN-Library*/
+https://github.com/Zeeex/Simple-Modern-Dark-Microsoft*/
 
 body {
     color: #fff;
@@ -11,14 +11,14 @@ body {
 /* Normal text */
 
 p {
-    color: #fff;
+    color: #fff !important;
 }
 /* Main header */
 
 h1,
 h1.title,
 .topic h1.title {
-    color: #fff;
+    color: #fff !important;
 }
 h2 {
     color: #35ff8b !important;
@@ -88,6 +88,9 @@ div#rightNavigationMenu>div a:visited {
 #navigationButtons ins.share {
     background-color: #35ff8b;
 }
+#navigationButtons ins.contribute {
+    background-color: #35ff8b;
+}
 #vsPanel {
     background-color: #2d2d2d;
 }
@@ -118,7 +121,19 @@ h5.subheading,
 #curversion {
     color: #9b9b9b;
 }
-/* TECHNET FIXES==================================== */
+
+h2.entry-title a {
+    color: inherit;
+}
+#posts-query-type .filter-option.selected a {
+    color: inherit;
+}
+pre {
+    color: #fff;
+    background-color: #4d4d4d;
+}
+
+/* TECHNET ==================================== */
 
 .communityContentAnnotation {
     color: #fff;
@@ -151,6 +166,33 @@ h5.subheading,
     color: #fff;
     background: inherit;
 }
+div#tocNav div.current a, div#tocDropdownMenu div.current a, div#tocNav div.current a:visited, div#tocDropdownMenu div.current a:visited, div#tocNav div.current a:link, div#tocDropdownMenu div.current a:link {
+    color: inherit;
+}
+div#tocNav div a, div#tocDropdownMenu div a, div#tocNav div a:visited, div#tocDropdownMenu div a:visited, div#tocNav div a:link, div#tocDropdownMenu div a:link {
+    color: inherit;
+}
+div#tocNav div.tocSelected, div#tocDropdownMenu div.tocSelected {
+    border-left: 4px solid #35ff8b;
+    background-color: black;
+}
+#threeColumns>.right #navigationButtons a, #threeColumns>.right #navigationButtons a:visited, #threeColumns>.right #navigationButtons a:link {
+    color: #fff;
+}
+div#body ul#task-nav-list>li.nav-header, #page #body ul#task-nav-list>li.nav-header, div#body ul#mobile-task-nav-list>li.nav-header, #page #body ul#mobile-task-nav-list>li.nav-header {
+    color: inherit;
+}
+
+div#body ul#task-nav-list>li>a, #page #body ul#task-nav-list>li>a, div#body ul#mobile-task-nav-list>li>a, #page #body ul#mobile-task-nav-list>li>a {
+    color: inherit;
+}
+span.username a {
+    color: #fff;
+}
+[id='openFeedbackContainer'] {
+    display: none;
+}
+
 /*blogs.technet======================*/
 
 #page {
