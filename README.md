@@ -3,7 +3,7 @@
 # Simple Modern Dark Microsoft
 Dark theme for microsoft.com pages
 
-[![GitHub Release](https://img.shields.io/badge/Build-1.7-blue.svg)](https://github.com/zeeex/Simple-Modern-Dark-Microsoft/releases) 
+[![GitHub Release](https://img.shields.io/badge/Build-1.8-blue.svg)](https://github.com/zeeex/Simple-Modern-Dark-Microsoft/releases) 
 [![License](https://img.shields.io/badge/License-MIT%20License-red.svg)](https://github.com/zeeex/Simple-Modern-Dark-Microsoft/blob/master/LICENSE)
 
 ### How to use
@@ -14,9 +14,9 @@ Install a userstyle manager [Stylish] for your browser:
 - [Safari](http://sobolev.us/stylish)
 
 ### Download
-Applies to `https://.*(msdn|technet).microsoft.com/.*` 
+Applies to `https://.*(msdn|technet|support|blogs|developer).microsoft.com/.*` 
 
-Userstyles.org script: [SIMPLE MODERN DARK Microsoft](https://userstyles.org/styles/131684/simple-modern-dark-microsoft)
+Userstyles.org script: [Simple Modern Dark Microsoft](https://userstyles.org/styles/131684/simple-modern-dark-microsoft)
 
 ### Bug reports
 
