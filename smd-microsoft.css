@@ -1,5 +1,5 @@
-@-moz-document regexp('https://.*(msdn|technet).microsoft.com/.*') {
-/*Simple Modern Dark MSDN Library userstyle v1.7
+@-moz-document regexp('https://.*(msdn|technet|support|blogs|developer).microsoft.com/.*') {
+/*Simple Modern Dark MSDN Library userstyle v1.8
 https://userstyles.org/styles/131684
 https://github.com/Zeeex/Simple-Modern-Dark-Microsoft*/
 
@@ -91,14 +91,11 @@ div#rightNavigationMenu>div a:visited {
 #navigationButtons ins.contribute {
     background-color: #35ff8b;
 }
+.LW_CollapsibleArea_Anchor_Img {
+    background-color: #35ff8b;
+}
 #vsPanel {
     background-color: #2d2d2d;
-}
-.LW_CollapsibleArea_TitleDiv DIV a:link,
-.LW_CollapsibleArea_TitleDiv DIV a:hover,
-.LW_CollapsibleArea_TitleDiv DIV a:visited,
-.LW_CollapsibleArea_TitleDiv DIV a:focus {
-    background-color: #35ff8b;
 }
 /* Collapsible headers */
 
@@ -121,7 +118,6 @@ h5.subheading,
 #curversion {
     color: #9b9b9b;
 }
-
 h2.entry-title a {
     color: inherit;
 }
@@ -130,9 +126,8 @@ h2.entry-title a {
 }
 pre {
     color: #fff;
-    background-color: #4d4d4d;
+    background-color: rgba(0, 0, 0, 0);
 }
-
 /* TECHNET ==================================== */
 
 .communityContentAnnotation {
@@ -166,24 +161,42 @@ pre {
     color: #fff;
     background: inherit;
 }
-div#tocNav div.current a, div#tocDropdownMenu div.current a, div#tocNav div.current a:visited, div#tocDropdownMenu div.current a:visited, div#tocNav div.current a:link, div#tocDropdownMenu div.current a:link {
+div#tocNav div.current a,
+div#tocDropdownMenu div.current a,
+div#tocNav div.current a:visited,
+div#tocDropdownMenu div.current a:visited,
+div#tocNav div.current a:link,
+div#tocDropdownMenu div.current a:link {
     color: inherit;
 }
-div#tocNav div a, div#tocDropdownMenu div a, div#tocNav div a:visited, div#tocDropdownMenu div a:visited, div#tocNav div a:link, div#tocDropdownMenu div a:link {
+div#tocNav div a,
+div#tocDropdownMenu div a,
+div#tocNav div a:visited,
+div#tocDropdownMenu div a:visited,
+div#tocNav div a:link,
+div#tocDropdownMenu div a:link {
     color: inherit;
 }
-div#tocNav div.tocSelected, div#tocDropdownMenu div.tocSelected {
+div#tocNav div.tocSelected,
+div#tocDropdownMenu div.tocSelected {
     border-left: 4px solid #35ff8b;
     background-color: black;
 }
-#threeColumns>.right #navigationButtons a, #threeColumns>.right #navigationButtons a:visited, #threeColumns>.right #navigationButtons a:link {
+#threeColumns>.right #navigationButtons a,
+#threeColumns>.right #navigationButtons a:visited,
+#threeColumns>.right #navigationButtons a:link {
     color: #fff;
 }
-div#body ul#task-nav-list>li.nav-header, #page #body ul#task-nav-list>li.nav-header, div#body ul#mobile-task-nav-list>li.nav-header, #page #body ul#mobile-task-nav-list>li.nav-header {
+div#body ul#task-nav-list>li.nav-header,
+#page #body ul#task-nav-list>li.nav-header,
+div#body ul#mobile-task-nav-list>li.nav-header,
+#page #body ul#mobile-task-nav-list>li.nav-header {
     color: inherit;
 }
-
-div#body ul#task-nav-list>li>a, #page #body ul#task-nav-list>li>a, div#body ul#mobile-task-nav-list>li>a, #page #body ul#mobile-task-nav-list>li>a {
+div#body ul#task-nav-list>li>a,
+#page #body ul#task-nav-list>li>a,
+div#body ul#mobile-task-nav-list>li>a,
+#page #body ul#mobile-task-nav-list>li>a {
     color: inherit;
 }
 span.username a {
@@ -192,7 +205,6 @@ span.username a {
 [id='openFeedbackContainer'] {
     display: none;
 }
-
 /*blogs.technet======================*/
 
 #page {
@@ -200,9 +212,6 @@ span.username a {
 }
 .widget_tag_cloud a {
     background-color: #616161;
-}
-#site-footer {
-    display: none;
 }
 button,
 input,
@@ -289,20 +298,59 @@ div.replies>h3 {
 div.replies {
     border-top: none;
 }
-div#nrSurvey {
-    display: none;
+/* support-ms */
+
+.ms-productpages .pp-section-header {
+    background-color: gainsboro;
 }
-#Footer {
-    display: none;
+.kb-article .kb-notice-section {
+    background-color: inherit;
 }
-/*END TECHNET====================================*/
+.section .section-title {
+    color: #fff;
+}
+.alert-band .alert.alert-info {
+    background-color: black;
+}
+/* blogs-ms */
+
+.featured-post a.post-title {
+    color: #35ff8b;
+}
+.single .entry-meta {
+    background: inherit;
+}
+.author-bio-box h6 {
+    color: inherit;
+}
+/* developer-ms */
+.section.item-section .section-title {
+    color: inherit;
+}
+.page-title-header .page-subtitle {
+    color: inherit;
+}
+.breadcrumb>li a, .breadcrumb>li a:visited {
+    color: inherit;
+}
+.breadcrumb>li+li:before {
+    color: inherit;
+}
+.breadcrumb {
+    color: inherit;
+}
+/* answers-ms (beta)*/
+.contentWrapper .inReplyTo {
+    background-color: black;
+}
+/* breakpoint ===========================*/
 
 a:link {
     color: #35ff8b;
 }
 a:hover,
 a:visited {
-    color: #92a69b;
+    color: gainsboro;
 }
 /* Links */
 
@@ -313,7 +361,7 @@ a:visited {
 .topic a:visited,
 .topic a:active,
 .topic a:hover {
-    color: #92a69b;
+    color: gainsboro;
 }
 /* Navigation links */
 
@@ -334,8 +382,7 @@ div#tocnav div.tocselected {
 div#tocnav div.tocselected a,
 div#tocnav div.tocselected a:link,
 div#tocnav div.tocselected a:visited {
-    color: #a0a0a0;
-    text-decoration: none;
+    color: gainsboro;
     padding-left: 12px;
 }
 div#tocnav div.tocunselected a,
@@ -388,22 +435,67 @@ td {
 .code {
     color: #4ec9b0 !important;
 }
-/* Fixes Alert Box*/
+/* Junk Box ======*/
 
 div.alert {
     background-color: rgba(255, 255, 255, 0);
     color: #a0dfe4 !important;
     font-style: italic;
 }
-/* Removes Feedback Bar */
-
+div#nrSurvey {
+    display: none;
+}
 .stdr-container>.stdr-vote {
     display: none;
 }
-/* Hide Footer */
+#PrivacyBanner {
+    display: none;
+}
+.sockWrapper {
+    display: none;
+}
+/* Header ======*/
+
+.epb-container.active {
+    display: none;
+}
+.shell-header-dropdown.active .shell-header-dropdown-label>a {
+    background-color: #4b4b4b;
+}
+.shell-header a,
+.shell-header a:hover,
+.shell-header a:focus,
+.shell-header a:link,
+.shell-header a:visited {
+    background-color: #2f2f2f;
+}
+/* Jumbotron ======*/
+
+.jumbotron-hero {
+    display: none;
+}
+.jumbotron {
+    display: none;
+}
+/* Footer */
 
 div#ux-footer {
     display: none;
+}
+.shell-footer {
+    display: none;
+}
+#Footer {
+    display: none;
+}
+#site-footer {
+    display: none;
+}
+.f1-footer {
+    background-color: black;
+}
+.site-footer {
+    background: black;
 }
 /* Archive Bar */
 
