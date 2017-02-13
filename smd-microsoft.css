@@ -1,472 +1,568 @@
-@-moz-document regexp('https://.*(msdn|technet|support|blogs|developer).microsoft.com/.*'),regexp('https://www.visualstudio.com/.*') {
-/*Simple Modern Dark MSDN Library userstyle v1.10
+@-moz-document regexp('https://.*(msdn|technet|support|blogs|developer|account|docs).microsoft.com/.*'),
+    regexp('https://www.visualstudio.com/.*'),
+    regexp('https://blogs.windows.com/.*') {
+/*Simple Modern Dark Microsoft userstyle v1.11
 https://userstyles.org/styles/131684
 https://github.com/Zeeex/Simple-Modern-Dark-Microsoft*/
 
 body {
-    color: #fff;
-    background-color: #000;
-    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkAgMAAAANjH3HAAAACVBMVEUaGhohISElJSUh9lebAAAB20lEQVRIx4XWuZXDMAwE0C0SAQtggIIYoAAEU+aKOHhYojTrYP2+QfOW/5QIJOih/q8HwF/pb3EX+UPIveYcQGgEHiu9hI+ihEc5Jz5KBIlRRRaJ1JtoSAl5Hw96hLB1/up1tnIXOck5jZQy+3iU2hAOKSH1JvwxHsp+5TLF5MOl1/MQXsVs1miXc+KDbYydyMeUgpPQreZ7fWidbNhkXNJSeAhc6qHmHD8AYovunYyEACWEbyIhNeB9fRrH3hFi0bGPLuEW7xCNaohw1vAlS805nfsrTspclB/hVdoqusg53eH7FWot+wjYpOViX8KbFFKTwlnzvj65P9H/vD0/hibYBGhPwlPO8TmxRsaxsNnrUmUXpNhirlJMPr6Hqq9k5Xn/8iYQHYIuQsWFC6Z87IOxLxHphSY4SpuiU87xJnJr5axfeRd+lnMExXpEWPpuZ1v7qZdNBOjiHzDREHX5fs5Zz9p6X0vVKbKKchlSl5rv+3p//FJ/PYvoKryI8vs+2G9lzRmnEKkh+BU8yDk515jDj/HAswu7CCz6U/Mxb/PnC9N41ndpU4hUU7JGk/C9PmP/M2xZYdvBW2PObyf1IUiIzoHmHW9yTncliYs9A9tVNppdShfgQaTLMf+j3X723tLeHgAAAABJRU5ErkJggg==) !important;
+    color: #fff !important;
+    background-color: #000 !important;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkAgMAAAANjH3HAAAACVBMVEUaGhohISElJSUh9lebAAAB20lEQVRIx4XWuZXDMAwE0C0SAQtggIIYoAAEU+aKOHhYojTrYP2+QfOW/5QIJOih/q8HwF/pb3EX+UPIveYcQGgEHiu9hI+ihEc5Jz5KBIlRRRaJ1JtoSAl5Hw96hLB1/up1tnIXOck5jZQy+3iU2hAOKSH1JvwxHsp+5TLF5MOl1/MQXsVs1miXc+KDbYydyMeUgpPQreZ7fWidbNhkXNJSeAhc6qHmHD8AYovunYyEACWEbyIhNeB9fRrH3hFi0bGPLuEW7xCNaohw1vAlS805nfsrTspclB/hVdoqusg53eH7FWot+wjYpOViX8KbFFKTwlnzvj65P9H/vD0/hibYBGhPwlPO8TmxRsaxsNnrUmUXpNhirlJMPr6Hqq9k5Xn/8iYQHYIuQsWFC6Z87IOxLxHphSY4SpuiU87xJnJr5axfeRd+lnMExXpEWPpuZ1v7qZdNBOjiHzDREHX5fs5Zz9p6X0vVKbKKchlSl5rv+3p//FJ/PYvoKryI8vs+2G9lzRmnEKkh+BU8yDk515jDj/HAswu7CCz6U/Mxb/PnC9N41ndpU4hUU7JGk/C9PmP/M2xZYdvBW2PObyf1IUiIzoHmHW9yTncliYs9A9tVNppdShfgQaTLMf+j3X723tLeHgAAAABJRU5ErkJggg==);
 }
-
 /* main */
 
-p, h1 {
+p,
+h1 {
     color: inherit !important;
     background-color: inherit !important;
 }
-
-h2, h3, h4, h5 {
+h2,
+h3,
+h4,
+h5 {
     color: #35ff8b !important;
     background-color: inherit !important;
 }
-
-.LW_CollapsibleArea_Title {
-    color: white;
-}
-
 div.msame_Header_name {
     color: #fff;
-    background-color: rgba(255, 255, 255, 0);
+    background-color: rgba(0, 0, 0, 0);
 }
-
 .msame_open .msame_Header {
-    background-color: rgba(255, 255, 255, 0);
+    background-color: rgba(0, 0, 0, 0);
 }
-
-.breadCrumb, .breadCrumb>span>a, .breadCrumb>span>a:link, .breadCrumb>span>a:hover, .breadCrumb>span>a:visited {
+.breadCrumb,
+.breadCrumb>span>a,
+.breadCrumb>span>a:link,
+.breadCrumb>span>a:hover,
+.breadCrumb>span>a:visited,
+.LW_CollapsibleArea_Title {
     color: #fff;
 }
-
 /* table header */
 
-div.alert th, th {
+div.alert th,
+th {
     background-color: #3b3b3b;
     color: #fff;
 }
-
 /* right navigation */
 
 div#rightNavigationMenu div#indoc_toc ul#indoc_toclist li.active a {
     color: #35ff8b;
 }
-
 div#rightNavigationMenu div#indoc_toc ul#indoc_toclist li.active {
     border-left: solid 3px #35ff8b;
 }
-
 div#rightNavigationMenu>div a:visited {
     color: #a0a0a0;
 }
-
 /* nav buttons background */
 
-#navigationButtons ins.print, #navigationButtons ins.export, #navigationButtons ins.share, #navigationButtons ins.contribute, .LW_CollapsibleArea_Anchor_Img {
+#navigationButtons ins.print,
+#navigationButtons ins.export,
+#navigationButtons ins.share,
+#navigationButtons ins.contribute,
+.LW_CollapsibleArea_Anchor_Img {
     background-color: #35ff8b;
 }
-
 #vsPanel {
     background-color: #212121;
 }
-
 /* Version of .NET framework under the main header */
 
 #curversion {
     color: #9b9b9b;
 }
-
-h2.entry-title a, #posts-query-type .filter-option.selected a {
+h2.entry-title a,
+#posts-query-type .filter-option.selected a {
     color: inherit;
 }
-
 pre {
     color: #fff;
     background-color: rgba(0, 0, 0, 0);
 }
-
 /* msdn sub ======*/
 
 .n29d-nav a {
-    color: #212121 !important;
+    color: #212121;
 }
-
 .n29d-content {
     background-color: #000;
 }
-
 .DL_list li:nth-child(even) {
     background-color: #212121;
 }
-
 /* technet ==================================== */
 
-#megabladeContainer #megabladeContainerCenter #megabladeMainMenu, .communityContentAnnotation {
-    color: #fff;
+#megabladeContainer #megabladeContainerCenter.active #megabladeMainMenu,
+#megabladeContainer #megabladeContainerCenter #megabladeMainMenu:hover {
+    background-color: rgba(0, 0, 0, 0);
 }
-
-#megabladeContainer #megabladeContainerCenter.active #megabladeMainMenu, #megabladeContainer #megabladeContainerCenter #megabladeMainMenu:hover {
-    background-color: rgba(241, 241, 241, 0);
-}
-
-#megabladeContainer #megabladeContainerCenter.active ul#megabladeItems li.bladeItemWithMenu.active div.navpage, #megabladeItems>li>a {
+#megabladeContainer #megabladeContainerCenter.active ul#megabladeItems li.bladeItemWithMenu.active div.navpage,
+#megabladeItems>li>a {
     background-color: #000;
     color: #fff;
 }
-
 #megabladeItems>li.active>a {
     background-color: #575757;
 }
-
-div#body ul#task-nav-list>li>a, #page #body ul#task-nav-list>li>a, div#body ul#mobile-task-nav-list>li>a, #page #body ul#mobile-task-nav-list>li>a, div#tocNav div a, div#tocDropdownMenu div a, div#tocNav div a:visited, div#tocDropdownMenu div a:visited, div#tocNav div a:link, div#tocDropdownMenu div a:link, div#tocNav div.current a, div#tocDropdownMenu div.current a, div#tocNav div.current a:visited, div#tocDropdownMenu div.current a:visited, div#tocNav div.current a:link, div#tocDropdownMenu div.current a:link {
-    color: white;
+div#body ul#task-nav-list>li>a,
+#page #body ul#task-nav-list>li>a,
+div#body ul#mobile-task-nav-list>li>a,
+#page #body ul#mobile-task-nav-list>li>a,
+div#tocNav div a,
+div#tocDropdownMenu div a,
+div#tocNav div a:visited,
+div#tocDropdownMenu div a:visited,
+div#tocNav div a:link,
+div#tocDropdownMenu div a:link,
+div#tocNav div.current a,
+div#tocDropdownMenu div.current a,
+div#tocNav div.current a:visited,
+div#tocDropdownMenu div.current a:visited,
+div#tocNav div.current a:link,
+div#tocDropdownMenu div.current a:link,
+megabladeContainer #megabladeContainerCenter #megabladeMainMenu,
+.communityContentAnnotation,
+#threeColumns>.right #navigationButtons a,
+#threeColumns>.right #navigationButtons a:visited,
+#threeColumns>.right #navigationButtons a:link,
+span.username a {
+    color: #fff;
 }
-
-div#body ul#task-nav-list>li.active>a, #page #body ul#task-nav-list>li.active>a, div#body ul#mobile-task-nav-list>li.active>a, #page #body ul#mobile-task-nav-list>li.active>a {
+div#body ul#task-nav-list>li.active>a,
+#page #body ul#task-nav-list>li.active>a,
+div#body ul#mobile-task-nav-list>li.active>a,
+#page #body ul#mobile-task-nav-list>li.active>a {
     color: #35ff8b;
 }
-
-div#body ul#task-nav-list>li.active, #page #body ul#task-nav-list>li.active, div#body ul#mobile-task-nav-list>li.active, #page #body ul#mobile-task-nav-list>li.active {
+div#body ul#task-nav-list>li.active,
+#page #body ul#task-nav-list>li.active,
+div#body ul#mobile-task-nav-list>li.active,
+#page #body ul#mobile-task-nav-list>li.active {
     border-left: solid 3px #35ff8b;
 }
-
-div#tocNav div.tocSelected, div#tocDropdownMenu div.tocSelected {
+div#tocNav div.tocSelected,
+div#tocDropdownMenu div.tocSelected {
     border-left: 4px solid #35ff8b;
     background-color: black;
 }
-
-#threeColumns>.right #navigationButtons a, #threeColumns>.right #navigationButtons a:visited, #threeColumns>.right #navigationButtons a:link, span.username a {
-    color: #fff;
-}
-
-div#body ul#task-nav-list>li.nav-header, #page #body ul#task-nav-list>li.nav-header, div#body ul#mobile-task-nav-list>li.nav-header, #page #body ul#mobile-task-nav-list>li.nav-header {
+div#body ul#task-nav-list>li.nav-header,
+#page #body ul#task-nav-list>li.nav-header,
+div#body ul#mobile-task-nav-list>li.nav-header,
+#page #body ul#mobile-task-nav-list>li.nav-header {
     color: inherit;
 }
-
-div#tocNav a.tocExpanded, div#tocDropdownMenu a.tocExpanded, div#tocNav a.tocCollapsed {
+div#tocNav a.tocExpanded,
+div#tocDropdownMenu a.tocExpanded,
+div#tocNav a.tocCollapsed {
     background: url(https://technet.microsoft.com/Areas/Epx/Content/Images/ImageSprite.png?v=636164956049129837) no-repeat scroll -1262px -3px;
     width: 16px;
     height: 16px;
 }
-
 /* mobile pref */
 
-#mobileMenu #tocDropdownMenuButton #tocDropdownMenu, #mobileMenu #tocDropdownMenuButton div.tocLabel {
-    background-color: black;
+#mobileMenu #tocDropdownMenuButton #tocDropdownMenu,
+#mobileMenu #tocDropdownMenuButton div.tocLabel,
+div#body ul#mobile-task-nav-list,
+#page #body ul#mobile-task-nav-list {
+    background-color: #000;
 }
-
-div#body ul#mobile-task-nav-list, #page #body ul#mobile-task-nav-list {
-    background-color: black;
-}
-
 /* blogs.technet======================*/
 
 #page {
-    background: rgba(255, 255, 255, 0);
+    background: rgba(0, 0, 0, 0);
 }
-
 .widget_tag_cloud a {
     background-color: #2a2a2a;
 }
-
-button, input, optgroup, select, textarea {
+button,
+input,
+optgroup,
+select,
+textarea {
     color: #000;
 }
-
 #site-header-global {
-    background: white;
+    background: #fff;
 }
-
 /* social.technet====================*/
 
 #BodyBackground {
     background: rgba(0, 0, 0, 0);
 }
-
-.inner, li.message, .searchbar .searchboxinnercontainer, #relatedThreadsLinkContainer, #announcementsContainer {
+.inner,
+li.message,
+.searchbar .searchboxinnercontainer,
+#relatedThreadsLinkContainer,
+#announcementsContainer,
+#msdn-technet-en-thread #threadPageContainer li.message div.menu.thread,
+#msdn-technet-en-thread #threadPageContainer li.message div.menu.message,
+div.expandedThreadContainer li.message div.menu.thread,
+div.expandedThreadContainer li.message div.menu.message {
     background-color: rgba(0, 0, 0, 0);
 }
-
 .Masthead {
     background-color: white;
 }
-
 .title {
     color: #fff !important;
 }
-
-#quickLinks #quickLinksText span, .pln, .messageContent .messageFooter .date {
+#quickLinks #quickLinksText span,
+.pln,
+.messageContent .messageFooter .date,
+.unified-baseball-card-mini .profile-mini,
+.unified-baseball-card-mini .profile-mini .profile-mini-points {
     color: #fff;
 }
-
-div.section p, div.helpbubble p, div.helpbubble ul, a.author>abbr {
+div.section p,
+div.helpbubble p,
+div.helpbubble ul,
+a.author>abbr {
     color: inherit;
 }
-
-div.unified-baseball-card, .unified-baseball-card-compact, .unified-baseball-card-hover div.unified-baseball-card {
+div.unified-baseball-card,
+.unified-baseball-card-compact,
+.unified-baseball-card-hover div.unified-baseball-card {
     background-color: #848484;
 }
-
-.unified-baseball-card-mini .profile-mini,.unified-baseball-card-mini .profile-mini .profile-mini-points {
-    color: #fff;
-}
-
-#msdn-technet-en-thread #threadPageContainer li.message div.menu.thread, #msdn-technet-en-thread #threadPageContainer li.message div.menu.message, div.expandedThreadContainer li.message div.menu.thread, div.expandedThreadContainer li.message div.menu.message {
-    background-color: rgba(255, 255, 255, 0);
-}
-
-#MainContent a, #MainContent a:link, #MainContent a:visited {
+#MainContent a,
+#MainContent a:link,
+#MainContent a:visited {
     color: #35ff8b;
 }
-
-ul.history>li>span.type, ul.history>li>span.date {
+ul.history>li>span.type,
+ul.history>li>span.date {
     color: #fff;
 }
-
-div.answers>h3, div.replies>h3 {
+div.answers>h3,
+div.replies>h3 {
     border-top: solid 2px #35ff8b;
 }
-
 div.replies {
     border-top: none;
 }
-
 /* support-ms */
 
 .ms-productpages .pp-section-header {
     background-color: gainsboro;
 }
-
 .kb-article .kb-notice-section {
     background-color: inherit;
 }
-
 .section .section-title {
     color: #fff;
 }
-
 .alert-band .alert.alert-info {
     background-color: black;
 }
-
 /* blogs-ms */
 
 .featured-post a.post-title {
     color: #35ff8b;
 }
-
-.single .entry-meta {
+.single .entry-meta,
+.author-bio-box h6 {
     background: inherit;
 }
-
-.author-bio-box h6 {
-    color: inherit;
-}
-
 /* developer-ms */
 
 #brand-name::after {
     color: white;
 }
-
-main, .bg-wrap, .feature, .hero, .products, .services, .card, .community, .linkband {
+main,
+.bg-wrap,
+.feature,
+.hero,
+.products,
+.services,
+.card,
+.community,
+.linkband {
     background: rgba(0, 0, 0, 0);
 }
-
-.blog-list span, .blog-list a:hover, .event-list span, .event-list a:hover {
-    color: inherit;
-}
-
 .hljs {
     color: #fff;
     background: rgba(0, 0, 0, 0);
 }
-
-.section.item-section .section-title, .page-title-header .page-subtitle, .breadcrumb, .breadcrumb>li a, .breadcrumb>li a:visited, .breadcrumb>li+li:before {
+.section.item-section .section-title,
+.page-title-header .page-subtitle,
+.breadcrumb,
+.breadcrumb>li a,
+.breadcrumb>li a:visited,
+.breadcrumb>li+li:before,
+.blog-list span,
+.blog-list a:hover,
+.event-list span,
+.event-list a:hover {
     color: inherit;
 }
-
 /* msdn-magazine */
 
-.codeCaption, .codeSnippetContainer, .codeSnippetContainerTabSingle, :nth-child(2n).rssFeedItem {
+.codeCaption,
+.codeSnippetContainer,
+.codeSnippetContainerTabSingle,
+:nth-child(2n).rssFeedItem {
     background-color: rgba(0, 0, 0, 0) !important;
 }
-
 /* answers-ms (beta)*/
 
 .contentWrapper .inReplyTo {
     background-color: black;
 }
-
 /* links */
 
-a:hover, a:visited, .topic a:visited, .topic a:active, .topic a:hover {
+a:hover,
+a:visited,
+.topic a:visited,
+.topic a:active,
+.topic a:hover {
     color: gainsboro !important;
 }
-
-a:link, .topic a, .topic a:link, div#leftNav a, div#leftNav a:link, div#leftNav a:visited, div#content a, div#content a:visited {
+a:link,
+.topic a,
+.topic a:link,
+div#leftNav a,
+div#leftNav a:link,
+div#leftNav a:visited,
+div#content a,
+div#content a:visited {
     color: #35ff8b;
 }
-
 /* Expanded navigation section */
-
 /* Current navigation section */
 
-div#tocnav div.tocselected, div#msdn-technet-en-thread div#threadPageContentContainer, ul.ops-treecontrol.expandable .ops-treelevel-0.ops-treenode-related {
+div#tocnav div.tocselected,
+div#msdn-technet-en-thread div#threadPageContentContainer,
+ul.ops-treecontrol.expandable .ops-treelevel-0.ops-treenode-related {
     border-left: 4px solid #35ff8b;
     background-color: #000;
-    padding-left: 12px;
 }
-
-div#tocnav div.tocselected a, div#tocnav div.tocselected a:link, div#tocnav div.tocselected a:visited {
+div#tocnav div.tocselected a,
+div#tocnav div.tocselected a:link,
+div#tocnav div.tocselected a:visited {
     color: gainsboro;
     padding-left: 12px;
 }
-
-div#tocnav div.tocunselected a, div#tocnav div.tocunselected a:link, iv#tocnav div.tocunselected a:hover, div#tocnav div.tocunselected a:focus, div#tocnav div.tocunselected a:visited, ul.ops-treecontrol.expandable span.ops-treecontent {
+div#tocnav div.tocunselected a,
+div#tocnav div.tocunselected a:link,
+iv#tocnav div.tocunselected a:hover,
+div#tocnav div.tocunselected a:focus,
+div#tocnav div.tocunselected a:visited,
+ul.ops-treecontrol.expandable span.ops-treecontent {
     color: #fff;
 }
-
 #overlay_indoctoc {
     background-color: black;
 }
-
 div#rightNavigationMenu>div a {
     color: #fff;
     display: block;
     margin-bottom: 10px;
 }
-
-div#rightNavigationMenu div#indoc_toc div#indoc_title, div#rightNavigationMenu div#indoc_toc ul#indoc_toclist li {
+div#rightNavigationMenu div#indoc_toc div#indoc_title,
+div#rightNavigationMenu div#indoc_toc ul#indoc_toclist li {
     color: #fff;
     font-weight: 600;
 }
-
 /* Description of members of a class */
 
 td {
     color: #dcdcdc;
 }
-
 /* Ordinary code color */
 
 [style*="Black"] {
     color: #dcdcdc !important;
 }
-
 /* Keywords */
 
 [style*="Blue"] {
     color: #569cd6 !important;
 }
-
 /* Comments */
 
 [style*="Green"] {
     color: #57a64a !important;
 }
-
 /* String literals */
 
 [style*="A31515"] {
     color: #d69d85 !important;
 }
-
 /* Inline code */
 
 .code {
     color: #4ec9b0 !important;
 }
-
 /* JUNK ======*/
 
 div.alert {
-    background-color: rgba(255, 255, 255, 0);
+    background-color: rgba(0, 0, 0, 0);
     color: #a0dfe4 !important;
     font-style: italic;
 }
-
-#nrSurvey, #PrivacyBanner, #archiveDisclaimer, .sockWrapper, .stdr-container>.stdr-vote, .epb-container.active, .jumbotron, .jumbotron-hero {
-    display: none;
-}
-
+#nrSurvey,
+#PrivacyBanner,
+#archiveDisclaimer,
+.sockWrapper,
+.stdr-container>.stdr-vote,
+.epb-container.active,
+.jumbotron,
+.jumbotron-hero,
 [id='openFeedbackContainer'] {
     display: none;
 }
-
 /* Header ======*/
 
-#shell-header .shell-header-nav .shell-header-dropdown-tab .shell-header-dropdown-tab-label a, .shell-header-dropdown.active .shell-header-dropdown-label>a, .shell-header a, .shell-header a:hover, .shell-header a:focus, .shell-header a:link, .shell-header a:visited, #Fragment_HeroHeadlines, #Fragment_ResourceBandcontent, .navL1, .navL2, .inactive, #ux-header header div.row nav ul.navL1>li.active>a, #ux-header header div.row nav ul.navL2>li.active>a, #ux-header header div.row nav ul.navL3>li.active>a, #ux-header header div.megaBladeToc nav ul.navL1, #ux-header header div.megaBladeToc nav ul.navL2, #ux-header header div.megaBladeToc nav ul.navL3 {
-    background-color: black;
+#shell-header .shell-header-nav .shell-header-dropdown-tab .shell-header-dropdown-tab-label a,
+.shell-header-dropdown.active .shell-header-dropdown-label>a,
+.shell-header a,
+.shell-header a:hover,
+.shell-header a:focus,
+.shell-header a:link,
+.shell-header a:visited,
+#Fragment_HeroHeadlines,
+#Fragment_ResourceBandcontent,
+.navL1,
+.navL2,
+.inactive,
+#ux-header header div.row nav ul.navL1>li.active>a,
+#ux-header header div.row nav ul.navL2>li.active>a,
+#ux-header header div.row nav ul.navL3>li.active>a,
+#ux-header header div.megaBladeToc nav ul.navL1,
+#ux-header header div.megaBladeToc nav ul.navL2,
+#ux-header header div.megaBladeToc nav ul.navL3 {
+    background-color: #000;
 }
-
-#ux-header header div.toc nav ul.navL1>li.current.active>a, #ux-header header div.toc nav ul.navL2>li.current.active>a, #ux-header header div.row nav ul.navL1>li.inactive>a:hover, #ux-header header div.row nav ul.navL2>li.inactive>a:hover, #ux-header header div.row nav ul.navL3>li.inactive>a:hover, .shell-header a:hover {
-    background-color: #2e2e2e !important;
+#ux-header header div.toc nav ul.navL1>li.current.active>a,
+#ux-header header div.toc nav ul.navL2>li.current.active>a,
+#ux-header header div.row nav ul.navL1>li.inactive>a:hover,
+#ux-header header div.row nav ul.navL2>li.inactive>a:hover,
+#ux-header header div.row nav ul.navL3>li.inactive>a:hover,
+.shell-header a:hover {
+    background-color: #2e2e2e;
 }
-
-#ux-header header div.row nav ul.navL1>li>a, #ux-header header div.row nav ul.navL2>li>a, #ux-header header div.row nav ul.navL3>li>a {
-    border-bottom: solid 1px #2e2e2e !important;
+#ux-header header div.row nav ul.navL1>li>a,
+#ux-header header div.row nav ul.navL2>li>a,
+#ux-header header div.row nav ul.navL3>li>a {
+    border-bottom: solid 1px #2e2e2e;
 }
-
 #ux-header header div.row #drawer * {
     background-color: black;
     color: white;
 }
-
-#ux-header header div.megaBladeToc nav ul.navL1 a, #ux-header header div.megaBladeToc nav ul.navL2 a, #ux-header header div.megaBladeToc nav ul.navL3 a {
-    color: white;
+#shell-header .shell-header-nav li .shell-header-dropdown-content a,
+#ux-header header div.megaBladeToc nav ul.navL1 a,
+#ux-header header div.megaBladeToc nav ul.navL2 a,
+#ux-header header div.megaBladeToc nav ul.navL3 a {
+    color: #fff;
 }
-
-#shell-header .shell-header-nav li .shell-header-dropdown-content a {
-    color: #fff !important;
-}
-
 .shell-header-dropdown-content {
     background: #000;
 }
-
-#ux-header a, #ux-header a:visited {
+#ux-header a,
+#ux-header a:visited,
+.pdfDownloadHolder a:link,
+.pdfDownloadHolder a:visited,
+.toc a:link,
+.toc a:visited {
     color: #35ff8b;
 }
-
-#ux-header .ux-nav a, .ux-nav a:link, .ux-nav a:visited {
+#ux-header .ux-nav a,
+.ux-nav a:link,
+.ux-nav a:visited {
     color: #fff;
     background: inherit;
 }
-
 div.shell-header {
-    background: rgba(255, 255, 255, 0);
+    background: rgba(0, 0, 0, 0);
 }
-
 #shell-header .shell-header-nav li a {
     color: #fff !important;
 }
-
 .shell-header-dropdown-label>a {
-    background-color: rgba(255, 255, 255, 0);
+    background-color: rgba(0, 0, 0, 0);
 }
-
-.shell-header-dropdown-label a:hover, .shell-header-dropdown-label a:focus, .shell-header-dropdown-label a:active {
+.shell-header-dropdown-label a:hover,
+.shell-header-dropdown-label a:focus,
+.shell-header-dropdown-label a:active {
     background-color: rgba(82, 195, 232, 0.3);
 }
-
 /* Footer */
 
-div#ux-footer, #Footer, #site-footer, .shell-footer {
-    display: none;
-}
-
-.f1-footer, .site-footer {
-    background-color: black;
-}
-
+div#ux-footer,
+#Footer,
+#site-footer,
+.shell-footer,
 div.epb-container {
     display: none;
 }
+.f1-footer,
+.site-footer {
+    background-color: #000;
+}
+/* account-ms */
 
 #srv_shellHeaderMicrosoftLogo img {
     background-color: #c7c7c7;
 }
-
 div.back-to-top-wrap {
     background-color: #2a2a2a;
+}
+#JelloWrapper {
+    background-color: rgba(0, 0, 0, 0);
+}
+div.body p span {
+    color: #ffffff;
+}
+font font p {
+    color: #0088ff;
+}
+/* blogs.windows.com */
+
+ul.popup,
+div.post-content.column,
+div.sidebar.column,
+.c-universal-header>div:first-child {
+    background-color: #000000;
+}
+h1.post-title,
+.type-curation_post .post-title a,
+.type-post:not(tr) .post-title a,
+.c-universal-header>div:first-child div.js-nav-menu button {
+    color: #ffffff;
+}
+div.kb-notice-section.section.ng-scope,
+div.search-container.other,
+div.container.quick-nav.ng-scope.other {
+    background-color: rgba(0, 0, 0, 0);
+}
+.auto-suggest-results.ng-isolate-scope {
+    background-color: #000;
+}
+h3.sbody-h3 {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 150%;
+}
+h4.sbody-h4 {
+    font-variant: small-caps;
+    font-size: 150%;
+}
+section.section.content-survey {
+    display: none;
+}
+.auto-suggest-results ul li:hover,
+.auto-suggest-results ul li.selected {
+    background-color: #35ff8b;
+}
+.codeSnippetContainerCode {
+    background-color: #222324;
+}
+/* Prevents scroll jitter */
+
+div#content {
+    padding-top: 0 !important;
     }}
