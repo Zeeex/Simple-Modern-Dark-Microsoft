@@ -1,6 +1,0 @@
-{
-  "name": "Simple Modern Dark Microsoft Theme",
-  "tagline": "Dark theme for microsoft.com pages",
-  "body": "![](https://userstyles.org/style_screenshots/131684_after.jpeg?r=1480874684) \r\n\r\n# Simple Modern Dark Microsoft\r\nDark theme for microsoft.com pages\r\n\r\n[![GitHub Release](https://img.shields.io/badge/Build-1.8-blue.svg)](https://github.com/zeeex/Simple-Modern-Dark-Microsoft/releases) \r\n[![License](https://img.shields.io/badge/License-MIT%20License-red.svg)](https://github.com/zeeex/Simple-Modern-Dark-Microsoft/blob/master/LICENSE)\r\n\r\n### How to use\r\nInstall a userstyle manager [Stylish] for your browser:\r\n\r\n- [Google Chrome](https://chrome.google.com/webstore/detail/stylish/fjnbnpbmkenffdnngjfgmeleoegfcffe?hl=en)\r\n- [Firefox](https://addons.mozilla.org/en-US/firefox/addon/stylish/)\r\n- [Safari](http://sobolev.us/stylish)\r\n\r\n### Download\r\nApplies to `https://.*(msdn|technet|support|blogs|developer).microsoft.com/.*` \r\n\r\nUserstyles.org script: [Simple Modern Dark Microsoft](https://userstyles.org/styles/131684/simple-modern-dark-microsoft)\r\n\r\n### Bug reports\r\n\r\nOpen an issue or submit a pull request, please.\r\n",
-  "note": "Don't delete this file! It's used internally to help with page regeneration."
-}
