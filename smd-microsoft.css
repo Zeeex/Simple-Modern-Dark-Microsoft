@@ -1,7 +1,7 @@
 @-moz-document regexp('https://.*(msdn|technet|support|blogs|developer|account|docs).microsoft.com/.*'),
     regexp('https://www.visualstudio.com/.*'),
     regexp('https://blogs.windows.com/.*') {
-/*Simple Modern Dark Microsoft userstyle v1.11
+/*Simple Modern Dark Microsoft userstyle v1.12
 https://userstyles.org/styles/131684
 https://github.com/Zeeex/Simple-Modern-Dark-Microsoft*/
 
@@ -254,8 +254,9 @@ div.replies {
 .section .section-title {
     color: #fff;
 }
-.alert-band .alert.alert-info {
-    background-color: black;
+.alert-band .alert.alert-info,
+.content-article .sbody-error {
+    background-color: #000;
 }
 /* blogs-ms */
 
