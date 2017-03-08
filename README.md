@@ -12,7 +12,7 @@ Install a userstyle manager **[Stylus]** for your browser:
 - [Firefox](https://addons.mozilla.org/en-US/firefox/addon/stylish/)
 
 ### Download
-Applies to `https://.*(msdn|technet|support|blogs|developer|account|docs).microsoft.com/.*` ,`https://www.visualstudio.com/.*`,`https://blogs.windows.com` 
+Applies to `https://.*(msdn|technet|support|blogs|developer|account|docs|download).microsoft.com/.*` ,`https://www.visualstudio.com/.*`,`https://blogs.windows.com/.*` ,`https://login.live.com/.*` 
 
 Userstyles.org script: [Simple Modern Dark Microsoft](https://userstyles.org/styles/131684/simple-modern-dark-microsoft)
 
