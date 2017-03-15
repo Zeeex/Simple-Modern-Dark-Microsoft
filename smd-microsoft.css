@@ -1,15 +1,16 @@
 @-moz-document regexp('https://.*(msdn|technet|support|blogs|developer|account|answers|docs).microsoft.com/.*'),
     regexp('https://www.visualstudio.com/.*'),
     regexp('https://blogs.windows.com/.*'),regexp('https://www.microsoft.com/.*/download.*'),regexp('https://login.live.com/.*') {
-/*Simple Modern Dark Microsoft userstyle v1.17
+/*Simple Modern Dark Microsoft userstyle v1.19
 https://userstyles.org/styles/131684
 https://github.com/Zeeex/Simple-Modern-Dark-Microsoft*/
 
+html,
 body,
-.CSPvNext {
+.CSPvNext,
+.n29d-content {
     color: #fff !important;
-    background-color: #000 !important;
-    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkAgMAAAANjH3HAAAACVBMVEUaGhohISElJSUh9lebAAAB20lEQVRIx4XWuZXDMAwE0C0SAQtggIIYoAAEU+aKOHhYojTrYP2+QfOW/5QIJOih/q8HwF/pb3EX+UPIveYcQGgEHiu9hI+ihEc5Jz5KBIlRRRaJ1JtoSAl5Hw96hLB1/up1tnIXOck5jZQy+3iU2hAOKSH1JvwxHsp+5TLF5MOl1/MQXsVs1miXc+KDbYydyMeUgpPQreZ7fWidbNhkXNJSeAhc6qHmHD8AYovunYyEACWEbyIhNeB9fRrH3hFi0bGPLuEW7xCNaohw1vAlS805nfsrTspclB/hVdoqusg53eH7FWot+wjYpOViX8KbFFKTwlnzvj65P9H/vD0/hibYBGhPwlPO8TmxRsaxsNnrUmUXpNhirlJMPr6Hqq9k5Xn/8iYQHYIuQsWFC6Z87IOxLxHphSY4SpuiU87xJnJr5axfeRd+lnMExXpEWPpuZ1v7qZdNBOjiHzDREHX5fs5Zz9p6X0vVKbKKchlSl5rv+3p//FJ/PYvoKryI8vs+2G9lzRmnEKkh+BU8yDk515jDj/HAswu7CCz6U/Mxb/PnC9N41ndpU4hUU7JGk/C9PmP/M2xZYdvBW2PObyf1IUiIzoHmHW9yTncliYs9A9tVNppdShfgQaTLMf+j3X723tLeHgAAAABJRU5ErkJggg==) !important;
+    background: #000 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkAgMAAAANjH3HAAAACVBMVEUaGhohISElJSUh9lebAAAB20lEQVRIx4XWuZXDMAwE0C0SAQtggIIYoAAEU+aKOHhYojTrYP2+QfOW/5QIJOih/q8HwF/pb3EX+UPIveYcQGgEHiu9hI+ihEc5Jz5KBIlRRRaJ1JtoSAl5Hw96hLB1/up1tnIXOck5jZQy+3iU2hAOKSH1JvwxHsp+5TLF5MOl1/MQXsVs1miXc+KDbYydyMeUgpPQreZ7fWidbNhkXNJSeAhc6qHmHD8AYovunYyEACWEbyIhNeB9fRrH3hFi0bGPLuEW7xCNaohw1vAlS805nfsrTspclB/hVdoqusg53eH7FWot+wjYpOViX8KbFFKTwlnzvj65P9H/vD0/hibYBGhPwlPO8TmxRsaxsNnrUmUXpNhirlJMPr6Hqq9k5Xn/8iYQHYIuQsWFC6Z87IOxLxHphSY4SpuiU87xJnJr5axfeRd+lnMExXpEWPpuZ1v7qZdNBOjiHzDREHX5fs5Zz9p6X0vVKbKKchlSl5rv+3p//FJ/PYvoKryI8vs+2G9lzRmnEKkh+BU8yDk515jDj/HAswu7CCz6U/Mxb/PnC9N41ndpU4hUU7JGk/C9PmP/M2xZYdvBW2PObyf1IUiIzoHmHW9yTncliYs9A9tVNppdShfgQaTLMf+j3X723tLeHgAAAABJRU5ErkJggg==) !important;
 }
 /* WHITE COLORS ============================== */
 
@@ -65,6 +66,17 @@ textarea,
     color: #fff !important;
     background-color: #000;
 }
+#HeaderSearchTextBox,
+#imageMSDN,
+a.n29d-logo {
+    background-color: #fff !important;
+}
+#site-header-global {
+    background: #fff;
+}
+.Masthead {
+    background-color: #fff;
+}
 .breadCrumb,
 .breadCrumb>span>a,
 .breadCrumb>span>a:link,
@@ -84,12 +96,11 @@ div#tocnav div.tocunselected a:focus,
 div#tocnav div.tocunselected a:visited,
 ul.ops-treecontrol.expandable span.ops-treecontent,
 div.body p span,
-#shell-header .shell-header-nav li .shell-header-dropdown-content a,
+.shell-header-dropdown-content a,
 #ux-header header div.megaBladeToc nav ul.navL1 a,
 #ux-header header div.megaBladeToc nav ul.navL2 a,
 #ux-header header div.megaBladeToc nav ul.navL3 a,
 #breadcrumbDropDownMenu>ul>li>a,
-#shell-header .shell-header-nav li a,
 .type-curation_post .post-title a,
 .type-post:not(tr) .post-title a,
 .type-curation_post .post-title a:hover,
@@ -104,7 +115,9 @@ summary:hover,
 div.body p span,
 h5.title-heading-left span,
 .title,
-.heading-md {
+.heading-md,
+.shell-header a,
+.shell-header {
     color: #fff !important;
 }
 a,
@@ -154,7 +167,16 @@ div#content td,
 span.file-size,
 .span.bp0-col-1-1.bp1-col-1-1.bp2-col-1-1.bp3-col-1-1.bundle-heading,
 .msame_Drop_active_name,
-.msame_Drop_active_email {
+.msame_Drop_active_email,
+.searchbarlabel,
+.browselabel,
+.renew,
+#legalDisclaimer,
+.internav a,
+.internav a:link,
+.internav a:visited,
+.msame_Drop_SI a:link,
+.msame_Drop_SI a:visited {
     color: #fff;
 }
 /* NO BACKGROUND ============================== */
@@ -162,7 +184,7 @@ span.file-size,
 div.msame_Header_name,
 .table th {
     color: #fff;
-    background-color: rgba(0, 0, 0, 0);
+    background: rgba(0, 0, 0, 0);
 }
 .msame_open .msame_Header,
 #DiscussionsTabPane .threadHeader,
@@ -180,7 +202,9 @@ div.profile-leaderboard,
 .SimpleSearch,
 .finder_holder,
 .posts:after,
-.user-account {
+.user-account,
+.newSubscriberDownloadProducts,
+ul.ng-scope li a {
     background-color: rgba(0, 0, 0, 0) !important;
 }
 .codeCaption,
@@ -200,8 +224,43 @@ form,
 .dlc-v73 .end-social,
 .download-main-article .select-and-down,
 .download-main-article .fileinfo,
-div.popup {
-    background-color: rgba(0, 0, 0, 0);
+div.popup,
+.n29d-shadow-top,
+.n29d-content-pane,
+div.kb-notice-section.section.ng-scope,
+div.search-container.other,
+div.container.quick-nav.ng-scope.other,
+#JelloWrapper,
+.shell-header-dropdown-label>a,
+#megabladeContainer #megabladeContainerCenter.active #megabladeMainMenu,
+#megabladeContainer #megabladeContainerCenter #megabladeMainMenu:hover,
+#page,
+#BodyBackground,
+div.shell-header,
+main,
+.bg-wrap,
+.feature,
+.hero,
+.products,
+.services,
+.card,
+.community,
+.linkband {
+    background: rgba(0, 0, 0, 0);
+}
+.n29d-nav li.n29d-active a,
+.n29d-nav a,
+.n29d-nav,
+.n29d-header ol,
+.n29d-header ul,
+.n29d-nav-wrapper,
+.n29d-nav li {
+    color: #fff !important;
+    background: rgba(0, 0, 0, 0);
+}
+.hljs {
+    color: #fff;
+    background: rgba(0, 0, 0, 0);
 }
 /* BLACK COLORS ============================== */
 
@@ -221,7 +280,6 @@ div#free-dev-offers,
 .fusion-fullwidth.fullwidth-box.fusion-fullwidth-3.fusion-parallax-none.nonhundred-percent-fullwidth {
     background-color: #000 !important;
 }
-.n29d-content,
 #mobileMenu #tocDropdownMenuButton #tocDropdownMenu,
 #mobileMenu #tocDropdownMenuButton div.tocLabel,
 div#body ul#mobile-task-nav-list,
@@ -230,11 +288,6 @@ div#body ul#mobile-task-nav-list,
 .content-article .sbody-error,
 #shell-header .shell-header-nav .shell-header-dropdown-tab .shell-header-dropdown-tab-label a,
 .shell-header-dropdown.active .shell-header-dropdown-label>a,
-.shell-header a,
-.shell-header a:hover,
-.shell-header a:focus,
-.shell-header a:link,
-.shell-header a:visited,
 #Fragment_HeroHeadlines,
 #Fragment_ResourceBandcontent,
 .navL1,
@@ -259,7 +312,20 @@ div#body ul#mobile-task-nav-list,
 .c-universal-header > div:first-child .c-uhf-menu > ul > li > [aria-expanded="true"],
 .c-universal-header > div:first-child .c-uhf-menu > ul > li > ul,
 .c-universal-header > div:first-child .c-uhf-menu > ul > li > ul:focus,
-.c-universal-header > div:first-child .c-uhf-menu > ul > li > ul:hover {
+.c-universal-header > div:first-child .c-uhf-menu > ul > li > ul:hover,
+.SearchBar,
+.slideoutmenupanel,
+.productsbycategory .slideoutmenupanel .categoryrow,
+#megabladeContainer .bladeItemMenu,
+.shell-header-dropdown-tab-list,
+.contentWrapper .inReplyTo,
+#overlay_indoctoc,
+.auto-suggest-results.ng-isolate-scope,
+div.NOTE,
+ul.popup,
+div.post-content.column,
+div.sidebar.column,
+.c-universal-header>div:first-child {
     background-color: #000;
 }
 div#eula,
@@ -309,9 +375,23 @@ input[type="text"]:focus,
 input[type="time"]:focus,
 input[type="url"]:focus,
 input[type="week"]:focus,
-textarea:focus {
+textarea:focus,
+.SearchBar input.searchtermtext,
+.SearchBar .productsatoz,
+.SearchBar .productsbycategory,
+.defaulttext,
+.srchbox .stxtcell>input,
+.srchbox #searchImageCell {
     color: #fff !important;
     background-color: #000;
+}
+#ux-header header div.row #drawer *,
+#breadcrumbDropDownMenu {
+    color: #fff;
+    background-color: #000;
+}
+.shell-header-dropdown-content {
+    background: #000;
 }
 input,
 optgroup,
@@ -347,15 +427,15 @@ input[type="search"] {
     border: 1px solid #424242;
 }
 .search-field {
-    border: 1px solid  #35ff8b;
+    border: 1px solid #35ff8b;
 }
 body.blog-id-1 .main-footer,
 body.blog-id-2 .main-footer {
-    border-top-color:  #35ff8b;
+    border-top-color: #35ff8b;
 }
 div.answers>h3,
 div.replies>h3 {
-    border-top: solid 2px  #35ff8b;
+    border-top: solid 2px #35ff8b;
 }
 div.replies {
     border-top: none;
@@ -364,30 +444,34 @@ div#body ul#task-nav-list>li.active,
 #page #body ul#task-nav-list>li.active,
 div#body ul#mobile-task-nav-list>li.active,
 #page #body ul#mobile-task-nav-list>li.active {
-    border-left: solid 3px  #35ff8b;
+    border-left: solid 3px #35ff8b;
 }
 div#tocNav div.tocSelected,
 div#tocDropdownMenu div.tocSelected,
 #breadcrumbDropDownMenu>ul>li.current {
-    border-left: 4px solid  #35ff8b;
+    border-left: 4px solid #35ff8b;
     background-color: #000;
 }
 summary {
     border-bottom: 1px solid gainsboro;
 }
 div#rightNavigationMenu div#indoc_toc ul#indoc_toclist li.active {
-    border-left: solid 3px  #35ff8b;
+    border-left: solid 3px #35ff8b;
 }
 div#tocnav div.tocselected,
 div#msdn-technet-en-thread div#threadPageContentContainer,
 ul.ops-treecontrol.expandable .ops-treelevel-0.ops-treenode-related {
-    border-left: 4px solid  #35ff8b;
+    border-left: 4px solid #35ff8b;
     background-color: #000;
 }
 #ux-header header div.row nav ul.navL1>li>a,
 #ux-header header div.row nav ul.navL2>li>a,
 #ux-header header div.row nav ul.navL3>li>a {
     border-bottom: solid 1px #2e2e2e;
+}
+li.message div.voting,
+.n29d-search-header {
+    border: 1px solid #999!important;
 }
 /* END BORDERS ============================== */
 /* TABLE HEADER */
@@ -445,15 +529,20 @@ div#MainContent a:link,
 a:visited,
 .web-feature__toggle[class*=icon--]::before,
 #popular-download ul.downloadList .index,
-.action-list a i {
-    color:  #35ff8b;
+.action-list a i,
+#featuredcontent li a,
+#featuredcontent a,
+a#side-nav-link-2,
+a#shell-header-shopping-cart,
+.faq-section .faq-chevron {
+    color: #35ff8b;
 }
 ul.side-nav .selected-nav,
 div.replies div.messageIcon.status.proposed,
 .auto-suggest-results ul li:hover,
 .auto-suggest-results ul li.selected,
 .anchor-top {
-    background-color:  #35ff8b;
+    background-color: #35ff8b;
 }
 /* TITLES ============================== */
 
@@ -466,7 +555,7 @@ body.blog-id-1 .pagination .page-numbers:not(.dots):not(.current) {
     font-weight: bold;
     text-transform: uppercase;
     font-size: 150%;
-    color:  #35ff8b !important;
+    color: #35ff8b !important;
     background-color: inherit !important;
 }
 /* INVERTED BUTTON ============================== */
@@ -477,12 +566,22 @@ body.blog-id-1 .pagination .page-numbers:not(.dots):not(.current) {
 .internav a.active:visited,
 a.btn.askQuestionLink,
 ul.navigation li.nav-wiki a,
-a#side-nav-link-2,
 ul.side-nav .selected-nav a,
 body.blog-id-1 .pagination .page-numbers.current,
 .toc .selectedHolder,
-.toc .selectedHolder .selected {
-    background-color:  #35ff8b !important;
+.toc .selectedHolder .selected,
+.n29d-nav a:hover,
+.n29d-nav li.n29d-active a:hover,
+.alphabetsrow a,
+.shell-header a:hover,
+.productsbycategory .slideoutmenupanel .categoryrowselected,
+.productsbycategory .slideoutmenupanel .categoryrow:hover,
+.sortText .sortbyText,
+.DownloadsFilterContent .filterheaderlabel,
+.shell-header-dropdown-tab .shell-header-dropdown-tab-label:hover,
+.shell-header-dropdown-tab .shell-header-dropdown-tab-label:focus,
+.shell-header-dropdown-label a:hover {
+    background-color: #35ff8b !important;
     color: #000 !important;
 }
 a:hover,
@@ -491,7 +590,7 @@ a:hover,
     color: gainsboro !important;
 }
 .placement__icon {
-    color:  #35ff8b !important;
+    color: #35ff8b !important;
     background-color: #000 !important;
 }
 /* GRAY BUTTON ============================== */
@@ -503,11 +602,11 @@ a:hover,
 
 #projectPage #Downloads .button:hover {
     background-color: #5d5d5d !important;
-    color:  #35ff8b !important;
+    color: #35ff8b !important;
 }
 button {
     background-color: rgba(0, 0, 0, 0) !important;
-    color:  #35ff8b !important;
+    color: #35ff8b !important;
 }
 /* END ACCENT ============================== */
 
@@ -527,7 +626,7 @@ div#rightNavigationMenu>div a:visited {
 #navigationButtons ins.share,
 #navigationButtons ins.contribute,
 .LW_CollapsibleArea_Anchor_Img {
-    background-color:  #35ff8b;
+    background-color: #35ff8b;
 }
 #vsPanel {
     background-color: #212121;
@@ -569,10 +668,6 @@ a.author>abbr,
 }
 /* technet ==================================== */
 
-#megabladeContainer #megabladeContainerCenter.active #megabladeMainMenu,
-#megabladeContainer #megabladeContainerCenter #megabladeMainMenu:hover {
-    background-color: rgba(0, 0, 0, 0);
-}
 #megabladeItems>li.active>a {
     background-color: #575757;
 }
@@ -585,31 +680,11 @@ div#tocNav a.tocCollapsed {
 }
 /* blogs.technet======================*/
 
-#page,
-#BodyBackground,
-div.shell-header,
-main,
-.bg-wrap,
-.feature,
-.hero,
-.products,
-.services,
-.card,
-.community,
-.linkband {
-    background: rgba(0, 0, 0, 0);
-}
 .widget_tag_cloud a {
     background-color: #2a2a2a;
 }
-#site-header-global {
-    background: #fff;
-}
 /* social.technet====================*/
 
-.Masthead {
-    background-color: white;
-}
 div.unified-baseball-card,
 .unified-baseball-card-compact,
 .unified-baseball-card-hover div.unified-baseball-card {
@@ -620,35 +695,20 @@ div.unified-baseball-card,
 .ms-productpages .pp-section-header {
     background-color: gainsboro;
 }
-.kb-article .kb-notice-section {
-    background-color: inherit;
-}
 .single .entry-meta,
 .author-bio-box h6,
 .internav a:hover,
-.internav a:focus {
+.internav a:focus,
+.kb-article .kb-notice-section {
     background: inherit;
 }
 /* developer-ms */
 
-.hljs {
-    color: #fff;
-    background: rgba(0, 0, 0, 0);
-}
-/* msdn-magazine */
-/* answers-ms (beta)*/
-
-.contentWrapper .inReplyTo {
-    background-color: #000;
-}
 div#tocnav div.tocselected a,
 div#tocnav div.tocselected a:link,
 div#tocnav div.tocselected a:visited {
     color: gainsboro;
     padding-left: 12px;
-}
-#overlay_indoctoc {
-    background-color: #000;
 }
 div#rightNavigationMenu>div a {
     color: #fff;
@@ -708,7 +768,8 @@ div#ux-footer,
 #site-footer,
 .shell-footer,
 div.epb-container,
-div#dlc-hp-hero-slideshow {
+div#dlc-hp-hero-slideshow,
+.n29d-bing {
     display: none;
 }
 /* Header ======*/
@@ -721,22 +782,6 @@ div#dlc-hp-hero-slideshow {
 .shell-header a:hover {
     background-color: #2e2e2e;
 }
-#ux-header header div.row #drawer *,
-#breadcrumbDropDownMenu {
-    background-color: #000;
-    color: white;
-}
-.shell-header-dropdown-content {
-    background: #000;
-}
-.shell-header-dropdown-label>a {
-    background-color: rgba(0, 0, 0, 0);
-}
-.shell-header-dropdown-label a:hover,
-.shell-header-dropdown-label a:focus,
-.shell-header-dropdown-label a:active {
-    background-color: rgba(82, 195, 232, 0.3);
-}
 /* account-ms */
 
 #srv_shellHeaderMicrosoftLogo img {
@@ -745,29 +790,11 @@ div#dlc-hp-hero-slideshow {
 div.back-to-top-wrap {
     background-color: #2a2a2a;
 }
-#JelloWrapper {
-    background-color: rgba(0, 0, 0, 0);
-}
 font font p {
     color: #0088ff;
 }
-/* blogs.windows.com */
+/* FONT TWEAKS */
 
-ul.popup,
-div.post-content.column,
-div.sidebar.column,
-.c-universal-header>div:first-child {
-    background-color: #000000;
-}
-div.kb-notice-section.section.ng-scope,
-div.search-container.other,
-div.container.quick-nav.ng-scope.other {
-    background-color: rgba(0, 0, 0, 0);
-}
-.auto-suggest-results.ng-isolate-scope,
-div.NOTE {
-    background-color: #000;
-}
 h3.sbody-h3 {
     font-weight: bold;
     text-transform: uppercase;
@@ -787,13 +814,7 @@ code {
 .shell-category-header.cat-theme-blue {
     background-color: #383838;
 }
-li.message div.voting {
-    border: 1px solid #999!important;
-}
-#HeaderSearchTextBox {
-    background-color: #fff !important;
-}
-/* Prevents scroll jitter */
+/* PREVENT SCROLL JITTER */
 
 div#content {
     padding-top: 0 !important;
