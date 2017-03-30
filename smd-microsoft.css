@@ -24,7 +24,7 @@ body.blog-id-1 .pagination .page-numbers:not(.dots):not(.current),
   font-weight: bold;
   text-transform: uppercase;
   font-size: 150%;
-  color: hsl(205.5, 100%, 60.4%) !important;
+  color: hsl(146, 100%, 60%) !important;
   background-color: inherit !important;
 }
 /* WHITE COLORS ============================== */
@@ -330,7 +330,7 @@ div#BrandLogo,
 }
 
 div#msdn-technet-en-thread div#threadPageContentContainer {
-  border-left: 4px solid hsl(205.5, 100%, 60.4%);
+  border-left: 4px solid hsl(146, 100%, 60%);
 }
 /* BLACK COLORS ============================== */
 
@@ -528,24 +528,24 @@ input[type="search"] {
 }
 
 .search-field {
-  border: 1px solid hsl(205.5, 100%, 60.4%);
+  border: 1px solid hsl(146, 100%, 60%);
 }
 
 body.blog-id-1 .main-footer,
 body.blog-id-2 .main-footer {
-  border-top-color: hsl(205.5, 100%, 60.4%);
+  border-top-color: hsl(146, 100%, 60%);
 }
 
 div.answers > h3,
 div.replies > h3 {
-  border-top: solid 2px hsl(205.5, 100%, 60.4%);
+  border-top: solid 2px hsl(146, 100%, 60%);
 }
 
 div#body ul#task-nav-list > li.active,
 #page #body ul#task-nav-list > li.active,
 div#body ul#mobile-task-nav-list > li.active,
 #page #body ul#mobile-task-nav-list > li.active {
-  border-left: solid 3px hsl(205.5, 100%, 60.4%);
+  border-left: solid 3px hsl(146, 100%, 60%);
 }
 
 div#tocnav div.tocselected,
@@ -553,7 +553,7 @@ ul.ops-treecontrol.expandable .ops-treelevel-0.ops-treenode-related,
 div#tocNav div.tocSelected,
 div#tocDropdownMenu div.tocSelected,
 #breadcrumbDropDownMenu > ul > li.current {
-  border-left: 4px solid hsl(205.5, 100%, 60.4%);
+  border-left: 4px solid hsl(146, 100%, 60%);
   background-color: #000;
   padding-right: 5px;
 }
@@ -563,7 +563,7 @@ summary {
 }
 
 div#rightNavigationMenu div#indoc_toc ul#indoc_toclist li.active {
-  border-left: solid 3px hsl(205.5, 100%, 60.4%);
+  border-left: solid 3px hsl(146, 100%, 60%);
 }
 
 #ux-header header div.row nav ul.navL1 > li > a,
@@ -573,7 +573,7 @@ div#rightNavigationMenu div#indoc_toc ul#indoc_toclist li.active {
 }
 
 #ux-header header div.toc nav ul.navL1 > li.current > a:hover {
-  border-bottom: solid 5px hsl(205.5, 100%, 60.4%);
+  border-bottom: solid 5px hsl(146, 100%, 60%);
 }
 
 li.message div.voting,
@@ -658,7 +658,7 @@ a.mscom-link.c-call-to-action.c-glyph span,
 .c-glyph:hover:after,
 .c-glyph:hover:before,
 #profile-body .statistic-header {
-  color: hsl(205.5, 100%, 60.4%);
+  color: hsl(146, 100%, 60%);
 }
 
 ul.side-nav .selected-nav,
@@ -666,12 +666,12 @@ div.replies div.messageIcon.status.proposed,
 .auto-suggest-results ul li:hover,
 .auto-suggest-results ul li.selected,
 .anchor-top {
-  background-color: hsl(205.5, 100%, 60.4%);
+  background-color: hsl(146, 100%, 60%);
 }
 /*  FORCE ACCENT COLOR FOR SOME ITEMS =========== */
 
 #profile-body .statistic-header {
-  color: hsl(205.5, 100%, 60.4%) !important;
+  color: hsl(146, 100%, 60%) !important;
 }
 /* INVERTED BUTTON ============================== */
 
@@ -718,7 +718,7 @@ button:hover,
 .c-universal-header > div + div .c-uhf-menu > ul > li > ul > li:focus,
 .c-universal-header > div + div .c-uhf-menu > ul > li > ul > li:hover,
 body #headerUniversalHeader .c-call-to-action.c-glyph {
-  background-color: hsl(205.5, 100%, 60.4%) !important;
+  background-color: hsl(146, 100%, 60%) !important;
   color: #000 !important;
 }
 /* END INVERTED BUTTON ============================== */
@@ -730,7 +730,7 @@ a:hover,
 }
 
 .placement__icon {
-  color: hsl(205.5, 100%, 60.4%) !important;
+  color: hsl(146, 100%, 60%) !important;
   background-color: #000 !important;
 }
 /* GRAY BUTTON ============================== */
@@ -742,12 +742,12 @@ a:hover,
 
 #projectPage #Downloads .button:hover {
   background-color: #5d5d5d !important;
-  color: hsl(205.5, 100%, 60.4%) !important;
+  color: hsl(146, 100%, 60%) !important;
 }
 
 button {
   background-color: rgba(0, 0, 0, 0) !important;
-  color: hsl(205.5, 100%, 60.4%) !important;
+  color: hsl(146, 100%, 60%) !important;
 }
 /* END COLOR ============================== */
 
@@ -769,7 +769,7 @@ div#rightNavigationMenu > div a:visited {
 #navigationButtons ins.share,
 #navigationButtons ins.contribute,
 .LW_CollapsibleArea_Anchor_Img {
-  background-color: hsl(205.5, 100%, 60.4%);
+  background-color: hsl(146, 100%, 60%);
 }
 
 #vsPanel {
@@ -852,12 +852,12 @@ div#tocDropdownMenu a.tocCollapsed {
 }
 
 #tocNav a.tocExpanded + a {
-  color: hsl(205.5, 100%, 60.4%) !important;
+  color: hsl(146, 100%, 60%) !important;
 }
 
 #tocNav div.tocLevel.current,
 div#tocnav div.toclevel.current {
-  background: hsl(205.5, 100%, 60.4%) !important;
+  background: hsl(146, 100%, 60%) !important;
   border-radius: 3px 0 0 3px !important;
   margin-right: -5px !important;
   margin-left: -5px !important;
