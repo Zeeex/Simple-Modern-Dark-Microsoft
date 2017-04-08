@@ -1,9 +1,9 @@
 @-moz-document 
-regexp("https://.*(msdn|technet|support|blogs|developer|account|answers|docs).microsoft.com/.*"),
-regexp("https://www.visualstudio.com/.*"), regexp("https://(blogs|insider).windows.com/.*"),
-regexp("https://www.microsoft.com/.*/(download|windows).*"),
-regexp("https://login.live.com/.*") {
-/*Simple Modern Dark Microsoft userstyle v1.24
+regexp("^https://.*(msdn|technet|support|blogs|developer|account|answers|docs).microsoft.com/.*$"),
+regexp("^https://www.visualstudio.com/.*"), regexp("https://(blogs|insider).windows.com/.*$"),
+regexp("^https://www.microsoft.com/.*/(download|windows).*$"),
+regexp("^https://login.live.com/.*$") {
+/*Simple Modern Dark Microsoft userstyle v1.25
 https://userstyles.org/styles/131684
 https://github.com/Zeeex/Simple-Modern-Dark-Microsoft
 some modifications by freMea since v1.23
@@ -254,7 +254,7 @@ div.profile-leaderboard,
 .newSubscriberDownloadProducts,
 ul.ng-scope li a,
 p span,
-.hero-base.hero-txt-dk.hero-std.hero-single-cell.hero-no-stack {
+.hero-base.hero-txt-dk.hero-std.hero-single-cell.hero-no-stack,.win-color-bg-10 {
 	background-color: rgba(0, 0, 0, 0) !important;
 }
 .codeCaption,
@@ -304,7 +304,10 @@ div#BrandLogo,
 .journey-step-elements li > a:hover,
 .features,
 .siteResources,
-#hdr {
+#hdr,
+.software-download .banner,
+.software-download .title,
+#site-header-global{
 	background: rgba(0, 0, 0, 0);
 }
 .n29d-nav li.n29d-active a,
@@ -635,7 +638,12 @@ a.mscom-link.c-call-to-action.c-glyph span,
 .c-glyph:before,
 .c-glyph:hover:after,
 .c-glyph:hover:before,
-#profile-body .statistic-header {
+#profile-body .statistic-header,
+.software-download .template-blue a,
+.software-download .banner a,
+.software-download .banner a:link,
+.software-download .banner a:visited,
+.software-download .banner a:active {
 	color: hsl(146, 100%, 60%);
 }
 ul.side-nav .selected-nav,
@@ -647,11 +655,15 @@ div.replies div.messageIcon.status.proposed,
 }
 /*  FORCE ACCENT COLOR FOR SOME ITEMS =========== */
 
-#profile-body .statistic-header {
+#profile-body .statistic-header,
+.software-download .banner h1,
+.software-download .banner h2,
+.software-download .banner h3 {
 	color: hsl(146, 100%, 60%) !important;
 }
 /* INVERTED BUTTON ============================== */
 
+.btn,
 #ux-header div.TocNavigation a.active,
 .internav a.active,
 .internav a.active:link,
@@ -684,7 +696,6 @@ button:hover,
 .c-auto-suggest .c-menu .c-menu-item > span:hover,
 .m-auto-suggest .c-menu .c-menu-item > a:hover,
 .m-auto-suggest .c-menu .c-menu-item > span:hover,
-.c-universal-header > div:first-child .c-uhf-menu > ul > li > ul:hover,
 .pivotTabs li.selected,
 #hdr-nav-large-primary a:hover,
 .c-universal-header>div+div .c-uhf-menu>ul>li>[aria-expanded=true],
@@ -694,7 +705,16 @@ button:hover,
 .c-universal-header > div + div .c-uhf-menu > ul > li > button:hover,
 .c-universal-header > div + div .c-uhf-menu > ul > li > ul > li:focus,
 .c-universal-header > div + div .c-uhf-menu > ul > li > ul > li:hover,
-body #headerUniversalHeader .c-call-to-action.c-glyph {
+body #headerUniversalHeader .c-call-to-action.c-glyph,
+.software-download .button-blue,
+.software-download .button-main,
+.software-download .banner a:hover,
+.software-download .banner a:link:hover,
+.software-download .banner a:visited:hover,
+.software-download .banner a:active:hover,
+.software-download .button-blue:hover,
+.software-download .button-main:hover,
+.c-universal-header>div:first-child .c-uhf-menu>ul>li>ul:hover {
 	background-color: hsl(146, 100%, 60%) !important;
 	color: #000 !important;
 }
@@ -936,6 +956,9 @@ div#rightNavigationMenu div#indoc_toc ul#indoc_toclist li {
 }
 /* JUNK ======*/
 
+.btn-default {
+    border-color: transparent;
+}
 div.alert {
 	background-color: rgba(0, 0, 0, 0);
 	color: #a0dfe4 !important;
@@ -996,6 +1019,8 @@ h4.sbody-h4 {
 
 pre {
 	border: solid hsl(200, 0%, 20%) 1px !important;
+	color: #fff;
+	border-radius: 8px;
 }
 .codeSnippetContainerCode,
 pre,
