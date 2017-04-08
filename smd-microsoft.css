@@ -1,14 +1,35 @@
-@-moz-document regexp('https://.*(msdn|technet|support|blogs|developer|account|docs).microsoft.com/.*'),
-    regexp('https://www.visualstudio.com/.*'),
-    regexp('https://blogs.windows.com/.*'),regexp('https://www.microsoft.com/.*/download.*'),regexp('https://login.live.com/.*') {
-/*Simple Modern Dark Microsoft userstyle v1.15
+@-moz-document 
+regexp("^https://.*(msdn|technet|support|blogs|developer|account|answers|docs).microsoft.com/.*$"),
+regexp("^https://www.visualstudio.com/.*"), regexp("https://(blogs|insider).windows.com/.*$"),
+regexp("^https://www.microsoft.com/.*/(download|windows).*$"),
+regexp("^https://login.live.com/.*$") {
+/*Simple Modern Dark Microsoft userstyle v1.25
 https://userstyles.org/styles/131684
-https://github.com/Zeeex/Simple-Modern-Dark-Microsoft*/
+https://github.com/Zeeex/Simple-Modern-Dark-Microsoft
+some modifications by freMea since v1.23
+*/
 
-body,.CSPvNext {
-    color: #fff !important;
-    background-color: #000 !important;
-    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkAgMAAAANjH3HAAAACVBMVEUaGhohISElJSUh9lebAAAB20lEQVRIx4XWuZXDMAwE0C0SAQtggIIYoAAEU+aKOHhYojTrYP2+QfOW/5QIJOih/q8HwF/pb3EX+UPIveYcQGgEHiu9hI+ihEc5Jz5KBIlRRRaJ1JtoSAl5Hw96hLB1/up1tnIXOck5jZQy+3iU2hAOKSH1JvwxHsp+5TLF5MOl1/MQXsVs1miXc+KDbYydyMeUgpPQreZ7fWidbNhkXNJSeAhc6qHmHD8AYovunYyEACWEbyIhNeB9fRrH3hFi0bGPLuEW7xCNaohw1vAlS805nfsrTspclB/hVdoqusg53eH7FWot+wjYpOViX8KbFFKTwlnzvj65P9H/vD0/hibYBGhPwlPO8TmxRsaxsNnrUmUXpNhirlJMPr6Hqq9k5Xn/8iYQHYIuQsWFC6Z87IOxLxHphSY4SpuiU87xJnJr5axfeRd+lnMExXpEWPpuZ1v7qZdNBOjiHzDREHX5fs5Zz9p6X0vVKbKKchlSl5rv+3p//FJ/PYvoKryI8vs+2G9lzRmnEKkh+BU8yDk515jDj/HAswu7CCz6U/Mxb/PnC9N41ndpU4hUU7JGk/C9PmP/M2xZYdvBW2PObyf1IUiIzoHmHW9yTncliYs9A9tVNppdShfgQaTLMf+j3X723tLeHgAAAABJRU5ErkJggg==) !important;
+html,
+body,
+.CSPvNext,
+.n29d-content {
+	color: #fff !important;
+	background: #000 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkAgMAAAANjH3HAAAACVBMVEUaGhohISElJSUh9lebAAAB20lEQVRIx4XWuZXDMAwE0C0SAQtggIIYoAAEU+aKOHhYojTrYP2+QfOW/5QIJOih/q8HwF/pb3EX+UPIveYcQGgEHiu9hI+ihEc5Jz5KBIlRRRaJ1JtoSAl5Hw96hLB1/up1tnIXOck5jZQy+3iU2hAOKSH1JvwxHsp+5TLF5MOl1/MQXsVs1miXc+KDbYydyMeUgpPQreZ7fWidbNhkXNJSeAhc6qHmHD8AYovunYyEACWEbyIhNeB9fRrH3hFi0bGPLuEW7xCNaohw1vAlS805nfsrTspclB/hVdoqusg53eH7FWot+wjYpOViX8KbFFKTwlnzvj65P9H/vD0/hibYBGhPwlPO8TmxRsaxsNnrUmUXpNhirlJMPr6Hqq9k5Xn/8iYQHYIuQsWFC6Z87IOxLxHphSY4SpuiU87xJnJr5axfeRd+lnMExXpEWPpuZ1v7qZdNBOjiHzDREHX5fs5Zz9p6X0vVKbKKchlSl5rv+3p//FJ/PYvoKryI8vs+2G9lzRmnEKkh+BU8yDk515jDj/HAswu7CCz6U/Mxb/PnC9N41ndpU4hUU7JGk/C9PmP/M2xZYdvBW2PObyf1IUiIzoHmHW9yTncliYs9A9tVNppdShfgQaTLMf+j3X723tLeHgAAAABJRU5ErkJggg==) !important;
+}
+/* TITLES ============================== */
+
+h2,
+h3,
+h4,
+h5,
+.main-header .search-field,
+body.blog-id-1 .pagination .page-numbers:not(.dots):not(.current),
+.brandLogo > a {
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 150%;
+	color: hsl(146, 100%, 60%) !important;
+	background-color: inherit !important;
 }
 /* WHITE COLORS ============================== */
 
@@ -36,15 +57,17 @@ h1,
 .unified-baseball-card .baseball-card-affiliate-company,
 .unified-baseball-card-compact-hover .baseball-card-affiliate-company,
 .unified-baseball-card-compact .baseball-card-affiliate-company,
-.threadsnippet .votes {
-    color: #fff !important;
-    background-color: inherit !important;
+.threadsnippet .votes,
+#profile-body span,
+#profile-body div {
+	color: hsl(0, 0%, 90%) !important;
+	background-color: inherit !important;
 }
 #ux-header .ux-nav a,
 .ux-nav a:link,
 .ux-nav a:visited {
-    color: #fff;
-    background: inherit;
+	color: #fff;
+	background: inherit;
 }
 .forumDetailsTip,
 input,
@@ -60,16 +83,33 @@ textarea,
 .type-post .superfeature-content-right .read-more,
 .post-text-only,
 .post-horizontal,
-.post-vertical {
-    color: #fff !important;
-    background-color: #000;
+.post-vertical,
+.theme-dark .theme-light .c-search input[type=search]:hover,
+.theme-light .c-search input[type=search]:hover,
+.c-auto-suggest .c-menu .c-menu-item > a,
+.c-auto-suggest .c-menu .c-menu-item > span,
+.m-auto-suggest .c-menu .c-menu-item > a,
+.m-auto-suggest .c-menu .c-menu-item > span {
+	color: #fff !important;
+	background-color: #000;
 }
-a,
+#HeaderSearchTextBox,
+#imageMSDN,
+a.n29d-logo {
+	background-color: #fff !important;
+	color: #000 !important;
+}
+#site-header-global {
+	background: #fff;
+}
+.Masthead {
+	background-color: #fff;
+}
 .breadCrumb,
-.breadCrumb>span>a,
-.breadCrumb>span>a:link,
-.breadCrumb>span>a:hover,
-.breadCrumb>span>a:visited,
+.breadCrumb > span > a,
+.breadCrumb > span > a:link,
+.breadCrumb > span > a:hover,
+.breadCrumb > span > a:visited,
 .LW_CollapsibleArea_Title,
 ul.ops-treecontrol.expandable a,
 input#SearchTextBox,
@@ -77,19 +117,13 @@ input#SearchTextBox,
 .FVBPubDateLabel,
 div.itemCount,
 .SimpleSearchBox2,
-div#tocnav div.tocunselected a,
-div#tocnav div.tocunselected a:link,
-iv#tocnav div.tocunselected a:hover,
-div#tocnav div.tocunselected a:focus,
-div#tocnav div.tocunselected a:visited,
 ul.ops-treecontrol.expandable span.ops-treecontent,
 div.body p span,
-#shell-header .shell-header-nav li .shell-header-dropdown-content a,
+.shell-header-dropdown-content a,
 #ux-header header div.megaBladeToc nav ul.navL1 a,
 #ux-header header div.megaBladeToc nav ul.navL2 a,
 #ux-header header div.megaBladeToc nav ul.navL3 a,
-#breadcrumbDropDownMenu>ul>li>a,
-#shell-header .shell-header-nav li a,
+#breadcrumbDropDownMenu > ul > li > a,
 .type-curation_post .post-title a,
 .type-post:not(tr) .post-title a,
 .type-curation_post .post-title a:hover,
@@ -103,13 +137,18 @@ summary:hover,
 .title h5,
 div.body p span,
 h5.title-heading-left span,
-.title {
-    color: #fff !important;
+.title,
+.heading-md,
+.shell-header a,
+.shell-header,
+#megabladeMainMenu,
+#megabladeItems h5,
+#megabladeItems > li.inactive > a {
+	color: #fff !important;
 }
-div#body ul#task-nav-list>li>a,
-#page #body ul#task-nav-list>li>a,
-div#body ul#mobile-task-nav-list>li>a,
-#page #body ul#mobile-task-nav-list>li>a,
+a,
+div#body ul#mobile-task-nav-list > li > a,
+#page #body ul#mobile-task-nav-list > li > a,
 div#tocNav div a,
 div#tocDropdownMenu div a,
 div#tocNav div a:visited,
@@ -122,11 +161,10 @@ div#tocNav div.current a:visited,
 div#tocDropdownMenu div.current a:visited,
 div#tocNav div.current a:link,
 div#tocDropdownMenu div.current a:link,
-megabladeContainer #megabladeContainerCenter #megabladeMainMenu,
 .communityContentAnnotation,
-#threeColumns>.right #navigationButtons a,
-#threeColumns>.right #navigationButtons a:visited,
-#threeColumns>.right #navigationButtons a:link,
+#threeColumns > .right #navigationButtons a,
+#threeColumns > .right #navigationButtons a:visited,
+#threeColumns > .right #navigationButtons a:link,
 span.username a,
 #quickLinks #quickLinksText span,
 .pln,
@@ -134,24 +172,67 @@ span.username a,
 .unified-baseball-card-mini .profile-mini,
 .unified-baseball-card-mini .profile-mini .profile-mini-points,
 .unified-baseball-card .baseball-card-joined,
-ul.history>li>span.type,
-ul.history>li>span.date,
+ul.history > li > span.type,
+ul.history > li > span.date,
 .section .section-title,
 #brand-name::after,
 h1.post-title,
 .type-curation_post .post-title a,
 .type-post:not(tr) .post-title a,
-.c-universal-header>div:first-child div.js-nav-menu button,
-#megabladeContainer #megabladeContainerCenter.active ul#megabladeItems li.bladeItemWithMenu.active div.navpage,
-#megabladeItems>li>a,span.loc,.download-main-article .row-fluid .brief-description,ul.htmldetails,div.download-summary table td,span.file-size,.span.bp0-col-1-1.bp1-col-1-1.bp2-col-1-1.bp3-col-1-1.bundle-heading,.msame_Drop_active_name,.msame_Drop_active_email {
-    color: #fff;
+.c-universal-header > div:first-child div.js-nav-menu button,
+span.loc,
+.download-main-article .row-fluid .brief-description,
+ul.htmldetails,
+div.download-summary table td,
+div#content td,
+span.file-size,
+.span.bp0-col-1-1.bp1-col-1-1.bp2-col-1-1.bp3-col-1-1.bundle-heading,
+.msame_Drop_active_name,
+.msame_Drop_active_email,
+.searchbarlabel,
+.browselabel,
+.renew,
+#legalDisclaimer,
+.internav a,
+.internav a:link,
+.internav a:visited,
+.msame_Drop_SI a:link,
+.msame_Drop_SI a:visited,
+.ask-learn-solve-container .content-text,
+.ask-learn-solve-container .content-title,
+div.home-category-list > div > a,
+.header-dropdown-label-home a:visited,
+.header-dropdown-tab-list a:visited,
+#MainContent .statistic-group .statistic-table td,
+#hdr .hdr-signin .hdr-signin-button,
+.c-universal-header > div + div .c-action-trigger,
+.c-universal-header > div + div .c-logo,
+.c-universal-header > div + div .c-uhf-menu a,
+.c-universal-header > div + div .c-uhf-menu button,
+.c-universal-header > div + div .c-uhf-nav-link,
+.c-universal-header > div:first-child .c-uhf-nav-link {
+	color: #fff;
+}
+/* DIM WHITE ============================== */
+
+div#tocNav div.tocLevel > a,
+div#tocnav div.tocunselected div.toclevel > a,
+div#body ul#task-nav-list > li > a,
+#page #body ul#task-nav-list > li > a,
+div#body ul#mobile-task-nav-list > li > a,
+#page #body ul#mobile-task-nav-list > li > a,
+.summaryBox,
+#supportedPlatformText,
+#disclaimer {
+	color: hsl(0, 0%, 70%);
 }
 /* NO BACKGROUND ============================== */
 
 div.msame_Header_name,
-.table th {
-    color: #fff;
-    background-color: rgba(0, 0, 0, 0);
+.table th,
+#megabladeContainerCenter {
+	color: #fff;
+	background: rgba(0, 0, 0, 0);
 }
 .msame_open .msame_Header,
 #DiscussionsTabPane .threadHeader,
@@ -169,8 +250,12 @@ div.profile-leaderboard,
 .SimpleSearch,
 .finder_holder,
 .posts:after,
-.user-account {
-    background-color: rgba(0, 0, 0, 0) !important;
+.user-account,
+.newSubscriberDownloadProducts,
+ul.ng-scope li a,
+p span,
+.hero-base.hero-txt-dk.hero-std.hero-single-cell.hero-no-stack,.win-color-bg-10 {
+	background-color: rgba(0, 0, 0, 0) !important;
 }
 .codeCaption,
 .codeSnippetContainer,
@@ -185,14 +270,68 @@ li.message,
 #msdn-technet-en-thread #threadPageContainer li.message div.menu.message,
 div.expandedThreadContainer li.message div.menu.thread,
 div.expandedThreadContainer li.message div.menu.message,
-form,.dlc-v73 .end-social,.download-main-article .select-and-down,.download-main-article .fileinfo,div.popup{
-    background-color: rgba(0, 0, 0, 0);
+form,
+.dlc-v73 .end-social,
+.download-main-article .select-and-down,
+.download-main-article .fileinfo,
+div.popup,
+.n29d-shadow-top,
+.n29d-content-pane,
+div.kb-notice-section.section.ng-scope,
+div.search-container.other,
+div.container.quick-nav.ng-scope.other,
+#JelloWrapper,
+.shell-header-dropdown-label > a,
+#page,
+#BodyBackground,
+div.shell-header,
+main,
+.bg-wrap,
+.feature,
+.hero,
+.products,
+.services,
+.card,
+.community,
+.linkband,
+table.home-header,
+.sidebar.col-md-4,
+.main-content.col-md-8,
+div#BrandLogo,
+#journeys,
+.journey-step,
+.journey-step-elements li > a,
+.journey-step-elements li > a:hover,
+.features,
+.siteResources,
+#hdr,
+.software-download .banner,
+.software-download .title,
+#site-header-global{
+	background: rgba(0, 0, 0, 0);
+}
+.n29d-nav li.n29d-active a,
+.n29d-nav a,
+.n29d-nav,
+.n29d-header ol,
+.n29d-header ul,
+.n29d-nav-wrapper,
+.n29d-nav li {
+	color: #fff !important;
+	background: rgba(0, 0, 0, 0);
+}
+.hljs {
+	color: #fff;
+	background: rgba(0, 0, 0, 0);
+}
+div#msdn-technet-en-thread div#threadPageContentContainer {
+	border-left: 4px solid hsl(146, 100%, 60%);
 }
 /* BLACK COLORS ============================== */
 
 .unified-baseball-card .baseball-card-header .baseball-card-summary,
 .unified-baseball-card .baseball-card-header .crop,
-.scriptcode .title>span,
+.scriptcode .title > span,
 .main-nav,
 .post-archive,
 .web-feature[open] .web-feature__toggle,
@@ -203,10 +342,13 @@ button[type=menu]+menu menuitem,
 .meta-box,
 div#free-dev-offers,
 .fusion-fullwidth.fullwidth-box.fusion-fullwidth-1.fusion-parallax-none.nonhundred-percent-fullwidth,
-.fusion-fullwidth.fullwidth-box.fusion-fullwidth-3.fusion-parallax-none.nonhundred-percent-fullwidth {
-    background-color: #000 !important;
+.fusion-fullwidth.fullwidth-box.fusion-fullwidth-3.fusion-parallax-none.nonhundred-percent-fullwidth,
+.c-universal-header > div + div,
+#megabladeMainMenu:hover,
+#megabladeContainerCenter.active #megabladeMainMenu,
+#megabladeContainer #megabladeContainerCenter.active ul#megabladeItems li.bladeItemWithMenu.active div.navpage {
+	background-color: #000 !important;
 }
-.n29d-content,
 #mobileMenu #tocDropdownMenuButton #tocDropdownMenu,
 #mobileMenu #tocDropdownMenuButton div.tocLabel,
 div#body ul#mobile-task-nav-list,
@@ -214,27 +356,68 @@ div#body ul#mobile-task-nav-list,
 .alert-band .alert.alert-info,
 .content-article .sbody-error,
 #shell-header .shell-header-nav .shell-header-dropdown-tab .shell-header-dropdown-tab-label a,
-.shell-header-dropdown.active .shell-header-dropdown-label>a,
-.shell-header a,
-.shell-header a:hover,
-.shell-header a:focus,
-.shell-header a:link,
-.shell-header a:visited,
+.shell-header-dropdown.active .shell-header-dropdown-label > a,
 #Fragment_HeroHeadlines,
 #Fragment_ResourceBandcontent,
 .navL1,
 .navL2,
 .inactive,
-#ux-header header div.row nav ul.navL1>li.active>a,
-#ux-header header div.row nav ul.navL2>li.active>a,
-#ux-header header div.row nav ul.navL3>li.active>a,
+#ux-header header div.row nav ul.navL1 > li.active > a,
+#ux-header header div.row nav ul.navL2 > li.active > a,
+#ux-header header div.row nav ul.navL3 > li.active > a,
 #ux-header header div.megaBladeToc nav ul.navL1,
 #ux-header header div.megaBladeToc nav ul.navL2,
 #ux-header header div.megaBladeToc nav ul.navL3,
 .f1-footer,
-.site-footer,.mscom-popup-content-header,.mscom-popup .mscom-popup-fullwidth > .mscom-popup-body > .mscom-popup-layout,.shell-header-user #meControl .msame_Header:hover, .shell-header-user #meControl .msame_Header:focus,.msame_Drop_content
-{
-    background-color: #000;}
+.site-footer,
+.mscom-popup-content-header,
+.mscom-popup .mscom-popup-fullwidth > .mscom-popup-body > .mscom-popup-layout,
+.shell-header-user #meControl .msame_Header:hover,
+.shell-header-user #meControl .msame_Header:focus,
+.msame_Drop_content,
+.c-universal-header > div:first-child .c-uhf-menu > ul,
+.c-universal-header > div:first-child .c-uhf-menu > ul > li >:focus,
+.c-universal-header > div:first-child .c-uhf-menu > ul > li >:hover,
+.c-universal-header > div:first-child .c-uhf-menu > ul > li > [aria-expanded="true"],
+.c-universal-header > div:first-child .c-uhf-menu > ul > li > ul,
+.c-universal-header > div:first-child .c-uhf-menu > ul > li > ul:focus,
+.c-universal-header > div:first-child .c-uhf-menu > ul > li > ul:hover,
+.SearchBar,
+.slideoutmenupanel,
+.productsbycategory .slideoutmenupanel .categoryrow,
+#megabladeContainer .bladeItemMenu,
+.shell-header-dropdown-tab-list,
+.contentWrapper .inReplyTo,
+#overlay_indoctoc,
+.auto-suggest-results.ng-isolate-scope,
+div.NOTE,
+ul.popup,
+div.post-content.column,
+div.sidebar.column,
+.c-universal-header > div:first-child,
+.dropNavForSearch ul,
+#Fragment_HeroHeadlines,
+#hdr-fb-main,
+.shell-header-dropdown-content,
+li.message div.body blockquote,
+#flot-points-hover,
+#flot-pie-hover,
+.rankings-left,
+.rankings-right .rank-cell,
+#MainContent .statistic-group,
+.ContextMenuPanel,
+.c-universal-footer > div,
+.c-universal-footer > section,
+.c-universal-footer nav,
+.c-universal-header>div+div .c-uhf-menu>button[aria-expanded=true],
+.c-universal-header > div + div .c-uhf-menu > ul,
+.c-universal-header > div + div .c-uhf-menu > ul > li > ul,
+.theme-light .c-search input[type=search]:focus,
+#Fragment_HeroHeadlines,
+.header-dropdown-content,
+.srchbox {
+	background: #000;
+}
 div#eula,
 #eulaPage,
 .posts-filter,
@@ -251,20 +434,61 @@ select option,
 select:active,
 .form-search input[type=search],
 #search-box input[type="text"].search-text,
-#search-box input[type="text"].search-text:focus,div.download-summary,input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"], textarea,input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="email"]:focus, input[type="month"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="time"]:focus, input[type="url"]:focus, input[type="week"]:focus, textarea:focus {
-    color: #fff !important;
-    background-color: #000;
+#search-box input[type="text"].search-text:focus,
+div.download-summary,
+input[type="color"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+input[type="week"],
+textarea,
+input[type="color"]:focus,
+input[type="date"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="email"]:focus,
+input[type="month"]:focus,
+input[type="number"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="text"]:focus,
+input[type="time"]:focus,
+input[type="url"]:focus,
+input[type="week"]:focus,
+textarea:focus,
+.SearchBar input.searchtermtext,
+.SearchBar .productsatoz,
+.SearchBar .productsbycategory,
+.defaulttext,
+.srchbox .stxtcell > input,
+.srchbox #searchImageCell {
+	color: #fff !important;
+	background-color: #000;
 }
-button,
+#ux-header header div.row #drawer *,
+#breadcrumbDropDownMenu {
+	color: #fff;
+	background-color: #000;
+}
 input,
 optgroup,
 select,
 textarea,
 ul.side-nav .selected-nav a {
-    color: #000;
+	color: #000;
 }
 li.box-title p {
-    color: #000!important;
+	color: #000 !important;
 }
 /* GRAY COLORS ============================== */
 
@@ -273,68 +497,77 @@ li.box-title p {
 #MainContent #msdn-technet-en-thread a#seeAnnouncementsLink:hover,
 #msdn-technet-en-thread #threadPageActionsContainer #relatedThreadCountContainer a:hover,
 #ux-header div.TocNavigation a:hover,
-.header-fragments ul.navigation li a:hover,.dlc-v73 .dlc-hp-icons .class_icon:hover, .dlc-v73 .dlc-hp-icons .class_icon:active,
-.dlc-v73 .dlc-hp-icons a:hover, .dlc-v73 .dlc-hp-icons a:active,.mscom-accordion .mscom-accordion-item-link:hover{
-    background-color: gray;
+.header-fragments ul.navigation li a:hover,
+.dlc-v73 .dlc-hp-icons .class_icon:hover,
+.dlc-v73 .dlc-hp-icons .class_icon:active,
+.dlc-v73 .dlc-hp-icons a:hover,
+.dlc-v73 .dlc-hp-icons a:active,
+.mscom-accordion .mscom-accordion-item-link:hover {
+	background-color: gray;
+}
+li.message div.body div.quote,
+#megabladeItems > li.inactive > a {
+	background-color: gray !important;
 }
 /* BORDERS ============================== */
 
-.editorPickedItem>td {
-    border-top: 6px solid gray;
+.editorPickedItem > td {
+	border-top: 6px solid gray;
 }
 input[type="search"] {
-    border: 1px solid #424242;
+	border: 1px solid #424242;
 }
 .search-field {
-    border: 1px solid #35ff8b;
+	border: 1px solid hsl(146, 100%, 60%);
 }
 body.blog-id-1 .main-footer,
 body.blog-id-2 .main-footer {
-    border-top-color: #35ff8b;
+	border-top-color: hsl(146, 100%, 60%);
 }
-div.answers>h3,
-div.replies>h3 {
-    border-top: solid 2px #35ff8b;
+div.answers > h3,
+div.replies > h3 {
+	border-top: solid 2px hsl(146, 100%, 60%);
 }
-div.replies {
-    border-top: none;
-}
-div#body ul#task-nav-list>li.active,
-#page #body ul#task-nav-list>li.active,
-div#body ul#mobile-task-nav-list>li.active,
-#page #body ul#mobile-task-nav-list>li.active {
-    border-left: solid 3px #35ff8b;
-}
-div#tocNav div.tocSelected,
-div#tocDropdownMenu div.tocSelected,
-#breadcrumbDropDownMenu>ul>li.current {
-    border-left: 4px solid #35ff8b;
-    background-color: #000;
-}
-summary {
-    border-bottom: 1px solid gainsboro;
-}
-div#rightNavigationMenu div#indoc_toc ul#indoc_toclist li.active {
-    border-left: solid 3px #35ff8b;
+div#body ul#task-nav-list > li.active,
+#page #body ul#task-nav-list > li.active,
+div#body ul#mobile-task-nav-list > li.active,
+#page #body ul#mobile-task-nav-list > li.active {
+	border-left: solid 3px hsl(146, 100%, 60%);
 }
 div#tocnav div.tocselected,
-div#msdn-technet-en-thread div#threadPageContentContainer,
-ul.ops-treecontrol.expandable .ops-treelevel-0.ops-treenode-related {
-    border-left: 4px solid #35ff8b;
-    background-color: #000;
+ul.ops-treecontrol.expandable .ops-treelevel-0.ops-treenode-related,
+div#tocNav div.tocSelected,
+div#tocDropdownMenu div.tocSelected,
+#breadcrumbDropDownMenu > ul > li.current {
+	border-left: 4px solid hsl(146, 100%, 60%);
+	background-color: #000;
+	padding-right: 5px;
 }
-#ux-header header div.row nav ul.navL1>li>a,
-#ux-header header div.row nav ul.navL2>li>a,
-#ux-header header div.row nav ul.navL3>li>a {
-    border-bottom: solid 1px #2e2e2e;
+summary {
+	border-bottom: 1px solid gainsboro;
+}
+div#rightNavigationMenu div#indoc_toc ul#indoc_toclist li.active {
+	border-left: solid 3px hsl(146, 100%, 60%);
+}
+#ux-header header div.row nav ul.navL1 > li > a,
+#ux-header header div.row nav ul.navL2 > li > a,
+#ux-header header div.row nav ul.navL3 > li > a {
+	border-bottom: solid 1px #2e2e2e;
+}
+#ux-header header div.toc nav ul.navL1 > li.current > a:hover {
+	border-bottom: solid 5px hsl(146, 100%, 60%);
+}
+li.message div.voting,
+.n29d-search-header {
+	border: 1px solid #999 !important;
 }
 /* END BORDERS ============================== */
 /* TABLE HEADER */
 
 div.alert th,
 th {
-    background-color: #3b3b3b;
-    color: #fff;
+	background-color: #3b3b3b;
+	color: #fff;
 }
 /* LINKS - ACCENT ============================== */
 
@@ -345,13 +578,13 @@ div#rightNavigationMenu div#indoc_toc ul#indoc_toclist li.active a,
 .function-area .ops-socialsharing-dropdownbtn:focus,
 .function-area .ops-socialsharing-dropdownbtn:hover,
 ul.side-nav .nav-link a,
-div#body ul#task-nav-list>li.active>a,
-#page #body ul#task-nav-list>li.active>a,
-div#body ul#mobile-task-nav-list>li.active>a,
-#page #body ul#mobile-task-nav-list>li.active>a,
+div#body ul#task-nav-list > li.active > a,
+#page #body ul#task-nav-list > li.active > a,
+div#body ul#mobile-task-nav-list > li.active > a,
+#page #body ul#mobile-task-nav-list > li.active > a,
 .msame_unauth .msame_Header_name:hover,
-#eulaPage .eulaPagebuttons>button,
-div.profile-leaderboard div.profile-leaderboard-item>div.profile-leaderboard-container .profile-leaderboard-value,
+#eulaPage .eulaPagebuttons > button,
+div.profile-leaderboard div.profile-leaderboard-item > div.profile-leaderboard-container .profile-leaderboard-value,
 .featured-post a.post-title,
 a:link,
 .topic a,
@@ -375,7 +608,7 @@ div#MainContent a:visited,
 div#MainContent a,
 div#MainContent a:link,
 .quick-nav a,
-.has-site-navigation .main-nav .container>ul>li.ms-current-blog>a,
+.has-site-navigation .main-nav .container > ul > li.ms-current-blog > a,
 .button--icon,
 .button--search:hover,
 .button--text,
@@ -383,69 +616,138 @@ div#MainContent a:link,
 .button--text:hover,
 a:visited,
 .web-feature__toggle[class*=icon--]::before,
-#popular-download ul.downloadList .index {
-    color: #35ff8b;
+#popular-download ul.downloadList .index,
+.action-list a i,
+#featuredcontent li a,
+#featuredcontent a,
+a#side-nav-link-2,
+a#shell-header-shopping-cart,
+.faq-section .faq-chevron,
+.alley a,
+.alley a:link,
+.alley a:visited,
+.icon-tip:before,
+.features a:active,
+.features a:link,
+.features a:visited,
+.c-universal-header > div:first-child .c-uhf-menu a,
+.c-universal-header > div:first-child .c-uhf-menu button,
+#bodyContentPane a,
+a.mscom-link.c-call-to-action.c-glyph span,
+.c-glyph:after,
+.c-glyph:before,
+.c-glyph:hover:after,
+.c-glyph:hover:before,
+#profile-body .statistic-header,
+.software-download .template-blue a,
+.software-download .banner a,
+.software-download .banner a:link,
+.software-download .banner a:visited,
+.software-download .banner a:active {
+	color: hsl(146, 100%, 60%);
 }
 ul.side-nav .selected-nav,
 div.replies div.messageIcon.status.proposed,
 .auto-suggest-results ul li:hover,
 .auto-suggest-results ul li.selected,
 .anchor-top {
-    background-color: #35ff8b;
+	background-color: hsl(146, 100%, 60%);
 }
-/* TITLES ============================== */
+/*  FORCE ACCENT COLOR FOR SOME ITEMS =========== */
 
-h2,
-h3,
-h4,
-h5,
-.main-header .search-field,
-body.blog-id-1 .pagination .page-numbers:not(.dots):not(.current),
-button {
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 150%;
-    color: #35ff8b !important;
-    background-color: inherit !important;
+#profile-body .statistic-header,
+.software-download .banner h1,
+.software-download .banner h2,
+.software-download .banner h3 {
+	color: hsl(146, 100%, 60%) !important;
 }
 /* INVERTED BUTTON ============================== */
 
+.btn,
 #ux-header div.TocNavigation a.active,
 .internav a.active,
 .internav a.active:link,
 .internav a.active:visited,
 a.btn.askQuestionLink,
 ul.navigation li.nav-wiki a,
-a#side-nav-link-2,
 ul.side-nav .selected-nav a,
-body.blog-id-1 .pagination .page-numbers.current {
-    background-color: #35ff8b !important;
-    color: #000 !important;
+body.blog-id-1 .pagination .page-numbers.current,
+.toc .selectedHolder,
+.toc .selectedHolder .selected,
+.n29d-nav a:hover,
+.n29d-nav li.n29d-active a:hover,
+.alphabetsrow a,
+.shell-header a:hover,
+.productsbycategory .slideoutmenupanel .categoryrowselected,
+.productsbycategory .slideoutmenupanel .categoryrow:hover,
+.sortText .sortbyText,
+.DownloadsFilterContent .filterheaderlabel,
+.shell-header-dropdown-tab .shell-header-dropdown-tab-label:hover,
+.shell-header-dropdown-tab .shell-header-dropdown-tab-label:focus,
+.shell-header-dropdown-label a:hover,
+#ux-header header div.toc nav ul.navL1 > li.current.active > a,
+#ux-header header div.toc nav ul.navL2 > li.current.active > a,
+#ux-header header div.row nav ul.navL1 > li.inactive > a:hover,
+#ux-header header div.row nav ul.navL2 > li.inactive > a:hover,
+#ux-header header div.row nav ul.navL3 > li.inactive > a:hover,
+.shell-header a:hover,
+button:hover,
+.c-auto-suggest .c-menu .c-menu-item > a:hover,
+.c-auto-suggest .c-menu .c-menu-item > span:hover,
+.m-auto-suggest .c-menu .c-menu-item > a:hover,
+.m-auto-suggest .c-menu .c-menu-item > span:hover,
+.pivotTabs li.selected,
+#hdr-nav-large-primary a:hover,
+.c-universal-header>div+div .c-uhf-menu>ul>li>[aria-expanded=true],
+.c-universal-header > div + div .c-uhf-menu > ul > li > a:focus,
+.c-universal-header > div + div .c-uhf-menu > ul > li > a:hover,
+.c-universal-header > div + div .c-uhf-menu > ul > li > button:focus,
+.c-universal-header > div + div .c-uhf-menu > ul > li > button:hover,
+.c-universal-header > div + div .c-uhf-menu > ul > li > ul > li:focus,
+.c-universal-header > div + div .c-uhf-menu > ul > li > ul > li:hover,
+body #headerUniversalHeader .c-call-to-action.c-glyph,
+.software-download .button-blue,
+.software-download .button-main,
+.software-download .banner a:hover,
+.software-download .banner a:link:hover,
+.software-download .banner a:visited:hover,
+.software-download .banner a:active:hover,
+.software-download .button-blue:hover,
+.software-download .button-main:hover,
+.c-universal-header>div:first-child .c-uhf-menu>ul>li>ul:hover {
+	background-color: hsl(146, 100%, 60%) !important;
+	color: #000 !important;
 }
+/* END INVERTED BUTTON ============================== */
+
 a:hover,
 .topic a:active,
 .topic a:hover {
-    color: gainsboro !important;
+	color: gainsboro !important;
 }
 .placement__icon {
-    color: #35ff8b !important;
-    background-color: #000 !important;
+	color: hsl(146, 100%, 60%) !important;
+	background-color: #000 !important;
 }
 /* GRAY BUTTON ============================== */
 
 #projectPage #Downloads .button {
-    background-color: #5d5d5d !important;
+	background-color: #5d5d5d !important;
 }
 /* HOVERED BUTTON ============================== */
 
 #projectPage #Downloads .button:hover {
-    background-color: #5d5d5d !important;
-    color: #35ff8b !important;
+	background-color: #5d5d5d !important;
+	color: hsl(146, 100%, 60%) !important;
 }
-/* END ACCENT ============================== */
+button {
+	background-color: rgba(0, 0, 0, 0) !important;
+	color: hsl(146, 100%, 60%) !important;
+}
+/* END COLOR ============================== */
 
-div#rightNavigationMenu>div a:visited {
-    color: #a0a0a0;
+div#rightNavigationMenu > div a:visited {
+	color: #a0a0a0;
 }
 #search-box .search-container,
 .Masthead,
@@ -453,183 +755,220 @@ div#rightNavigationMenu>div a:visited {
 #sideNav #contributeSection h3,
 .sidebar #contributeSection h3,
 #contributeSection h3 {
-    background-color: inherit !important;
+	background-color: inherit !important;
 }
 #navigationButtons ins.print,
 #navigationButtons ins.export,
 #navigationButtons ins.share,
 #navigationButtons ins.contribute,
 .LW_CollapsibleArea_Anchor_Img {
-    background-color: #35ff8b;
+	background-color: hsl(146, 100%, 60%);
 }
 #vsPanel {
-    background-color: #212121;
+	background-color: #212121;
 }
 /* Version of .NET framework under the main header */
 
 #curversion {
-    color: #9b9b9b;
+	color: #9b9b9b;
 }
 h2.entry-title a,
 #posts-query-type .filter-option.selected a,
-div#body ul#task-nav-list>li.nav-header,
-#page #body ul#task-nav-list>li.nav-header,
-div#body ul#mobile-task-nav-list>li.nav-header,
-#page #body ul#mobile-task-nav-list>li.nav-header,
+div#body ul#task-nav-list > li.nav-header,
+#page #body ul#task-nav-list > li.nav-header,
+div#body ul#mobile-task-nav-list > li.nav-header,
+#page #body ul#mobile-task-nav-list > li.nav-header,
 div.section p,
 div.helpbubble p,
 div.helpbubble ul,
-a.author>abbr,
+a.author > abbr,
 .section.item-section .section-title,
 .page-title-header .page-subtitle,
 .breadcrumb,
-.breadcrumb>li a,
-.breadcrumb>li a:visited,
-.breadcrumb>li+li:before,
+.breadcrumb > li a,
+.breadcrumb > li a:visited,
+.breadcrumb > li + li:before,
 .blog-list span,
 .blog-list a:hover,
 .event-list span,
 .event-list a:hover {
-    color: inherit;
+	color: inherit;
 }
 /* msdn sub ======*/
 
 .n29d-nav a {
-    color: #212121;
+	color: #212121;
 }
 .DL_list li:nth-child(even) {
-    background-color: #212121;
+	background-color: #212121;
 }
-/* technet ==================================== */
+/* technet and msdn ==================================== */
 
-#megabladeContainer #megabladeContainerCenter.active #megabladeMainMenu,
-#megabladeContainer #megabladeContainerCenter #megabladeMainMenu:hover {
-    background-color: rgba(0, 0, 0, 0);
+#megabladeItems > li.active > a {
+	background-color: #575757;
 }
-#megabladeItems>li.active>a {
-    background-color: #575757;
-}
-div#tocNav a.tocExpanded,
+/********** Table of contents*/
+
+#tocNav a.tocExpanded,
+#tocnav a.toc_expanded,
 div#tocDropdownMenu a.tocExpanded,
-div#tocNav a.tocCollapsed {
-    background: url(https://technet.microsoft.com/Areas/Epx/Content/Images/ImageSprite.png?v=636164956049129837) no-repeat scroll -1262px -3px;
-    width: 16px;
-    height: 16px;
+#megabladeMainMenu:after {
+	background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAU3pUWHRSYXcgcHJvZmlsZSB0eXBlIGV4aWYAAHja40qtyEzjUgADExMuE1NzCzNLMzMDIDCxNLE0SgQyLAwgwAhMGhqYgEkoxwDGQBHngktAARcATu4UINhypRgAAAAJcEhZcwAAEGUAABBlAdEuKBEAAACKSURBVDjL3ZIxDoJAEEWXw9BaUEGoLLFUrgC0nsJLcglILIzF+xZgMpmwiJT8cmfe25nshnCMSEqACkh/9QIn4OwPH5IEjECxAl+AF1PutvDUnJjkC5u+3hYbACfJV+A3cPU3dFYiaQDyCFzHduwWJtkGmxdp3STb4ZjkL9hLZvi264MBJZCFY+cDxLIdTU4i8BsAAAAASUVORK5CYII=') no-repeat scroll !important;
+	background-color: transparent !important;
+	height: 12px !important;
+	width: 12px !important;
+	margin-top: 5px !important;
+	background-size: 12px !important;
+}
+#tocNav a.tocCollapsed,
+#tocnav a.toc_collapsed,
+div#tocDropdownMenu a.tocCollapsed {
+	background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAU3pUWHRSYXcgcHJvZmlsZSB0eXBlIGV4aWYAAHja40qtyEzjUgADExMuE1NzCzNLMzMDIDCxNLE0SgQyLAwgwAhMGhqYgEkoxwDGQBHngktAARcATu4UINhypRgAAAAJcEhZcwAAEGUAABBlAdEuKBEAAACKSURBVDjL3ZIxDoJAEEWXw9BaUEGoLLFUrgC0nsJLcglILIzF+xZgMpmwiJT8cmfe25nshnCMSEqACkh/9QIn4OwPH5IEjECxAl+AF1PutvDUnJjkC5u+3hYbACfJV+A3cPU3dFYiaQDyCFzHduwWJtkGmxdp3STb4ZjkL9hLZvi264MBJZCFY+cDxLIdTU4i8BsAAAAASUVORK5CYII=') no-repeat scroll !important;
+	background-color: transparent !important;
+	height: 8px !important;
+	width: 8px !important;
+	margin-top: 7px !important;
+	background-size: 8px !important;
+	transform: rotate(-90deg) !important;
+}
+#tocnav div.tocselected a.toc_collapsed {
+	margin-top: 0px !important;
+}
+#megabladeMainMenu:after {
+	margin: 5px !important;
+}
+#tocNav a.tocExpanded + a {
+	color: hsl(146, 100%, 60%) !important;
+}
+#tocNav div.tocLevel.current,
+div#tocnav div.toclevel.current {
+	background: hsl(146, 100%, 60%) !important;
+	border-radius: 3px 0 0 3px !important;
+	margin-right: -5px !important;
+	margin-left: -5px !important;
+	padding: 5px !important;
+}
+div#tocNav div.tocLevel.current > a,
+div#tocnav div.toclevel.current > a {
+	color: black !important;
+	font-weight: bold !important;
 }
 /* blogs.technet======================*/
 
-#page,
-#BodyBackground,
-div.shell-header,
-main,
-.bg-wrap,
-.feature,
-.hero,
-.products,
-.services,
-.card,
-.community,
-.linkband {
-    background: rgba(0, 0, 0, 0);
-}
 .widget_tag_cloud a {
-    background-color: #2a2a2a;
+	background-color: #2a2a2a;
 }
-#site-header-global {
-    background: #fff;
+/* gallery.technet.microsoft.com======*/
+/* tables */
+
+tr.oddRow {
+	background: hsl(0, 0%, 10%) !important;
+}
+tr.evenRow {
+	background: hsl(0, 0%, 15%) !important;
+}
+tr.oddRow td,
+tr.evenRow td {
+	color: hsl(0, 0%, 90%);
 }
 /* social.technet====================*/
 
-.Masthead {
-    background-color: white;
-}
 div.unified-baseball-card,
 .unified-baseball-card-compact,
 .unified-baseball-card-hover div.unified-baseball-card {
-    background-color: #3e3e3e;
+	background-color: #3e3e3e;
 }
 /* support-ms */
 
 .ms-productpages .pp-section-header {
-    background-color: gainsboro;
-}
-.kb-article .kb-notice-section {
-    background-color: inherit;
+	background-color: gainsboro;
 }
 .single .entry-meta,
 .author-bio-box h6,
 .internav a:hover,
-.internav a:focus {
-    background: inherit;
+.internav a:focus,
+.kb-article .kb-notice-section {
+	background: inherit;
 }
 /* developer-ms */
 
-.hljs {
-    color: #fff;
-    background: rgba(0, 0, 0, 0);
-}
-/* msdn-magazine */
-/* answers-ms (beta)*/
-
-.contentWrapper .inReplyTo {
-    background-color: #000;
-}
 div#tocnav div.tocselected a,
 div#tocnav div.tocselected a:link,
 div#tocnav div.tocselected a:visited {
-    color: gainsboro;
-    padding-left: 12px;
+	color: gainsboro;
+	padding-left: 12px;
 }
-#overlay_indoctoc {
-    background-color: #000;
-}
-div#rightNavigationMenu>div a {
-    color: #fff;
-    display: block;
-    margin-bottom: 10px;
+div#rightNavigationMenu > div a {
+	color: #fff;
+	display: block;
+	margin-bottom: 10px;
 }
 div#rightNavigationMenu div#indoc_toc div#indoc_title,
 div#rightNavigationMenu div#indoc_toc ul#indoc_toclist li {
-    color: #fff;
-    font-weight: 600;
+	color: #fff;
+	font-weight: 600;
 }
 /* Ordinary code color */
 
 [style*="Black"] {
-    color: #dcdcdc !important;
+	color: #dcdcdc !important;
 }
 /* Keywords */
 
 [style*="Blue"] {
-    color: #569cd6 !important;
+	color: #569cd6 !important;
 }
 /* Comments */
 
 [style*="Green"] {
-    color: #57a64a !important;
+	color: #57a64a !important;
 }
 /* String literals */
 
 [style*="A31515"] {
-    color: #d69d85 !important;
+	color: #d69d85 !important;
 }
 /* Inline code */
 
 .code {
-    color: #4ec9b0 !important;
+	color: #4ec9b0 !important;
+}
+/* Other code color */
+
+.hljs {
+	color: hsl(200, 0%, 80%) !important;
+}
+.hljs-meta {
+	color: hsl(100, 50%, 50%) !important;
+}
+.hljs-attribute,
+.hljs-attr {
+	color: hsl(50, 80%, 50%) !important;
+}
+.hljs-literal {
+	color: hsl(180, 80%, 50%) !important;
+}
+.hljs-built_in {
+	color: hsl(200, 100%, 50%) !important;
+}
+.hljs-number {
+	color: hsl(280, 100%, 50%) !important;
 }
 /* JUNK ======*/
 
+.btn-default {
+    border-color: transparent;
+}
 div.alert {
-    background-color: rgba(0, 0, 0, 0);
-    color: #a0dfe4 !important;
-    font-style: italic;
+	background-color: rgba(0, 0, 0, 0);
+	color: #a0dfe4 !important;
+	font-style: italic;
 }
 #nrSurvey,
 #PrivacyBanner,
 #archiveDisclaimer,
 .sockWrapper,
-.stdr-container>.stdr-vote,
+.stdr-container > .stdr-vote,
 .epb-container.active,
 .jumbotron,
 .jumbotron-hero,
@@ -640,92 +979,64 @@ div#ux-footer,
 #Footer,
 #site-footer,
 .shell-footer,
-div.epb-container,div#dlc-hp-hero-slideshow {
-    display: none;
+div.epb-container,
+div#dlc-hp-hero-slideshow,
+.n29d-bing,
+div#PrivacyBanner,
+#hero-content,
+.m-alert.f-information {
+	display: none !important;
 }
-/* Header ======*/
-
-#ux-header header div.toc nav ul.navL1>li.current.active>a,
-#ux-header header div.toc nav ul.navL2>li.current.active>a,
-#ux-header header div.row nav ul.navL1>li.inactive>a:hover,
-#ux-header header div.row nav ul.navL2>li.inactive>a:hover,
-#ux-header header div.row nav ul.navL3>li.inactive>a:hover,
-.shell-header a:hover {
-    background-color: #2e2e2e;
+div.replies {
+	border-top: none !important;
 }
-#ux-header header div.row #drawer *,
-#breadcrumbDropDownMenu {
-    background-color: #000;
-    color: white;
-}
-.shell-header-dropdown-content {
-    background: #000;
-}
-.shell-header-dropdown-label>a {
-    background-color: rgba(0, 0, 0, 0);
-}
-.shell-header-dropdown-label a:hover,
-.shell-header-dropdown-label a:focus,
-.shell-header-dropdown-label a:active {
-    background-color: rgba(82, 195, 232, 0.3);
+#BrandDisplayText {
+	display: block;
 }
 /* account-ms */
 
 #srv_shellHeaderMicrosoftLogo img {
-    background-color: #c7c7c7;
+	background-color: #c7c7c7;
 }
 div.back-to-top-wrap {
-    background-color: #2a2a2a;
-}
-#JelloWrapper {
-    background-color: rgba(0, 0, 0, 0);
+	background-color: #2a2a2a;
 }
 font font p {
-    color: #0088ff;
+	color: #0088ff;
 }
-/* blogs.windows.com */
+/* FONT TWEAKS */
 
-ul.popup,
-div.post-content.column,
-div.sidebar.column,
-.c-universal-header>div:first-child {
-    background-color: #000000;
-}
-div.kb-notice-section.section.ng-scope,
-div.search-container.other,
-div.container.quick-nav.ng-scope.other {
-    background-color: rgba(0, 0, 0, 0);
-}
-.auto-suggest-results.ng-isolate-scope,
-div.NOTE {
-    background-color: #000;
-}
 h3.sbody-h3 {
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 150%;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 150%;
 }
 h4.sbody-h4 {
-    font-variant: small-caps;
-    font-size: 150%;
+	font-variant: small-caps;
+	font-size: 150%;
 }
 /* CODE BACKGROUND */
 
-.codeSnippetContainerCode,
 pre {
-    background-color: #222324;
+	border: solid hsl(200, 0%, 20%) 1px !important;
+	color: #fff;
+	border-radius: 8px;
+}
+.codeSnippetContainerCode,
+pre,
+code {
+	background: hsl(200, 0%, 10%) !important;
 }
 .shell-category-header.cat-theme-blue {
-    background-color: #383838;
+	background-color: #383838;
 }
-li.message div.voting {
-    border: 1px solid #999!important;
+blockquote,
+#answers.answers,
+.build-app {
+	background: #2d2d2d;
 }
-#HeaderSearchTextBox {
-    background-color: #fff !important;
-}
-/* Prevents scroll jitter */
+/* PREVENT SCROLL JITTER */
 
 div#content {
-    padding-top: 0 !important;
+	padding-top: 0 !important;
 }}
