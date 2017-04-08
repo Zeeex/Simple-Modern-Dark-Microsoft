@@ -1,4 +1,4 @@
-![](https://userstyles.org/style_screenshots/131684_after.jpeg?r=1480874684) 
+![](https://userstyles.org/style_screenshots/131684_after.png) 
 
 # Simple Modern Dark Microsoft
 Dark theme for microsoft.com & visualstudio.com pages
