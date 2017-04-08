@@ -1,7 +1,7 @@
 ![](https://userstyles.org/style_screenshots/131684_after.png) 
 
 # Simple Modern Dark Microsoft
-Dark theme for microsoft.com & visualstudio.com pages
+Dark theme for **microsoft.com** & **visualstudio.com** & **windows.com** & **live.com** pages
 
 [![License](https://img.shields.io/badge/License-MIT%20License-red.svg)](https://github.com/zeeex/Simple-Modern-Dark-Microsoft/blob/master/LICENSE)
 
@@ -9,11 +9,9 @@ Dark theme for microsoft.com & visualstudio.com pages
 Install a userstyle manager **[Stylus]** for your browser:
 
 - [Google Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne) - **Recommended**
-- [Firefox](https://addons.mozilla.org/en-US/firefox/addon/stylish/)
+- [Mozilla Firefox](https://addons.mozilla.org/en-US/firefox/addon/stylish/)
 
 ### Download
-Applies to `https://.*(msdn|technet|support|blogs|developer|account|answers|docs|download).microsoft.com/.*` ,`https://www.visualstudio.com/.*`,`https://(blogs|insider).windows.com/.*` ,`https://login.live.com/.*` 
-
 Userstyles.org script: [Simple Modern Dark Microsoft](https://userstyles.org/styles/131684/simple-modern-dark-microsoft)
 
 ### Bug reports
