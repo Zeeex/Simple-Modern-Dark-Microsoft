@@ -3,7 +3,7 @@ regexp("^https://.*(msdn|technet|support|blogs|developer|account|answers|docs).m
 regexp("^https://www.visualstudio.com/.*"), regexp("https://(blogs|insider).windows.com/.*$"),
 regexp("^https://www.microsoft.com/.*/(download|windows).*$"),
 regexp("^https://login.live.com/.*$") {
-/*Simple Modern Dark Microsoft userstyle v1.25
+/*Simple Modern Dark Microsoft userstyle v1.26
 https://userstyles.org/styles/131684
 https://github.com/Zeeex/Simple-Modern-Dark-Microsoft
 some modifications by freMea since v1.23
@@ -20,8 +20,6 @@ body,
 
 h2,
 h3,
-h4,
-h5,
 .main-header .search-field,
 body.blog-id-1 .pagination .page-numbers:not(.dots):not(.current),
 .brandLogo > a {
@@ -30,6 +28,21 @@ body.blog-id-1 .pagination .page-numbers:not(.dots):not(.current),
 	font-size: 150%;
 	color: hsl(146, 100%, 60%) !important;
 	background-color: inherit !important;
+}
+/* FONT TWEAKS */
+
+h3.sbody-h3 {
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 150%;
+}
+h4,
+h5,
+h4.sbody-h4 {
+	font-variant: small-caps;
+	font-size: 125%;
+	color: #fff !important;
+	text-decoration: underline;
 }
 /* WHITE COLORS ============================== */
 
@@ -254,7 +267,8 @@ div.profile-leaderboard,
 .newSubscriberDownloadProducts,
 ul.ng-scope li a,
 p span,
-.hero-base.hero-txt-dk.hero-std.hero-single-cell.hero-no-stack,.win-color-bg-10 {
+.hero-base.hero-txt-dk.hero-std.hero-single-cell.hero-no-stack,
+.win-color-bg-10 {
 	background-color: rgba(0, 0, 0, 0) !important;
 }
 .codeCaption,
@@ -307,7 +321,8 @@ div#BrandLogo,
 #hdr,
 .software-download .banner,
 .software-download .title,
-#site-header-global{
+#site-header-global,
+.wp-embed {
 	background: rgba(0, 0, 0, 0);
 }
 .n29d-nav li.n29d-active a,
@@ -643,7 +658,12 @@ a.mscom-link.c-call-to-action.c-glyph span,
 .software-download .banner a,
 .software-download .banner a:link,
 .software-download .banner a:visited,
-.software-download .banner a:active {
+.software-download .banner a:active,
+body.blog-id-2 .post-content a,
+body.blog-id-2 .sidebar a,
+body.blog-id-2 .post-header .author a,
+body.blog-id-2 .read-more-inline,
+body.blog-id-1 .read-more-inline {
 	color: hsl(146, 100%, 60%);
 }
 ul.side-nav .selected-nav,
@@ -714,7 +734,8 @@ body #headerUniversalHeader .c-call-to-action.c-glyph,
 .software-download .banner a:active:hover,
 .software-download .button-blue:hover,
 .software-download .button-main:hover,
-.c-universal-header>div:first-child .c-uhf-menu>ul>li>ul:hover {
+.c-universal-header>div:first-child .c-uhf-menu>ul>li>ul:hover,
+body.blog-id-2 .pagination .page-numbers.current {
 	background-color: hsl(146, 100%, 60%) !important;
 	color: #000 !important;
 }
@@ -957,7 +978,7 @@ div#rightNavigationMenu div#indoc_toc ul#indoc_toclist li {
 /* JUNK ======*/
 
 .btn-default {
-    border-color: transparent;
+	border-color: transparent;
 }
 div.alert {
 	background-color: rgba(0, 0, 0, 0);
@@ -1004,17 +1025,6 @@ div.back-to-top-wrap {
 font font p {
 	color: #0088ff;
 }
-/* FONT TWEAKS */
-
-h3.sbody-h3 {
-	font-weight: bold;
-	text-transform: uppercase;
-	font-size: 150%;
-}
-h4.sbody-h4 {
-	font-variant: small-caps;
-	font-size: 150%;
-}
 /* CODE BACKGROUND */
 
 pre {
@@ -1039,4 +1049,8 @@ blockquote,
 
 div#content {
 	padding-top: 0 !important;
+}
+p,span
+{
+color:#fff !important
 }}
