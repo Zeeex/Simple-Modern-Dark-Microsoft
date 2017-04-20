@@ -1,9 +1,9 @@
 @-moz-document 
-regexp("^https://.*(msdn|technet|support|blogs|developer|account|answers|docs).microsoft.com/.*$"),
+regexp("^https://.*(msdn|technet|support|blogs|developer|account|answers|docs|commerce).microsoft.com/.*$"),
 regexp("^https://www.visualstudio.com/.*"), regexp("https://(blogs|insider).windows.com/.*$"),
-regexp("^https://www.microsoft.com/.*/(download|windows).*$"),
-regexp("^https://login.live.com/.*$") {
-/*Simple Modern Dark Microsoft userstyle v1.26
+regexp("^https://www.microsoft.com/.*/(download|windows|research).*$"),
+regexp("^https://(login|account).live.com/.*$") {
+/*Simple Modern Dark Microsoft userstyle v1.27
 https://userstyles.org/styles/131684
 https://github.com/Zeeex/Simple-Modern-Dark-Microsoft
 some modifications by freMea since v1.23
@@ -223,7 +223,10 @@ div.home-category-list > div > a,
 .c-universal-header > div + div .c-uhf-menu a,
 .c-universal-header > div + div .c-uhf-menu button,
 .c-universal-header > div + div .c-uhf-nav-link,
-.c-universal-header > div:first-child .c-uhf-nav-link {
+.c-universal-header > div:first-child .c-uhf-nav-link,
+.picchu .msr-tabs a,
+.picchu.profile .subtitle a,
+.download-main-article {
 	color: #fff;
 }
 /* DIM WHITE ============================== */
@@ -286,7 +289,6 @@ div.expandedThreadContainer li.message div.menu.thread,
 div.expandedThreadContainer li.message div.menu.message,
 form,
 .dlc-v73 .end-social,
-.download-main-article .select-and-down,
 .download-main-article .fileinfo,
 div.popup,
 .n29d-shadow-top,
@@ -322,7 +324,9 @@ div#BrandLogo,
 .software-download .banner,
 .software-download .title,
 #site-header-global,
-.wp-embed {
+.wp-embed,
+.picchu .white-bgc,
+#security-landing .m-security-card {
 	background: rgba(0, 0, 0, 0);
 }
 .n29d-nav li.n29d-active a,
@@ -430,7 +434,15 @@ li.message div.body blockquote,
 .theme-light .c-search input[type=search]:focus,
 #Fragment_HeroHeadlines,
 .header-dropdown-content,
-.srchbox {
+.srchbox,
+.picchu .msr-light-gray-bgc,
+.picchu .dropdown select,
+.download-main-article .select-and-down,
+.shell-category-header.cat-theme-blue .c-top-nav-link.current,
+#sidebar .sidebar-footer,
+#sidebar .sidebar-header,
+.todayToolbar-inner,
+.listItem .listItem-inner:hover {
 	background: #000;
 }
 div#eula,
@@ -499,10 +511,12 @@ input,
 optgroup,
 select,
 textarea,
-ul.side-nav .selected-nav a {
+ul.side-nav .selected-nav a{
 	color: #000;
 }
-li.box-title p {
+li.box-title p,
+a.c-call-to-action span,
+div#tocnav div.current a, div#tocnav div.current a:link  {
 	color: #000 !important;
 }
 /* GRAY COLORS ============================== */
@@ -663,14 +677,20 @@ body.blog-id-2 .post-content a,
 body.blog-id-2 .sidebar a,
 body.blog-id-2 .post-header .author a,
 body.blog-id-2 .read-more-inline,
-body.blog-id-1 .read-more-inline {
+body.blog-id-1 .read-more-inline,
+.picchu .msr-post-sidebar .subtitle a,
+.picchu .publications-accordion .publication h5 a,
+.picchu.search .subtitle a {
 	color: hsl(146, 100%, 60%);
 }
 ul.side-nav .selected-nav,
 div.replies div.messageIcon.status.proposed,
 .auto-suggest-results ul li:hover,
 .auto-suggest-results ul li.selected,
-.anchor-top {
+.anchor-top,
+a.c-call-to-action,
+a.c-call-to-action:focus:not(.x-hidden-focus),
+a.c-call-to-action:hover {
 	background-color: hsl(146, 100%, 60%);
 }
 /*  FORCE ACCENT COLOR FOR SOME ITEMS =========== */
@@ -678,7 +698,9 @@ div.replies div.messageIcon.status.proposed,
 #profile-body .statistic-header,
 .software-download .banner h1,
 .software-download .banner h2,
-.software-download .banner h3 {
+.software-download .banner h3,
+a.cHelpALink,
+a.cHelpALink:hover {
 	color: hsl(146, 100%, 60%) !important;
 }
 /* INVERTED BUTTON ============================== */
@@ -735,7 +757,8 @@ body #headerUniversalHeader .c-call-to-action.c-glyph,
 .software-download .button-blue:hover,
 .software-download .button-main:hover,
 .c-universal-header>div:first-child .c-uhf-menu>ul>li>ul:hover,
-body.blog-id-2 .pagination .page-numbers.current {
+body.blog-id-2 .pagination .page-numbers.current,
+.download-main-article .select-and-down .dl {
 	background-color: hsl(146, 100%, 60%) !important;
 	color: #000 !important;
 }
@@ -759,10 +782,6 @@ a:hover,
 
 #projectPage #Downloads .button:hover {
 	background-color: #5d5d5d !important;
-	color: hsl(146, 100%, 60%) !important;
-}
-button {
-	background-color: rgba(0, 0, 0, 0) !important;
 	color: hsl(146, 100%, 60%) !important;
 }
 /* END COLOR ============================== */
@@ -869,9 +888,8 @@ div#tocnav div.toclevel.current {
 	margin-left: -5px !important;
 	padding: 5px !important;
 }
-div#tocNav div.tocLevel.current > a,
-div#tocnav div.toclevel.current > a {
-	color: black !important;
+div#tocNav div.tocLevel.current > a {
+	color: #000 !important;
 	font-weight: bold !important;
 }
 /* blogs.technet======================*/
@@ -949,8 +967,9 @@ div#rightNavigationMenu div#indoc_toc ul#indoc_toclist li {
 [style*="A31515"] {
 	color: #d69d85 !important;
 }
-/* Inline code */
-
+[style*="Red"] {
+	color: #e44343 !important;
+}
 .code {
 	color: #4ec9b0 !important;
 }
@@ -1005,7 +1024,8 @@ div#dlc-hp-hero-slideshow,
 .n29d-bing,
 div#PrivacyBanner,
 #hero-content,
-.m-alert.f-information {
+.m-alert.f-information,
+.picchu .gray-l3-bgc {
 	display: none !important;
 }
 div.replies {
@@ -1044,6 +1064,16 @@ blockquote,
 #answers.answers,
 .build-app {
 	background: #2d2d2d;
+}
+img.image-icon-large {
+	background: hsl(146, 100%, 60%);
+	border-radius: 19px;
+}
+.addTask {
+	background: rgba(255, 255, 255, 0.2);
+}
+.icon svg path {
+	fill: hsl(146, 100%, 60%) !important;
 }
 /* PREVENT SCROLL JITTER */
 
