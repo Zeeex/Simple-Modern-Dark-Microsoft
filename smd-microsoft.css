@@ -1,9 +1,9 @@
 @-moz-document 
 regexp("^https://.*(msdn|technet|support|blogs|developer|account|answers|docs|commerce).microsoft.com/.*$"),
-regexp("^https://www.visualstudio.com/.*"), regexp("https://(blogs|insider).windows.com/.*$"),
-regexp("^https://www.microsoft.com/.*/(download|windows|research).*$"),
-regexp("^https://(login|account).live.com/.*$") {
-/*Simple Modern Dark Microsoft userstyle v1.27
+domain("visualstudio.com"), regexp("https://(blogs|insider).windows.com/.*$"),
+regexp("^https://www.microsoft.com/.*/(download|windows|research|store).*$"),
+regexp("^https://(login|account).live.com/.*$"),domain("microsoftstore.com") {
+/*Simple Modern Dark Microsoft userstyle v1.28
 https://userstyles.org/styles/131684
 https://github.com/Zeeex/Simple-Modern-Dark-Microsoft
 some modifications by freMea since v1.23
@@ -12,7 +12,8 @@ some modifications by freMea since v1.23
 html,
 body,
 .CSPvNext,
-.n29d-content {
+.n29d-content,
+.rwd {
 	color: #fff !important;
 	background: #000 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkAgMAAAANjH3HAAAACVBMVEUaGhohISElJSUh9lebAAAB20lEQVRIx4XWuZXDMAwE0C0SAQtggIIYoAAEU+aKOHhYojTrYP2+QfOW/5QIJOih/q8HwF/pb3EX+UPIveYcQGgEHiu9hI+ihEc5Jz5KBIlRRRaJ1JtoSAl5Hw96hLB1/up1tnIXOck5jZQy+3iU2hAOKSH1JvwxHsp+5TLF5MOl1/MQXsVs1miXc+KDbYydyMeUgpPQreZ7fWidbNhkXNJSeAhc6qHmHD8AYovunYyEACWEbyIhNeB9fRrH3hFi0bGPLuEW7xCNaohw1vAlS805nfsrTspclB/hVdoqusg53eH7FWot+wjYpOViX8KbFFKTwlnzvj65P9H/vD0/hibYBGhPwlPO8TmxRsaxsNnrUmUXpNhirlJMPr6Hqq9k5Xn/8iYQHYIuQsWFC6Z87IOxLxHphSY4SpuiU87xJnJr5axfeRd+lnMExXpEWPpuZ1v7qZdNBOjiHzDREHX5fs5Zz9p6X0vVKbKKchlSl5rv+3p//FJ/PYvoKryI8vs+2G9lzRmnEKkh+BU8yDk515jDj/HAswu7CCz6U/Mxb/PnC9N41ndpU4hUU7JGk/C9PmP/M2xZYdvBW2PObyf1IUiIzoHmHW9yTncliYs9A9tVNppdShfgQaTLMf+j3X723tLeHgAAAABJRU5ErkJggg==) !important;
 }
@@ -226,7 +227,8 @@ div.home-category-list > div > a,
 .c-universal-header > div:first-child .c-uhf-nav-link,
 .picchu .msr-tabs a,
 .picchu.profile .subtitle a,
-.download-main-article {
+.download-main-article,
+.m-product-detail-hero.m-digital-good-hero .context-product-placement-data .c-rating .c-glyph:after {
 	color: #fff;
 }
 /* DIM WHITE ============================== */
@@ -326,7 +328,8 @@ div#BrandLogo,
 #site-header-global,
 .wp-embed,
 .picchu .white-bgc,
-#security-landing .m-security-card {
+#security-landing .m-security-card,
+.background-grey {
 	background: rgba(0, 0, 0, 0);
 }
 .n29d-nav li.n29d-active a,
@@ -511,12 +514,13 @@ input,
 optgroup,
 select,
 textarea,
-ul.side-nav .selected-nav a{
+ul.side-nav .selected-nav a {
 	color: #000;
 }
 li.box-title p,
 a.c-call-to-action span,
-div#tocnav div.current a, div#tocnav div.current a:link  {
+div#tocnav div.current a,
+div#tocnav div.current a:link {
 	color: #000 !important;
 }
 /* GRAY COLORS ============================== */
@@ -680,7 +684,10 @@ body.blog-id-2 .read-more-inline,
 body.blog-id-1 .read-more-inline,
 .picchu .msr-post-sidebar .subtitle a,
 .picchu .publications-accordion .publication h5 a,
-.picchu.search .subtitle a {
+.picchu.search .subtitle a,
+.c-rating .c-glyph:after,
+.c-content-toggle button,
+.rwd .footer-links .grid-container .grid-row .list-of-links ul li a {
 	color: hsl(146, 100%, 60%);
 }
 ul.side-nav .selected-nav,
@@ -688,9 +695,8 @@ div.replies div.messageIcon.status.proposed,
 .auto-suggest-results ul li:hover,
 .auto-suggest-results ul li.selected,
 .anchor-top,
-a.c-call-to-action,
-a.c-call-to-action:focus:not(.x-hidden-focus),
-a.c-call-to-action:hover {
+.c-histogram>ul a>div>div,
+.m-histogram>ul a>div>div {
 	background-color: hsl(146, 100%, 60%);
 }
 /*  FORCE ACCENT COLOR FOR SOME ITEMS =========== */
@@ -1025,8 +1031,23 @@ div#dlc-hp-hero-slideshow,
 div#PrivacyBanner,
 #hero-content,
 .m-alert.f-information,
-.picchu .gray-l3-bgc {
+.picchu .gray-l3-bgc,
+a.top-stripe-banner-content {
 	display: none !important;
+}
+.triple-hero-control a.large.dark-text-color h1,
+.triple-hero-control a.large.dark-text-color h2,
+.triple-hero-control a.top.dark-text-color h1,
+.triple-hero-control a.top.dark-text-color h2,
+.triple-hero-control a.bottom.dark-text-color h1,
+.triple-hero-control a.bottom.dark-text-color h2,
+.triple-hero-control div.large.dark-text-color h1,
+.triple-hero-control div.large.dark-text-color h2,
+.triple-hero-control div.top.dark-text-color h1,
+.triple-hero-control div.top.dark-text-color h2,
+.triple-hero-control div.bottom.dark-text-color h1,
+.triple-hero-control div.bottom.dark-text-color h2 {
+	color: initial !important;
 }
 div.replies {
 	border-top: none !important;
@@ -1065,7 +1086,8 @@ blockquote,
 .build-app {
 	background: #2d2d2d;
 }
-img.image-icon-large {
+img.image-icon-large,
+img.c-image.oneui-override {
 	background: hsl(146, 100%, 60%);
 	border-radius: 19px;
 }
