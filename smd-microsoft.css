@@ -1,6 +1,6 @@
 @-moz-document 
 domain("microsoft.com"), domain("visualstudio.com"), domain("windows.com"), domain("office.com"), domain("microsoftstore.com"), domain("microsoftonline.com") {
-/*Simple Modern Dark Microsoft userstyle v2.10
+/*Simple Modern Dark Microsoft userstyle v2.11
 https://userstyles.org/styles/131684
 https://github.com/Zeeex/Simple-Modern-Dark-Microsoft
 some modifications by freMea in v1.23
@@ -42,7 +42,7 @@ h4.sbody-h4 {
 	text-decoration: underline;
 }
 
-/* WHITE COLORS ============================== */
+/* CS WHITE ============================== */
 p,
 h1,
 .ms-products .ms-product-list .product-name,
@@ -114,47 +114,6 @@ a.n29d-logo {
 }
 .Masthead {
 	background-color: #fff;
-}
-.breadCrumb,
-.breadCrumb > span > a,
-.breadCrumb > span > a:link,
-.breadCrumb > span > a:hover,
-.breadCrumb > span > a:visited,
-.LW_CollapsibleArea_Title,
-ul.ops-treecontrol.expandable a,
-input#SearchTextBox,
-.smallgreytext,
-.FVBPubDateLabel,
-div.itemCount,
-.SimpleSearchBox2,
-ul.ops-treecontrol.expandable span.ops-treecontent,
-div.body p span,
-.shell-header-dropdown-content a,
-#ux-header header div.megaBladeToc nav ul.navL1 a,
-#ux-header header div.megaBladeToc nav ul.navL2 a,
-#ux-header header div.megaBladeToc nav ul.navL3 a,
-#breadcrumbDropDownMenu > ul > li > a,
-.type-curation_post .post-title a,
-.type-post:not(tr) .post-title a,
-.type-curation_post .post-title a:hover,
-.type-post:not(tr) .post-title a:hover,
-summary:hover,
-.fusion-modal h5,
-.fusion-post-content h5,
-.fusion-title h5,
-.fusion-widget-area h5,
-.post-content h5,
-.title h5,
-div.body p span,
-h5.title-heading-left span,
-.title,
-.heading-md,
-.shell-header a,
-.shell-header,
-#megabladeMainMenu,
-#megabladeItems h5,
-#megabladeItems > li.inactive > a {
-	color: #fff !important;
 }
 a,
 div#body ul#mobile-task-nav-list > li > a,
@@ -242,8 +201,58 @@ li,
 #lia-body.ForumTopicPage .lia-component-common-widget-page-title span,
 #lia-body .lia-content .custom-component-wrapper .heading-black,
 #lia-body.ForumTopicPage .lia-content .lia-message-body-content,
-#lia-body .lia-content .lia-quilt-column-common-header .lia-menu-navigation-wrapper .lia-menu-navigation .default-menu-option.default-menu-option {
+#lia-body .lia-content .lia-quilt-column-common-header .lia-menu-navigation-wrapper .lia-menu-navigation .default-menu-option.default-menu-option,
+#docs-navbar .nav li a,
+#docs-subnavbar .nav li a,
+.c-universal-header > [class*="theme-"] .c-action-trigger,
+.c-universal-header > [class*="theme-"] .c-logo,
+.c-universal-header > [class*="theme-"] .c-uhf-nav-link,
+.c-universal-header > [class*="theme-"] .c-uhf-menu a,
+.c-universal-header > [class*="theme-"] .c-uhf-menu button,
+.c-universal-header > [class*="theme-"] .c-me:not(.msame_open) .msame_Header_name,
+#allRepliesLink .c-heading-5.c-hyperlink {
 	color: #fff;
+}
+.breadCrumb,
+.breadCrumb > span > a,
+.breadCrumb > span > a:link,
+.breadCrumb > span > a:hover,
+.breadCrumb > span > a:visited,
+.LW_CollapsibleArea_Title,
+ul.ops-treecontrol.expandable a,
+input#SearchTextBox,
+.smallgreytext,
+.FVBPubDateLabel,
+div.itemCount,
+.SimpleSearchBox2,
+ul.ops-treecontrol.expandable span.ops-treecontent,
+div.body p span,
+.shell-header-dropdown-content a,
+#ux-header header div.megaBladeToc nav ul.navL1 a,
+#ux-header header div.megaBladeToc nav ul.navL2 a,
+#ux-header header div.megaBladeToc nav ul.navL3 a,
+#breadcrumbDropDownMenu > ul > li > a,
+.type-curation_post .post-title a,
+.type-post:not(tr) .post-title a,
+.type-curation_post .post-title a:hover,
+.type-post:not(tr) .post-title a:hover,
+summary:hover,
+.fusion-modal h5,
+.fusion-post-content h5,
+.fusion-title h5,
+.fusion-widget-area h5,
+.post-content h5,
+.title h5,
+div.body p span,
+h5.title-heading-left span,
+.title,
+.heading-md,
+.shell-header a,
+.shell-header,
+#megabladeMainMenu,
+#megabladeItems h5,
+#megabladeItems > li.inactive > a {
+	color: #fff !important;
 }
 
 /* DIM WHITE ============================== */
@@ -259,37 +268,7 @@ div#body ul#mobile-task-nav-list > li > a,
 	color: hsl(0, 0%, 70%);
 }
 
-/* NO BACKGROUND ============================== */
-div.msame_Header_name,
-.table th,
-#megabladeContainerCenter {
-	color: #fff;
-	background: rgba(0, 0, 0, 0);
-}
-.msame_open .msame_Header,
-#DiscussionsTabPane .threadHeader,
-#megabladeContainer .bladeItemMenuContainer,
-.scriptcode,
-#searchContent .searchbar .searchboxinnercontainer,
-#threadsearchbarContainer .searchbar .searchboxinnercontainer,
-td.name,
-td.num,
-.Search .SearchBox,
-#msdn-technet-en-home div.tagcontainer,
-tr.itemRow.editorPickedItem,
-div.profile-leaderboard,
-.TechNetTroubleShootingPanel tr td,
-.SimpleSearch,
-.finder_holder,
-.posts:after,
-.user-account,
-.newSubscriberDownloadProducts,
-ul.ng-scope li a,
-p span,
-.hero-base.hero-txt-dk.hero-std.hero-single-cell.hero-no-stack,
-.win-color-bg-10 {
-	background-color: rgba(0, 0, 0, 0) !important;
-}
+/* CS NONE ============================== */
 .codeCaption,
 .codeSnippetContainer,
 .codeSnippetContainerTabSingle,
@@ -349,7 +328,41 @@ div#BrandLogo,
 .home .value-props .value-prop:hover,
 .lia-top-quilt,
 #lia-body.ForumTopicPage .lia-content .lia-top-quilt,
-#lia-body.CategoryPage .lia-quilt-category-page-supergroup .lia-quilt-row-main .lia-quilt-column-side-content {
+#lia-body.CategoryPage .lia-quilt-category-page-supergroup .lia-quilt-row-main .lia-quilt-column-side-content,
+.strip,
+#threadMain .thread-message-separator-line,
+#threadMain .separator-line {
+	background: rgba(0, 0, 0, 0);
+}
+.msame_open .msame_Header,
+#DiscussionsTabPane .threadHeader,
+#megabladeContainer .bladeItemMenuContainer,
+.scriptcode,
+#searchContent .searchbar .searchboxinnercontainer,
+#threadsearchbarContainer .searchbar .searchboxinnercontainer,
+td.name,
+td.num,
+.Search .SearchBox,
+#msdn-technet-en-home div.tagcontainer,
+tr.itemRow.editorPickedItem,
+div.profile-leaderboard,
+.TechNetTroubleShootingPanel tr td,
+.SimpleSearch,
+.finder_holder,
+.posts:after,
+.user-account,
+.newSubscriberDownloadProducts,
+ul.ng-scope li a,
+p span,
+.hero-base.hero-txt-dk.hero-std.hero-single-cell.hero-no-stack,
+.win-color-bg-10 {
+	background-color: rgba(0, 0, 0, 0) !important;
+}
+div.msame_Header_name,
+.table th,
+#megabladeContainerCenter,
+.hljs {
+	color: #fff;
 	background: rgba(0, 0, 0, 0);
 }
 .n29d-nav li.n29d-active a,
@@ -362,42 +375,11 @@ div#BrandLogo,
 	color: #fff !important;
 	background: rgba(0, 0, 0, 0);
 }
-.hljs {
-	color: #fff;
-	background: rgba(0, 0, 0, 0);
-}
 div#msdn-technet-en-thread div#threadPageContentContainer {
 	border-left: 4px solid hsl(146, 100%, 60%);
 }
 
-/* BLACK COLORS ============================== */
-.unified-baseball-card .baseball-card-header .baseball-card-summary,
-.unified-baseball-card .baseball-card-header .crop,
-.scriptcode .title > span,
-.main-nav,
-.post-archive,
-.web-feature[open] .web-feature__toggle,
-.nav-bar .navbar__submenu,
-button[type=submit] + [role=menu] label,
-button[type=menu] + [role=menu] label,
-button[type=menu] + menu menuitem,
-.meta-box,
-div#free-dev-offers,
-.fusion-fullwidth.fullwidth-box.fusion-fullwidth-1.fusion-parallax-none.nonhundred-percent-fullwidth,
-.fusion-fullwidth.fullwidth-box.fusion-fullwidth-3.fusion-parallax-none.nonhundred-percent-fullwidth,
-.c-universal-header > div + div,
-#megabladeMainMenu:hover,
-#megabladeContainerCenter.active #megabladeMainMenu,
-#megabladeContainer #megabladeContainerCenter.active ul#megabladeItems li.bladeItemWithMenu.active div.navpage,
-.ClearFloat.row.activityrow.ExpandedRow,
-#idAccountActivityV2 .activityrow,
-#idAccountActivityV2 .activityrow:hover,
-#idAccountActivityV2 .activitycontent,
-.workSpace,
-.metro,
-.swimlane {
-	background-color: #000 !important;
-}
+/* CS BLACK ============================== */
 #mobileMenu #tocDropdownMenuButton #tocDropdownMenu,
 #mobileMenu #tocDropdownMenuButton div.tocLabel,
 div#body ul#mobile-task-nav-list,
@@ -521,8 +503,46 @@ li.message div.body blockquote,
 #lia-body .lia-content .lia-quilt-column-side-content .lia-panel .lia-panel-heading-bar,
 #lia-body.CategoryPage .lia-quilt-category-page-supergroup .category-board-browser-wrapper .custom-category-board-browser-component,
 .KudosLeaderboardPage .TopUsersLeaderBoard .lia-quilt-kudos-leader-board-author-item .lia-quilt-column-user-search-result > .lia-quilt-column-alley,
-.KudosLeaderboardPage .TopUsersLeaderBoard .lia-quilt-kudos-leader-board-giver-item .lia-quilt-column-user-search-result > .lia-quilt-column-alley {
+.KudosLeaderboardPage .TopUsersLeaderBoard .lia-quilt-kudos-leader-board-giver-item .lia-quilt-column-user-search-result > .lia-quilt-column-alley,
+#threadMain .thread-message-answer,
+#threadMain .message-user-info-content-holder .c-heading-4,
+#threadMain .thread-message-content-reply-action-button,
+.info-panel,
+.rsp-history-table table > tbody > tr > td,
+.rsp-history-table table tr th,
+.c-context-menu > li span,
+.c-universal-header .brand-blue .c-uhf-menu > button[aria-expanded="true"],
+.c-universal-header .brand-blue .c-uhf-menu > ul {
 	background: #000;
+}
+.unified-baseball-card .baseball-card-header .baseball-card-summary,
+.unified-baseball-card .baseball-card-header .crop,
+.scriptcode .title > span,
+.main-nav,
+.post-archive,
+.web-feature[open] .web-feature__toggle,
+.nav-bar .navbar__submenu,
+button[type=submit] + [role=menu] label,
+button[type=menu] + [role=menu] label,
+button[type=menu] + menu menuitem,
+.meta-box,
+div#free-dev-offers,
+.fusion-fullwidth.fullwidth-box.fusion-fullwidth-1.fusion-parallax-none.nonhundred-percent-fullwidth,
+.fusion-fullwidth.fullwidth-box.fusion-fullwidth-3.fusion-parallax-none.nonhundred-percent-fullwidth,
+.c-universal-header > div + div,
+#megabladeMainMenu:hover,
+#megabladeContainerCenter.active #megabladeMainMenu,
+#megabladeContainer #megabladeContainerCenter.active ul#megabladeItems li.bladeItemWithMenu.active div.navpage,
+.ClearFloat.row.activityrow.ExpandedRow,
+#idAccountActivityV2 .activityrow,
+#idAccountActivityV2 .activityrow:hover,
+#idAccountActivityV2 .activitycontent,
+.workSpace,
+.metro,
+.swimlane,
+#threadMain .thread-message-content-reply-message,
+.c-universal-header .brand-blue {
+	background-color: #000 !important;
 }
 div#eula,
 #eulaPage,
@@ -614,7 +634,9 @@ div#tocnav div.current a:link {
 .dlc-v73 .dlc-hp-icons .class_icon:active,
 .dlc-v73 .dlc-hp-icons a:hover,
 .dlc-v73 .dlc-hp-icons a:active,
-.mscom-accordion .mscom-accordion-item-link:hover {
+.mscom-accordion .mscom-accordion-item-link:hover,
+.gist .blob-wrapper table,
+.gist .gist-meta {
 	background-color: gray;
 }
 li.message div.body div.quote,
@@ -685,29 +707,13 @@ th {
 }
 
 /* LINKS - ACCENT ============================== */
-.date,
-span.category,
-div#rightNavigationMenu div#indoc_toc ul#indoc_toclist li.active a,
-.function-area .ops-socialsharing-dropdownbtn:active,
-.function-area .ops-socialsharing-dropdownbtn:focus,
-.function-area .ops-socialsharing-dropdownbtn:hover,
-ul.side-nav .nav-link a,
-div#body ul#task-nav-list > li.active > a,
-#page #body ul#task-nav-list > li.active > a,
-div#body ul#mobile-task-nav-list > li.active > a,
-#page #body ul#mobile-task-nav-list > li.active > a,
-.msame_unauth .msame_Header_name:hover,
-#eulaPage .eulaPagebuttons > button,
-div.profile-leaderboard div.profile-leaderboard-item > div.profile-leaderboard-container .profile-leaderboard-value,
-.featured-post a.post-title,
 a:link,
+.date,
 .topic a,
 .topic a:link,
 div#leftNav a,
 div#leftNav a:link,
 div#leftNav a:visited,
-div#content a,
-div#content a:visited,
 #ux-header a,
 #ux-header a:visited,
 .pdfDownloadHolder a:link,
@@ -770,6 +776,20 @@ body.blog-id-1 .read-more-inline,
 .c-content-toggle button,
 .rwd .footer-links .grid-container .grid-row .list-of-links ul li a,
 .topNav li ul li a,
+span.category,
+div#rightNavigationMenu div#indoc_toc ul#indoc_toclist li.active a,
+.function-area .ops-socialsharing-dropdownbtn:active,
+.function-area .ops-socialsharing-dropdownbtn:focus,
+.function-area .ops-socialsharing-dropdownbtn:hover,
+ul.side-nav .nav-link a,
+div#body ul#task-nav-list > li.active > a,
+#page #body ul#task-nav-list > li.active > a,
+div#body ul#mobile-task-nav-list > li.active > a,
+#page #body ul#mobile-task-nav-list > li.active > a,
+.msame_unauth .msame_Header_name:hover,
+#eulaPage .eulaPagebuttons > button,
+div.profile-leaderboard div.profile-leaderboard-item > div.profile-leaderboard-container .profile-leaderboard-value,
+.featured-post a.post-title,
 #lia-body .lia-content .category-recent-conversations-wrapper .recent-conversations-messages-wrapper .message-list .post .message-subject > a,
 #lia-body .lia-content .category-recent-conversations-wrapper .recent-conversations-messages-wrapper .message-list .post .details .details-container .user-login a,
 #lia-body .lia-content .category-recent-conversations-wrapper .recent-conversations-messages-wrapper .message-list .post-reply .details .details-container .user-login a,
@@ -787,18 +807,20 @@ body.blog-id-1 .read-more-inline,
 #lia-body .lia-content .lia-quilt-column-side-content .lia-panel.negative .lia-panel-content a,
 #lia-body .custom-blog-posts-latest .carousel-inner > .item .details .details-container .author-name a,
 #lia-body .custom-blog-posts-latest .carousel-inner > .item .details .details-container .blog-name a,
-#lia-body .custom-blog-posts-latest .carousel-inner > .item .blog-title a {
+#lia-body .custom-blog-posts-latest .carousel-inner > .item .blog-title a,
+#docs-subnavbar .nav > .active > a,
+.msaActionText,
+.msaActionText:focus,
+.msaActionText:hover,
+a.c-button[role=button].f-lightweight,
+button.c-button.f-lightweight,
+a.c-button[role=button].f-lightweight:focus,
+a.c-button[role=button].f-lightweight:hover,
+button.c-button.f-lightweight:focus,
+button.c-button.f-lightweight:hover,
+button.c-action-trigger,
+a.c-action-trigger {
 	color: hsl(146, 100%, 60%);
-}
-ul.side-nav .selected-nav,
-div.replies div.messageIcon.status.proposed,
-.auto-suggest-results ul li:hover,
-.auto-suggest-results ul li.selected,
-.anchor-top,
-.c-histogram > ul a > div > div,
-.m-histogram > ul a > div > div,
-#lia-body.ForumTopicPage .unread:before {
-	background-color: hsl(146, 100%, 60%);
 }
 
 /*  FORCE ACCENT COLOR ============================== */
@@ -808,12 +830,18 @@ div.replies div.messageIcon.status.proposed,
 .software-download .banner h3,
 a.cHelpALink,
 a.cHelpALink:hover,
-#lia-body .lia-content .category-recent-conversations-wrapper .recent-conversations-messages-wrapper .message-list .post .details .details-container .source > a {
+#lia-body .lia-content .category-recent-conversations-wrapper .recent-conversations-messages-wrapper .message-list .post .details .details-container .source > a,
+div#content a,
+div#content a:visited,
+#docs-navbar > .nav > .active .active > a,
+#docs-navbar > .nav > .active > a,
+.c-me .msame_unauth .msame_Header_name:hover {
 	color: hsl(146, 100%, 60%) !important;
 }
 
 /* INVERTED BUTTON ============================== */
-.btn,
+.button,
+.button:hover,
 #ux-header div.TocNavigation a.active,
 .internav a.active,
 .internav a.active:link,
@@ -841,7 +869,6 @@ body.blog-id-1 .pagination .page-numbers.current,
 #ux-header header div.row nav ul.navL2 > li.inactive > a:hover,
 #ux-header header div.row nav ul.navL3 > li.inactive > a:hover,
 .shell-header a:hover,
-button:hover,
 .c-auto-suggest .c-menu .c-menu-item > a:hover,
 .c-auto-suggest .c-menu .c-menu-item > span:hover,
 .m-auto-suggest .c-menu .c-menu-item > a:hover,
@@ -874,7 +901,12 @@ body.blog-id-2 .pagination .page-numbers.current,
 .c-universal-header > [class*=theme-] .c-uhf-menu > ul > li > ul > li :focus,
 .c-universal-header > [class*=theme-] .c-uhf-menu > ul > li > ul > li :hover,
 #lia-body .lia-content .lia-button.reply-action-link,
-#lia-body .lia-paging-full .lia-link-navigation {
+#lia-body .lia-paging-full .lia-link-navigation,
+button.c-button[type=submit],
+.c-universal-header .brand-blue .c-logo:focus,
+.c-universal-header .brand-blue .c-logo:hover,
+.c-universal-header .brand-blue .c-uhf-menu > button:focus,
+.c-universal-header .brand-blue .c-uhf-menu > button:hover {
 	background-color: hsl(146, 100%, 60%) !important;
 	color: #000 !important;
 }
@@ -902,8 +934,18 @@ a:hover,
 	background-color: #5d5d5d !important;
 	color: hsl(146, 100%, 60%) !important;
 }
+ul.side-nav .selected-nav,
+div.replies div.messageIcon.status.proposed,
+.auto-suggest-results ul li:hover,
+.auto-suggest-results ul li.selected,
+.anchor-top,
+.c-histogram > ul a > div > div,
+.m-histogram > ul a > div > div,
+#lia-body.ForumTopicPage .unread:before {
+	background-color: hsl(146, 100%, 60%);
+}
 
-/* END COLOR ============================== */
+/* END ACCENT ============================== */
 div#rightNavigationMenu > div a:visited {
 	color: #a0a0a0;
 }
@@ -1145,7 +1187,9 @@ button#skylight-entry-chrome,
 .dlc-v73 .end-social,
 .skylight-entry .message-bubble.full-width,
 .survey-invite-slide-in,
-#lia-body .custom-share-component .lia-decoration-border-content {
+#lia-body .custom-share-component .lia-decoration-border-content,
+#Fragment_HeroHeadlines,
+.docs .feedback .widget {
 	display: none !important;
 }
 .btn-default {
@@ -1226,4 +1270,4 @@ div#content {
 p,
 span {
 	color: #fff !important
-}
+}}
