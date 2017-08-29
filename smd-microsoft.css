@@ -1,6 +1,6 @@
 @-moz-document 
 domain("microsoft.com"), domain("visualstudio.com"), domain("windows.com"), domain("office.com"), domain("microsoftstore.com"), domain("microsoftonline.com") {
-/*Simple Modern Dark Microsoft userstyle v2.11
+/*Simple Modern Dark Microsoft userstyle v2.12
 https://userstyles.org/styles/131684
 https://github.com/Zeeex/Simple-Modern-Dark-Microsoft
 some modifications by freMea in v1.23
@@ -23,7 +23,7 @@ body.blog-id-1 .pagination .page-numbers:not(.dots):not(.current),
 	font-weight: bold;
 	text-transform: uppercase;
 	font-size: 150%;
-	color: hsl(146, 100%, 60%) !important;
+	color: #fff !important;
 	background-color: inherit !important;
 }
 
@@ -251,7 +251,15 @@ h5.title-heading-left span,
 .shell-header,
 #megabladeMainMenu,
 #megabladeItems h5,
-#megabladeItems > li.inactive > a {
+#megabladeItems > li.inactive > a,
+#projectPage .projectTitle,
+#projectPage .sidebar .section .titleBar h3,
+#search-box .search-container,
+.Masthead,
+#contributeSection,
+#sideNav #contributeSection h3,
+.sidebar #contributeSection h3,
+#contributeSection h3 {
 	color: #fff !important;
 }
 
@@ -331,7 +339,11 @@ div#BrandLogo,
 #lia-body.CategoryPage .lia-quilt-category-page-supergroup .lia-quilt-row-main .lia-quilt-column-side-content,
 .strip,
 #threadMain .thread-message-separator-line,
-#threadMain .separator-line {
+#threadMain .separator-line,
+.alley,
+#projectBody,
+#projectDetails,
+#BrandDisplayText {
 	background: rgba(0, 0, 0, 0);
 }
 .msame_open .msame_Header,
@@ -430,7 +442,6 @@ div.sidebar.column,
 #Fragment_HeroHeadlines,
 #hdr-fb-main,
 .shell-header-dropdown-content,
-li.message div.body blockquote,
 #flot-points-hover,
 #flot-pie-hover,
 .rankings-left,
@@ -541,7 +552,8 @@ div#free-dev-offers,
 .metro,
 .swimlane,
 #threadMain .thread-message-content-reply-message,
-.c-universal-header .brand-blue {
+.c-universal-header .brand-blue,
+li.message div.body blockquote {
 	background-color: #000 !important;
 }
 div#eula,
