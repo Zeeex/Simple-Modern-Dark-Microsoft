@@ -1,7 +1,6 @@
 @-moz-document 
 domain("microsoft.com"), domain("visualstudio.com"), domain("windows.com"), domain("office.com"), domain("microsoftstore.com"), domain("microsoftonline.com") {
-/*Simple Modern Dark Microsoft userstyle v2.3
-https://userstyles.org/styles/131684
+/*https://userstyles.org/styles/131684
 https://github.com/Zeeex/Simple-Modern-Dark-Microsoft
 some modifications by freMea in v1.23
 */
@@ -171,7 +170,12 @@ li,
 .linkband ul li a,
 .js .toc li.rotate[aria-expanded]:before,
 .toc li[aria-expanded]:before,
-.entry-content p {
+.entry-content p,
+.item-details-control-root .ux-item-shortdesc,
+.meta-data-list-container .ux-section-meta-data-list a,
+.meta-data-list-container .ux-section-meta-data-list span,
+.m-highlight-feature .c-heading a,
+.article-card .c-paragraph a {
 	color: #fff;
 }
 h6,
@@ -221,7 +225,10 @@ h5.title-heading-left span,
 #contributeSection,
 #sideNav #contributeSection h3,
 .sidebar #contributeSection h3,
-#contributeSection h3 {
+#contributeSection h3,
+.item-details-control-root .ux-item-publisher-link,
+.fusion-content-boxes.content-boxes-icon-on-top .content-container,
+.fusion-content-boxes.content-boxes-icon-on-top .fusion-read-more {
 	color: #fff !important;
 }
 
@@ -337,7 +344,9 @@ div#BrandLogo,
 .linkband,
 .c-universal-footer > section,
 .c-universal-footer > div,
-#search-option .search-filter {
+#search-option .search-filter,
+.single .primary,
+.widget {
 	background: rgba(0, 0, 0, 0);
 }
 .msame_open .msame_Header,
@@ -388,6 +397,7 @@ aside.toc li.active > a {
 }
 
 /* CS BLACK ============================== */
+td,
 #mobileMenu #tocDropdownMenuButton #tocDropdownMenu,
 #mobileMenu #tocDropdownMenuButton div.tocLabel,
 div#body ul#mobile-task-nav-list,
@@ -523,9 +533,20 @@ div.sidebar.column,
 .form-searchbox input[type=text]:active,
 .form-searchbox input[type=text]:focus,
 .form-searchbox input[type=text]:hover,
-#search-form .btn {
+#search-form .btn,
+.docs #confirmation,
+.extensions .gallery-item-card,
+.carousel,
+.item-details-control-root .ux-section-banner,
+.ux-item-details,
+.c-universal-header > [class*="theme-"] .c-uhf-menu > button[aria-expanded="true"],
+.c-universal-header > [class*="theme-"] .c-uhf-menu > ul,
+.article-card,
+.m-highlight-feature.f-align-left > div {
 	background: #000;
 }
+.main-navigation ul,
+.main-navigation li,
 .unified-baseball-card .baseball-card-header .baseball-card-summary,
 .unified-baseball-card .baseball-card-header .crop,
 .scriptcode .title > span,
@@ -557,7 +578,9 @@ li.message div.body blockquote,
 .c-universal-header > div:first-child,
 .entry-content.single div,
 .width-100 .fullwidth-box,
-.width-100 .fusion-section-separator {
+.width-100 .fusion-section-separator,
+#downloads-boxes .content-wrapper-background,
+.fusion-content-boxes.content-boxes-icon-on-top .content-container {
 	background-color: #000 !important;
 }
 div#eula,
@@ -872,11 +895,19 @@ a.c-action-trigger,
 #locale-selector-link,
 .function-area .ops-socialsharing-dropdownbtn,
 div#content a,
-div#content a:visited {
+div#content a:visited,
+.bowtie-install,
+a:not(.ms-Button):visited,
+.wds-call-to-action .cta-link,
+.c-pagination li > a,
+.c-pagination li > span,
+.m-pagination li > a,
+.m-pagination li > span,
+.child-level-below-nav .blog-title a {
 	color: hsl(146, 100%, 60%);
 }
 
-/* CS ACCENT */
+/* CS ACCENT = */
 
 /*  FORCE ACCENT COLOR ============================== */
 #profile-body .statistic-header,
@@ -983,12 +1014,14 @@ a.btn.btn-primary:visited,
 .gform_wrapper .gform_button,
 .gform_wrapper .button,
 .woocommerce .checkout #place_order,
-.bbp-submit-wrapper .button {
+.bbp-submit-wrapper .button,
+.meta-data-list-container a.meta-data-list-link:hover,
+.meta-data-list-container a.meta-data-list-link:focus {
 	background-color: hsl(146, 100%, 60%) !important;
 	color: #000 !important;
 }
 
-/* CS INVERTED BUTTON ============================== */
+/* CS INVERTED BUTTON = */
 a:hover,
 .topic a:active,
 .topic a:hover {
@@ -1043,6 +1076,11 @@ div#rightNavigationMenu > div a:visited {
 }
 #vsPanel {
 	background-color: #212121;
+}
+
+/* CS OUTLINE */
+.m-pagination .active a {
+	outline: 1px solid hsl(146, 100%, 60%) !important;
 }
 
 /* Version of .NET framework under the main header */
@@ -1271,8 +1309,8 @@ button#skylight-entry-chrome,
 	display: none !important;
 }
 div.alert {
-	background-color: rgba(0, 0, 0, 0);
-	color: #a0dfe4 !important;
+	background-color: #000 !important;
+	color: #b6b6b6 !important;
 	font-style: italic;
 }
 .triple-hero-control a.large.dark-text-color h1,
@@ -1342,4 +1380,4 @@ div#content {
 p,
 span {
 	color: #fff !important
-}}
+	}}
