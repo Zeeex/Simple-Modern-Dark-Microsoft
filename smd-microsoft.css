@@ -72,6 +72,9 @@ select option {
 	background: inherit;
 }
 a,
+p,
+span,
+li,
 div#body ul#mobile-task-nav-list > li > a,
 #page #body ul#mobile-task-nav-list > li > a,
 div#tocNav div a,
@@ -144,7 +147,6 @@ div.home-category-list > div > a,
 .pdfDownloadHolder a:visited,
 .toc > ul a:link,
 .toc > ul a:visited,
-li,
 .c-universal-header .theme-light .c-call-to-action.f-image,
 .c-universal-header > [class*=theme-] .c-action-trigger,
 .c-universal-header > [class*=theme-] .c-logo,
@@ -228,7 +230,8 @@ h5.title-heading-left span,
 #contributeSection h3,
 .item-details-control-root .ux-item-publisher-link,
 .fusion-content-boxes.content-boxes-icon-on-top .content-container,
-.fusion-content-boxes.content-boxes-icon-on-top .fusion-read-more {
+.fusion-content-boxes.content-boxes-icon-on-top .fusion-read-more,
+span.date {
 	color: #fff !important;
 }
 
@@ -919,7 +922,9 @@ a.cHelpALink:hover,
 #lia-body .lia-content .category-recent-conversations-wrapper .recent-conversations-messages-wrapper .message-list .post .details .details-container .source > a,
 #docs-navbar > .nav > .active .active > a,
 #docs-navbar > .nav > .active > a,
-.c-me .msame_unauth .msame_Header_name:hover {
+.c-me .msame_unauth .msame_Header_name:hover,
+a.author span,
+a.author:hover span {
 	color: hsl(146, 100%, 60%) !important;
 }
 .button,
@@ -1228,17 +1233,20 @@ div#rightNavigationMenu div#indoc_toc ul#indoc_toclist li {
 }
 
 /* Keywords */
-[style*="Blue"] {
+[style*="Blue"],
+.kwd {
 	color: #569cd6 !important;
 }
 
 /* Comments */
-[style*="Green"] {
+[style*="Green"],
+.com {
 	color: #57a64a !important;
 }
 
 /* String literals */
-[style*="A31515"] {
+[style*="A31515"],
+.typ {
 	color: #d69d85 !important;
 }
 [style*="Red"] {
@@ -1371,11 +1379,6 @@ img.c-image.oneui-override {
 }
 .icon svg path {
 	fill: hsl(146, 100%, 60%) !important;
-}
-
-/* PREVENT SCROLL JITTER */
-div#content {
-	padding-top: 0 !important;
 }
 p,
 span {
