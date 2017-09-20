@@ -1380,6 +1380,10 @@ img.c-image.oneui-override {
 .icon svg path {
 	fill: hsl(146, 100%, 60%) !important;
 }
+/* PREVENT SCROLL JITTER */
+div#content {
+	padding-top: 0 !important;
+}
 p,
 span {
 	color: #fff !important
