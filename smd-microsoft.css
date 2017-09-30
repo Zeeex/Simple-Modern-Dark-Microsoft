@@ -75,6 +75,8 @@ a,
 p,
 span,
 li,
+td.titleColumn,
+.highlight-lineno,
 div#body ul#mobile-task-nav-list > li > a,
 #page #body ul#mobile-task-nav-list > li > a,
 div#tocNav div a,
@@ -188,7 +190,6 @@ h6,
 .breadCrumb > span > a:visited,
 .LW_CollapsibleArea_Title,
 ul.ops-treecontrol.expandable a,
-input#SearchTextBox,
 .smallgreytext,
 .FVBPubDateLabel,
 div.itemCount,
@@ -233,6 +234,10 @@ h5.title-heading-left span,
 .fusion-content-boxes.content-boxes-icon-on-top .fusion-read-more,
 span.date {
 	color: #fff !important;
+}
+input#SearchTextBox {
+	color: #fff !important;
+	background: #000 !important;
 }
 
 /* DIM WHITE ============================== */
@@ -279,7 +284,6 @@ div#body ul#mobile-task-nav-list > li > a,
 /* CS NONE ============================== */
 .codeCaption,
 .codeSnippetContainer,
-.codeSnippetContainerTabSingle,
 :nth-child(2n).rssFeedItem,
 .inner,
 li.message,
@@ -376,6 +380,7 @@ p span,
 .win-color-bg-10 {
 	background-color: rgba(0, 0, 0, 0) !important;
 }
+.codeSnippetContainerTabSingle,
 div.msame_Header_name,
 .table th,
 #megabladeContainerCenter,
@@ -400,7 +405,6 @@ aside.toc li.active > a {
 }
 
 /* CS BLACK ============================== */
-td,
 #mobileMenu #tocDropdownMenuButton #tocDropdownMenu,
 #mobileMenu #tocDropdownMenuButton div.tocLabel,
 div#body ul#mobile-task-nav-list,
@@ -664,6 +668,7 @@ textarea,
 	color: #fff !important;
 	background-color: #000;
 }
+td,
 #ux-header header div.row #drawer *,
 #breadcrumbDropDownMenu,
 .toc .selectedHolder > ul,
@@ -1092,6 +1097,8 @@ div#rightNavigationMenu > div a:visited {
 #curversion {
 	color: #9b9b9b;
 }
+
+/* CS INHERIT */
 h2.entry-title a,
 #posts-query-type .filter-option.selected a,
 div#body ul#task-nav-list > li.nav-header,
@@ -1113,6 +1120,13 @@ a.author > abbr,
 .event-list span,
 .event-list a:hover {
 	color: inherit;
+}
+li.box-title p,
+div#tocnav div.current a,
+div#tocnav div.current a:link,
+.fusion-button-text,
+.fusion-button i {
+	color: inherit !important;
 }
 
 /* msdn sub ======*/
@@ -1234,13 +1248,16 @@ div#rightNavigationMenu div#indoc_toc ul#indoc_toclist li {
 
 /* Keywords */
 [style*="Blue"],
-.kwd {
+.kwd,
+.highlight-keyword,
+.codeSnippetContainerCode .keyword {
 	color: #569cd6 !important;
 }
 
 /* Comments */
 [style*="Green"],
-.com {
+.com,
+.highlight-comment {
 	color: #57a64a !important;
 }
 
@@ -1249,10 +1266,13 @@ div#rightNavigationMenu div#indoc_toc ul#indoc_toclist li {
 .typ {
 	color: #d69d85 !important;
 }
-[style*="Red"] {
+[style*="Red"],
+.highlight-literal {
 	color: #e44343 !important;
 }
-.code {
+.code,
+.highlight-number,
+span.selflink {
 	color: #4ec9b0 !important;
 }
 
@@ -1380,6 +1400,7 @@ img.c-image.oneui-override {
 .icon svg path {
 	fill: hsl(146, 100%, 60%) !important;
 }
+
 /* PREVENT SCROLL JITTER */
 div#content {
 	padding-top: 0 !important;
