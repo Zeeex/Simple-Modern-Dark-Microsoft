@@ -6,9 +6,9 @@ Dark theme for:
 * **visualstudio.com**
 * **windows.com**
 * **office.com**
-* **live.com**
 * **microsoftstore.com**
 * **microsoftonline.com**
+* **newtonsoft.com**
 
 [![License](https://img.shields.io/badge/License-MIT%20License-red.svg)](https://github.com/zeeex/Simple-Modern-Dark-Microsoft/blob/master/LICENSE)
 
