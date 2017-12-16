@@ -209,7 +209,11 @@ div.home-category-list > div > a,
 #meControlDropdown.msame_Drop_root .msame_Drop_AI.switch:hover,
 #meControlDropdown.msame_Drop_root .msame_Drop_active_email,
 #meControlDropdown.msame_Drop_root .msame_Drop_AI_email,
-#meControlDropdown.msame_Drop_root .msame_Drop_AI_status
+#meControlDropdown.msame_Drop_root .msame_Drop_AI_status,
+.c-uhfh > div:first-child .c-uhf-menu a,
+.c-uhfh > div:first-child .c-uhf-menu button,
+.c-uhfh > div:first-child .c-uhf-nav-link,
+.c-uhfh > [class*="theme-"] .c-me:not(.msame_open) .msame_Header_name
 {
 	color: #fff;
 }
@@ -274,10 +278,16 @@ span.date,
 input#SearchTextBox,
 .bowtie input[type=text],
 .bowtie.modal-dialog input[type=text],
-.modal-dialog .bowtie input[type=text]
+.modal-dialog .bowtie input[type=text],
+form#SearchForm
 {
 	color: #fff !important;
 	background: #000 !important;
+}
+
+form#SearchForm button
+{
+	filter: invert(100%);
 }
 
 
@@ -613,7 +623,25 @@ div.sidebar.column,
 .c-universal-header > [class*="theme-"] .c-uhf-menu > ul,
 .article-card,
 .m-highlight-feature.f-align-left > div,
-.panel-danger
+.panel-danger,
+.c-uhfh > div:first-child,
+.c-uhfh > div:first-child .c-uhf-menu > button[aria-expanded="true"],
+.c-uhfh > div:first-child .c-uhf-menu > ul,
+.c-uhfh > [class*="theme-"] .c-uhf-menu > ul > li > a:hover,
+.c-uhfh > [class*="theme-"] .c-uhf-menu > ul > li > a:focus,
+.c-uhfh > [class*="theme-"] .c-uhf-menu > ul > li > button:hover,
+.c-uhfh > [class*="theme-"] .c-uhf-menu > ul > li > button:focus,
+.c-uhfh > [class*="theme-"] .c-uhf-menu > ul > li > [aria-expanded="true"],
+.c-uhfh > [class*="theme-"] .c-uhf-menu > ul > li > ul,
+.c-uhfh > div:first-child .c-uhf-menu > ul > li > :focus,
+.c-uhfh > div:first-child .c-uhf-menu > ul > li > :hover,
+.c-uhfh > div:first-child .c-uhf-menu > ul > li > [aria-expanded="true"],
+.c-uhfh > div:first-child .c-uhf-menu > ul > li > ul,
+.c-uhfh > div:first-child .c-uhf-menu > ul > li > ul :focus,
+.c-uhfh > div:first-child .c-uhf-menu > ul > li > ul :hover,
+.c-uhfh > div:first-child .c-uhf-menu > button:hover,
+.c-uhfh > div:first-child .c-uhf-menu > button:focus,
+.site-resources
 {
 	background: #000;
 }
@@ -752,7 +780,7 @@ td,
 }
 
 
-/* CS T B*/
+/* CS TxB*/
 input,
 optgroup,
 textarea,
@@ -763,15 +791,6 @@ ul.side-nav .selected-nav a,
 .div_rl_h
 {
 	color: #000;
-}
-
-li.box-title p,
-div#tocnav div.current a,
-div#tocnav div.current a:link,
-.fusion-button-text,
-.fusion-button i
-{
-	color: #000 !important;
 }
 
 
@@ -900,6 +919,7 @@ th
 
 p a,
 a:link,
+a:visited,
 .date,
 .topic a,
 .topic a:link,
@@ -1015,6 +1035,7 @@ a.c-action-trigger,
 #footer .links a,
 .icon-comments:before,
 .icon-editor:before,
+.docon-comment-lines:before,
 #locale-selector-link,
 .function-area .ops-socialsharing-dropdownbtn,
 div#content a,
@@ -1077,7 +1098,9 @@ body.blog-id-8 .sidebar a,
 body.blog-id-9 .post-content a,
 body.blog-id-9 .sidebar a,
 body.wp-admin .post-content a,
-body.wp-admin .sidebar a
+body.wp-admin .sidebar a,
+.article-container a:link,
+.article-container a:visited
 {
 	color: hsl(146, 100%, 60%);
 }
@@ -1097,7 +1120,8 @@ a.cHelpALink:hover,
 #docs-navbar > .nav > .active > a,
 .c-me .msame_unauth .msame_Header_name:hover,
 a.author span,
-a.author:hover span
+a.author:hover span,
+.content-box-heading
 {
 	color: hsl(146, 100%, 60%) !important;
 }
@@ -1196,7 +1220,9 @@ a.btn.btn-primary:visited,
 .woocommerce .checkout #place_order,
 .bbp-submit-wrapper .button,
 .meta-data-list-container a.meta-data-list-link:hover,
-.meta-data-list-container a.meta-data-list-link:focus
+.meta-data-list-container a.meta-data-list-link:focus,
+#MainContent #askaquestion a.askQuestionLink,
+#MainContent #askaquestion a.askQuestionLink:hover
 {
 	background-color: hsl(146, 100%, 60%) !important;
 	color: #000 !important;
@@ -1465,7 +1491,7 @@ div#tocnav div.tocselected a,
 div#tocnav div.tocselected a:link,
 div#tocnav div.tocselected a:visited
 {
-	color: gainsboro;
+	color: #000;
 	padding-left: 12px;
 }
 
@@ -1543,12 +1569,14 @@ span.selflink
 }
 
 .hljs-attribute,
-.hljs-attr
+.hljs-attr,
+.atv
 {
 	color: hsl(50, 80%, 50%) !important;
 }
 
-.hljs-literal
+.hljs-literal,
+.tag
 {
 	color: hsl(180, 80%, 50%) !important;
 }
@@ -1558,7 +1586,8 @@ span.selflink
 	color: hsl(200, 100%, 50%) !important;
 }
 
-.hljs-number
+.hljs-number,
+.atn
 {
 	color: hsl(280, 100%, 50%) !important;
 }
@@ -1600,7 +1629,14 @@ button#skylight-entry-chrome,
 #lia-body .custom-share-component .lia-decoration-border-content,
 #Fragment_HeroHeadlines,
 .docs .feedback .widget,
-.carousel.carousel-versatile .background
+.carousel.carousel-versatile .background,
+.c-uhff > section,
+.c-uhff > div,
+.footerSubLinksContainer,
+.c-uhff-nav,
+.connect-home.fullwidth-box.top-hero,
+#usbl-integrated-button,
+[data-vg="nonmwf-wfb-footnote-VG1"]
 {
 	display: none !important;
 }
