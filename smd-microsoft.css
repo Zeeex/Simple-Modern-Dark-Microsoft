@@ -213,7 +213,10 @@ div.home-category-list > div > a,
 .c-uhfh > div:first-child .c-uhf-menu a,
 .c-uhfh > div:first-child .c-uhf-menu button,
 .c-uhfh > div:first-child .c-uhf-nav-link,
-.c-uhfh > [class*="theme-"] .c-me:not(.msame_open) .msame_Header_name
+.c-uhfh > [class*="theme-"] .c-me:not(.msame_open) .msame_Header_name,
+#threadMainContent .message-user-info .message-user-info-text .asking-text,
+#threadMainContent .message-user-info .message-user-info-text .message-user-info-link.message-user-info-link-history,
+#ux-header .logoText
 {
 	color: #fff;
 }
@@ -303,6 +306,11 @@ div#body ul#mobile-task-nav-list > li > a,
 #disclaimer
 {
 	color: hsl(0, 0%, 90%);
+}
+
+.toclevel.current a
+{
+	color: #000 !important;
 }
 
 .ms-products .ms-product-list .product-name,
@@ -601,7 +609,6 @@ div.sidebar.column,
 #lia-body.CategoryPage .lia-quilt-category-page-supergroup .category-board-browser-wrapper .custom-category-board-browser-component,
 .KudosLeaderboardPage .TopUsersLeaderBoard .lia-quilt-kudos-leader-board-author-item .lia-quilt-column-user-search-result > .lia-quilt-column-alley,
 .KudosLeaderboardPage .TopUsersLeaderBoard .lia-quilt-kudos-leader-board-giver-item .lia-quilt-column-user-search-result > .lia-quilt-column-alley,
-#threadMain .thread-message-answer,
 #threadMain .message-user-info-content-holder .c-heading-4,
 #threadMain .thread-message-content-reply-action-button,
 .info-panel,
@@ -641,11 +648,13 @@ div.sidebar.column,
 .c-uhfh > div:first-child .c-uhf-menu > ul > li > ul :hover,
 .c-uhfh > div:first-child .c-uhf-menu > button:hover,
 .c-uhfh > div:first-child .c-uhf-menu > button:focus,
-.site-resources
+.site-resources,
+.c-uhfh .brand-blue
 {
 	background: #000;
 }
 
+.kb-sb,
 .main-navigation ul,
 .main-navigation li,
 .unified-baseball-card .baseball-card-header .baseball-card-summary,
@@ -769,7 +778,6 @@ textarea,
 	background-color: #000;
 }
 
-td,
 #ux-header header div.row #drawer *,
 #breadcrumbDropDownMenu,
 .toc .selectedHolder > ul,
@@ -920,6 +928,19 @@ th
 {
 	background-color: #1f232a;
 	color: #fff;
+}
+
+div.alert,
+.kb-article .kb-banner
+{
+	background-color: #0d0d0d;
+	color: #b6b6b6 !important;
+	font-style: italic;
+}
+
+td
+{
+	background-color: #1f232a !important;
 }
 
 p a,
@@ -1126,7 +1147,8 @@ a.cHelpALink:hover,
 .c-me .msame_unauth .msame_Header_name:hover,
 a.author span,
 a.author:hover span,
-.content-box-heading
+.content-box-heading,
+.c-drawer > button
 {
 	color: hsl(146, 100%, 60%) !important;
 }
@@ -1445,9 +1467,10 @@ div#tocNav div.tocLevel.current > a
 
 /* DARKISH GRAY */
 .widget_tag_cloud a,
-#lia-body .lia-content .category-recent-conversations-wrapper .recent-conversations-messages-wrapper .message-list .post-reply
+#lia-body .lia-content .category-recent-conversations-wrapper .recent-conversations-messages-wrapper .message-list .post-reply,
+#threadMain .thread-message-answer
 {
-	background-color: #2a2a2a;
+	background-color: #111211;
 }
 
 
@@ -1528,7 +1551,7 @@ div#rightNavigationMenu div#indoc_toc ul#indoc_toclist li
 .highlight-keyword,
 .codeSnippetContainerCode .keyword
 {
-	color: #569cd6 !important;
+	color: #53a1e2 !important;
 }
 
 
@@ -1537,13 +1560,13 @@ div#rightNavigationMenu div#indoc_toc ul#indoc_toclist li
 .com,
 .highlight-comment
 {
-	color: #57a64a !important;
+	color: #54b320 !important;
 }
 
 
 /* String literals */
 [style*="A31515"],
-.typ
+.str
 {
 	color: #d69d85 !important;
 }
@@ -1556,9 +1579,10 @@ div#rightNavigationMenu div#indoc_toc ul#indoc_toclist li
 
 .code,
 .highlight-number,
-span.selflink
+span.selflink,
+.typ
 {
-	color: #4ec9b0 !important;
+	color: #09f1eb !important;
 }
 
 
@@ -1641,15 +1665,10 @@ button#skylight-entry-chrome,
 .c-uhff-nav,
 .connect-home.fullwidth-box.top-hero,
 #usbl-integrated-button,
-[data-vg="nonmwf-wfb-footnote-VG1"]
+[data-vg="nonmwf-wfb-footnote-VG1"],
+.site-survey-opener-button
 {
 	display: none !important;
-}
-
-div.alert
-{
-	color: #b6b6b6 !important;
-	font-style: italic;
 }
 
 .triple-hero-control a.large.dark-text-color h1,
@@ -1700,10 +1719,15 @@ pre
 }
 
 .codeSnippetContainerCode,
-pre,
+pre
+{
+	background: hsl(200, 0%, 10%) !important;
+}
+
 code
 {
 	background: hsl(200, 0%, 10%) !important;
+	color: #fff;
 }
 
 .shell-category-header.cat-theme-blue
