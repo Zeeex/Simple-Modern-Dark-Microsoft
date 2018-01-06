@@ -3,17 +3,39 @@ domain("microsoft.com"), domain("visualstudio.com"), domain("windows.com"), doma
 /*https://userstyles.org/styles/131684
 https://github.com/Zeeex/Simple-Modern-Dark-Microsoft
 some modifications by freMea in v1.23
-*/
+Check out my tool for optimizing Windows: 
+https://xtrtoolbox.blogspot.com*/
 html,
 body,
 .CSPvNext,
 .n29d-content,
-.rwd
+.rwd,
+div.alert
 {
 	color: #fff !important;
 	background: #000 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkAgMAAAANjH3HAAAACVBMVEUaGhohISElJSUh9lebAAAB20lEQVRIx4XWuZXDMAwE0C0SAQtggIIYoAAEU+aKOHhYojTrYP2+QfOW/5QIJOih/q8HwF/pb3EX+UPIveYcQGgEHiu9hI+ihEc5Jz5KBIlRRRaJ1JtoSAl5Hw96hLB1/up1tnIXOck5jZQy+3iU2hAOKSH1JvwxHsp+5TLF5MOl1/MQXsVs1miXc+KDbYydyMeUgpPQreZ7fWidbNhkXNJSeAhc6qHmHD8AYovunYyEACWEbyIhNeB9fRrH3hFi0bGPLuEW7xCNaohw1vAlS805nfsrTspclB/hVdoqusg53eH7FWot+wjYpOViX8KbFFKTwlnzvj65P9H/vD0/hibYBGhPwlPO8TmxRsaxsNnrUmUXpNhirlJMPr6Hqq9k5Xn/8iYQHYIuQsWFC6Z87IOxLxHphSY4SpuiU87xJnJr5axfeRd+lnMExXpEWPpuZ1v7qZdNBOjiHzDREHX5fs5Zz9p6X0vVKbKKchlSl5rv+3p//FJ/PYvoKryI8vs+2G9lzRmnEKkh+BU8yDk515jDj/HAswu7CCz6U/Mxb/PnC9N41ndpU4hUU7JGk/C9PmP/M2xZYdvBW2PObyf1IUiIzoHmHW9yTncliYs9A9tVNppdShfgQaTLMf+j3X723tLeHgAAAABJRU5ErkJggg==) !important;
+	font-family: Roboto !important;
 }
 
+p
+{
+	color: #e1e1e1 !important;
+}
+
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button
+{
+	font-family: Roboto !important;
+}
+
+
+/* TITLES = */
 h1,
 h2,
 h3,
@@ -28,8 +50,6 @@ body.blog-id-1 .pagination .page-numbers:not(.dots):not(.current),
 	background-color: inherit !important;
 }
 
-
-/* TITLES = */
 h3.sbody-h3
 {
 	font-weight: bold;
@@ -47,16 +67,6 @@ h4.sbody-h4
 }
 
 
-/* FONT TWEAKS = */
-#HeaderSearchTextBox,
-#imageMSDN,
-a.n29d-logo
-{
-	background-color: #fff !important;
-	color: #000 !important;
-}
-
-
 /* FORCE BLACK ON WHITE = */
 select,
 select option:checked,
@@ -65,18 +75,6 @@ select option
 {
 	background-color: #000 !important;
 	color: #fff !important;
-}
-
-
-/* FORCE WHITE ON BLACK = */
-#site-header-global
-{
-	background: #fff;
-}
-
-.Masthead
-{
-	background-color: #fff;
 }
 
 
@@ -796,7 +794,9 @@ ul.side-nav .selected-nav a,
 .js .toc li.selectedHolder.rotate[aria-expanded]:before,
 .toc li.selectedHolder[aria-expanded]:before,
 .Right_Nav_Title,
-.div_rl_h
+.div_rl_h,
+.c-uhfh .brand-purple .c-uhf-nav-link,
+.c-uhfh > div + div .c-logo span
 {
 	color: #000;
 }
@@ -922,11 +922,13 @@ input[type=submit].btn-primary
 
 /* END BORDERS ============================== */
 
-/* TABLE HEADER */
+/* CS TABLE */
 div.alert th,
-th
+th,
+td,
+.content-article table td:first-child
 {
-	background-color: #1f232a;
+	background-color: #212121;
 	color: #fff;
 }
 
@@ -938,9 +940,11 @@ div.alert,
 	font-style: italic;
 }
 
-td
+.codeHeader
 {
-	background-color: #1f232a !important;
+	background-color: #1f232a;
+	color: #fff;
+	border: 1px solid #242424;
 }
 
 p a,
@@ -1126,7 +1130,8 @@ body.blog-id-9 .sidebar a,
 body.wp-admin .post-content a,
 body.wp-admin .sidebar a,
 .article-container a:link,
-.article-container a:visited
+.article-container a:visited,
+.icon-share:before
 {
 	color: hsl(146, 100%, 60%);
 }
@@ -1249,7 +1254,15 @@ a.btn.btn-primary:visited,
 .meta-data-list-container a.meta-data-list-link:hover,
 .meta-data-list-container a.meta-data-list-link:focus,
 #MainContent #askaquestion a.askQuestionLink,
-#MainContent #askaquestion a.askQuestionLink:hover
+#MainContent #askaquestion a.askQuestionLink:hover,
+.c-uhfh .brand-purple,
+.c-uhfh div[class*="brand-"] .c-uhf-nav-link:hover,
+.c-uhfh .brand-purple .c-logo:hover,
+.c-uhfh .brand-purple .c-logo:focus,
+.c-uhfh .brand-purple .c-uhf-nav-link:hover,
+.c-uhfh .brand-purple .c-uhf-nav-link:focus,
+.c-uhfh .brand-purple .c-uhf-menu > button:hover,
+.c-uhfh .brand-purple .c-uhf-menu > button:focus
 {
 	background-color: hsl(146, 100%, 60%) !important;
 	color: #000 !important;
@@ -1261,7 +1274,7 @@ a:hover,
 .topic a:active,
 .topic a:hover
 {
-	color: gainsboro !important;
+	color: #cdedc9 !important;
 }
 
 .placement__icon,
@@ -1560,7 +1573,7 @@ div#rightNavigationMenu div#indoc_toc ul#indoc_toclist li
 .com,
 .highlight-comment
 {
-	color: #54b320 !important;
+	color: #5cbc5c !important
 }
 
 
@@ -1640,6 +1653,7 @@ div#ux-footer,
 .shell-footer,
 div.epb-container,
 div#dlc-hp-hero-slideshow,
+.social-icons-wrap,
 .n29d-bing,
 div#PrivacyBanner,
 #hero-content,
@@ -1666,7 +1680,8 @@ button#skylight-entry-chrome,
 .connect-home.fullwidth-box.top-hero,
 #usbl-integrated-button,
 [data-vg="nonmwf-wfb-footnote-VG1"],
-.site-survey-opener-button
+.site-survey-opener-button,
+.survey-background
 {
 	display: none !important;
 }
@@ -1718,15 +1733,11 @@ pre
 	border-radius: 8px;
 }
 
-.codeSnippetContainerCode,
-pre
+code,
+pre,
+.codeSnippetContainerCode
 {
-	background: hsl(200, 0%, 10%) !important;
-}
-
-code
-{
-	background: hsl(200, 0%, 10%) !important;
+	background: hsl(200, 0%, 8%) !important;
 	color: #fff;
 }
 
@@ -1758,6 +1769,7 @@ img.c-image.oneui-override
 {
 	fill: hsl(146, 100%, 60%) !important;
 }
+
 
 /* PREVENT SCROLL JITTER */
 div#content
