@@ -2,7 +2,6 @@
 domain("microsoft.com"), domain("visualstudio.com"), domain("windows.com"), domain("office.com"), domain("microsoftstore.com"), domain("microsoftonline.com") {
 /*https://userstyles.org/styles/131684
 https://github.com/Zeeex/Simple-Modern-Dark-Microsoft
-some modifications by freMea in v1.23
 Check out my tool for optimizing Windows: 
 https://xtrtoolbox.blogspot.com*/
 html,
@@ -271,7 +270,8 @@ h5.title-heading-left span,
 .fusion-content-boxes.content-boxes-icon-on-top .fusion-read-more,
 span.date,
 .CMSvNextComp a,
-.fusion-content-boxes .content-container
+.fusion-content-boxes .content-container,
+a.c-hyperlink
 {
 	color: #fff !important;
 }
@@ -796,7 +796,13 @@ ul.side-nav .selected-nav a,
 .Right_Nav_Title,
 .div_rl_h,
 .c-uhfh .brand-purple .c-uhf-nav-link,
-.c-uhfh > div + div .c-logo span
+.c-uhfh > div + div .c-logo span,
+.c-uhfh .brand-neutral .c-action-trigger,
+.c-uhfh .brand-neutral .c-logo,
+.c-uhfh .brand-neutral .c-uhf-nav-link,
+.c-uhfh .brand-neutral .c-uhf-menu a,
+.c-uhfh .brand-neutral .c-uhf-menu button,
+.c-uhfh .brand-neutral .c-me:not(.msame_open) .msame_Header_name
 {
 	color: #000;
 }
@@ -1131,7 +1137,10 @@ body.wp-admin .post-content a,
 body.wp-admin .sidebar a,
 .article-container a:link,
 .article-container a:visited,
-.icon-share:before
+.icon-share:before,
+a.c-call-to-action.c-glyph.f-lightweight,
+.fyre .fyre-comment a,
+.fyre a
 {
 	color: hsl(146, 100%, 60%);
 }
@@ -1262,7 +1271,17 @@ a.btn.btn-primary:visited,
 .c-uhfh .brand-purple .c-uhf-nav-link:hover,
 .c-uhfh .brand-purple .c-uhf-nav-link:focus,
 .c-uhfh .brand-purple .c-uhf-menu > button:hover,
-.c-uhfh .brand-purple .c-uhf-menu > button:focus
+.c-uhfh .brand-purple .c-uhf-menu > button:focus,
+.theme-light.js-cat-head,
+.fyre .fyre-moderator,
+.fyre .fyre-comment-author-tag,
+.theme-dark.brand-neutral.js-cat-head,
+.c-uhfh .brand-neutral .c-logo:hover,
+.c-uhfh .brand-neutral .c-logo:focus,
+.c-uhfh .brand-neutral .c-uhf-nav-link:hover,
+.c-uhfh .brand-neutral .c-uhf-nav-link:focus,
+.c-uhfh .brand-neutral .c-uhf-menu > button[aria-expanded="true"],
+.c-uhfh .brand-neutral .c-uhf-menu > ul
 {
 	background-color: hsl(146, 100%, 60%) !important;
 	color: #000 !important;
@@ -1550,6 +1569,11 @@ div#rightNavigationMenu div#indoc_toc ul#indoc_toclist li
 	font-weight: 600;
 }
 
+nav.c-in-page-navigation.f-sticky
+{
+	background: #fff0;
+}
+
 
 /* Ordinary code color */
 [style*="Black"]
@@ -1631,7 +1655,7 @@ span.selflink,
 .hljs-number,
 .atn
 {
-	color: hsl(280, 100%, 50%) !important;
+	color: hsl(280, 100%, 63%) !important
 }
 
 
@@ -1730,7 +1754,6 @@ pre
 {
 	border: solid hsl(200, 0%, 20%) 1px !important;
 	color: #fff;
-	border-radius: 8px;
 }
 
 code,
@@ -1763,6 +1786,11 @@ img.c-image.oneui-override
 .addTask
 {
 	background: rgba(255, 255, 255, 0.2);
+}
+
+.line-highlight
+{
+	background: #333 !important;
 }
 
 .icon svg path
