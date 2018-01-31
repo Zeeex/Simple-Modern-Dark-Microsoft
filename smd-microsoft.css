@@ -8,8 +8,7 @@ html,
 body,
 .CSPvNext,
 .n29d-content,
-.rwd,
-div.alert
+.rwd
 {
 	color: #fff !important;
 	background: #000 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkAgMAAAANjH3HAAAACVBMVEUaGhohISElJSUh9lebAAAB20lEQVRIx4XWuZXDMAwE0C0SAQtggIIYoAAEU+aKOHhYojTrYP2+QfOW/5QIJOih/q8HwF/pb3EX+UPIveYcQGgEHiu9hI+ihEc5Jz5KBIlRRRaJ1JtoSAl5Hw96hLB1/up1tnIXOck5jZQy+3iU2hAOKSH1JvwxHsp+5TLF5MOl1/MQXsVs1miXc+KDbYydyMeUgpPQreZ7fWidbNhkXNJSeAhc6qHmHD8AYovunYyEACWEbyIhNeB9fRrH3hFi0bGPLuEW7xCNaohw1vAlS805nfsrTspclB/hVdoqusg53eH7FWot+wjYpOViX8KbFFKTwlnzvj65P9H/vD0/hibYBGhPwlPO8TmxRsaxsNnrUmUXpNhirlJMPr6Hqq9k5Xn/8iYQHYIuQsWFC6Z87IOxLxHphSY4SpuiU87xJnJr5axfeRd+lnMExXpEWPpuZ1v7qZdNBOjiHzDREHX5fs5Zz9p6X0vVKbKKchlSl5rv+3p//FJ/PYvoKryI8vs+2G9lzRmnEKkh+BU8yDk515jDj/HAswu7CCz6U/Mxb/PnC9N41ndpU4hUU7JGk/C9PmP/M2xZYdvBW2PObyf1IUiIzoHmHW9yTncliYs9A9tVNppdShfgQaTLMf+j3X723tLeHgAAAABJRU5ErkJggg==) !important;
@@ -28,7 +27,10 @@ h3,
 h4,
 h5,
 h6,
-button
+button,
+font,
+.entry-content,
+.entry-summary
 {
 	font-family: Roboto !important;
 }
@@ -90,6 +92,7 @@ a,
 p,
 span,
 li,
+.top-breadcrumbs,
 .ocpArticleContent p,
 td.titleColumn,
 .highlight-lineno,
@@ -213,7 +216,8 @@ div.home-category-list > div > a,
 .c-uhfh > [class*="theme-"] .c-me:not(.msame_open) .msame_Header_name,
 #threadMainContent .message-user-info .message-user-info-text .asking-text,
 #threadMainContent .message-user-info .message-user-info-text .message-user-info-link.message-user-info-link-history,
-#ux-header .logoText
+#ux-header .logoText,
+.gist .gist-meta
 {
 	color: #fff;
 }
@@ -276,6 +280,8 @@ a.c-hyperlink
 	color: #fff !important;
 }
 
+
+/* INPUT BOX */
 input#SearchTextBox,
 .bowtie input[type=text],
 .bowtie.modal-dialog input[type=text],
@@ -448,7 +454,10 @@ div.profile-leaderboard,
 ul.ng-scope li a,
 p span,
 .hero-base.hero-txt-dk.hero-std.hero-single-cell.hero-no-stack,
-.win-color-bg-10
+.win-color-bg-10,
+div#section-banner,
+li.message div.body blockquote,
+li.message div.body div.quote
 {
 	background-color: rgba(0, 0, 0, 0) !important;
 }
@@ -475,13 +484,6 @@ div.msame_Header_name,
 	background: rgba(0, 0, 0, 0);
 }
 
-div#msdn-technet-en-thread div#threadPageContentContainer,
-#mobile-inpage-toc li.active > a,
-aside.toc li.active > a
-{
-	border-left: 4px solid hsl(146, 100%, 60%);
-}
-
 
 /* CS BLACK ============================== */
 #mobileMenu #tocDropdownMenuButton #tocDropdownMenu,
@@ -504,7 +506,6 @@ div#body ul#mobile-task-nav-list,
 #ux-header header div.megaBladeToc nav ul.navL2,
 #ux-header header div.megaBladeToc nav ul.navL3,
 .f1-footer,
-.site-footer,
 .mscom-popup-content-header,
 .mscom-popup .mscom-popup-fullwidth > .mscom-popup-body > .mscom-popup-layout,
 .shell-header-user #meControl .msame_Header:hover,
@@ -546,7 +547,6 @@ div.sidebar.column,
 .c-universal-header > div + div .c-uhf-menu > button[aria-expanded=true],
 .c-universal-header > div + div .c-uhf-menu > ul,
 .c-universal-header > div + div .c-uhf-menu > ul > li > ul,
-.theme-light .c-search input[type=search]:focus,
 #Fragment_HeroHeadlines,
 .header-dropdown-content,
 .srchbox,
@@ -615,9 +615,6 @@ div.sidebar.column,
 .c-context-menu > li span,
 .c-universal-header .brand-blue .c-uhf-menu > button[aria-expanded="true"],
 .c-universal-header .brand-blue .c-uhf-menu > ul,
-.form-searchbox input[type=text]:active,
-.form-searchbox input[type=text]:focus,
-.form-searchbox input[type=text]:hover,
 #search-form .btn,
 .docs #confirmation,
 .extensions .gallery-item-card,
@@ -647,7 +644,12 @@ div.sidebar.column,
 .c-uhfh > div:first-child .c-uhf-menu > button:hover,
 .c-uhfh > div:first-child .c-uhf-menu > button:focus,
 .site-resources,
-.c-uhfh .brand-blue
+.c-uhfh .brand-blue,
+.wp-caption-text,
+.theme-light .c-search input[type=search]:focus,
+.form-searchbox input[type=text]:active,
+.form-searchbox input[type=text]:focus,
+.form-searchbox input[type=text]:hover
 {
 	background: #000;
 }
@@ -700,9 +702,9 @@ div#eula,
 #eulaPage,
 .posts-filter,
 input,
+input:focus,
 optgroup,
 textarea,
-input:focus,
 select:focus,
 textarea:focus,
 select:active,
@@ -802,7 +804,8 @@ ul.side-nav .selected-nav a,
 .c-uhfh .brand-neutral .c-uhf-nav-link,
 .c-uhfh .brand-neutral .c-uhf-menu a,
 .c-uhfh .brand-neutral .c-uhf-menu button,
-.c-uhfh .brand-neutral .c-me:not(.msame_open) .msame_Header_name
+.c-uhfh .brand-neutral .c-me:not(.msame_open) .msame_Header_name,
+.fyre-editor .fyre-editor-toolbar .goog-toolbar > div.fyre-button-right.fyre-post-button .fyre-button-right-outer-box .fyre-button-right-inner-box
 {
 	color: #000;
 }
@@ -819,17 +822,15 @@ ul.side-nav .selected-nav a,
 .dlc-v73 .dlc-hp-icons .class_icon:active,
 .dlc-v73 .dlc-hp-icons a:hover,
 .dlc-v73 .dlc-hp-icons a:active,
-.mscom-accordion .mscom-accordion-item-link:hover,
-.gist .blob-wrapper table,
-.gist .gist-meta
+.mscom-accordion .mscom-accordion-item-link:hover
 {
 	background-color: gray;
 }
 
-li.message div.body div.quote,
-#megabladeItems > li.inactive > a
+.gist .blob-wrapper table,
+.gist .gist-meta
 {
-	background-color: gray !important;
+	background-color: #222 !important;
 }
 
 
@@ -894,7 +895,8 @@ summary,
 
 #ux-header header div.row nav ul.navL1 > li > a,
 #ux-header header div.row nav ul.navL2 > li > a,
-#ux-header header div.row nav ul.navL3 > li > a
+#ux-header header div.row nav ul.navL3 > li > a,
+#ux-header header div.toc nav ul.navL1 > li > a:hover
 {
 	border-bottom: solid 1px #2e2e2e;
 }
@@ -915,12 +917,20 @@ div.replies
 	border-top: none !important;
 }
 
+.theme_night .doc-outline li.selected
+{
+	border-color: hsl(146, 100%, 60%);
+}
+
 .btn-default,
 .btn.btn-primary,
 button.btn-primary,
 input[type=button].btn-primary,
 input[type=reset].btn-primary,
-input[type=submit].btn-primary
+input[type=submit].btn-primary,
+div#msdn-technet-en-thread div#threadPageContentContainer,
+#mobile-inpage-toc li.active > a,
+aside.toc li.active > a
 {
 	border: none;
 }
@@ -934,7 +944,13 @@ th,
 td,
 .content-article table td:first-child
 {
-	background-color: #212121;
+	background-color: hsla(0, 0%, 17%, 1);
+	color: #fff;
+}
+
+td[style*="rgb(247, 247, 247)"]
+{
+	background-color: hsla(0, 0%, 17%, 1) !important;
 	color: #fff;
 }
 
@@ -1281,7 +1297,17 @@ a.btn.btn-primary:visited,
 .c-uhfh .brand-neutral .c-uhf-nav-link:hover,
 .c-uhfh .brand-neutral .c-uhf-nav-link:focus,
 .c-uhfh .brand-neutral .c-uhf-menu > button[aria-expanded="true"],
-.c-uhfh .brand-neutral .c-uhf-menu > ul
+.c-uhfh .brand-neutral .c-uhf-menu > ul,
+.c-uhfh .brand-blue,
+.c-uhfh .brand-blue .c-action-trigger,
+.c-uhfh .brand-blue .c-logo,
+.c-uhfh .brand-blue .c-uhf-nav-link,
+.c-uhfh .brand-blue .c-uhf-menu a,
+.c-uhfh .brand-blue .c-uhf-menu button,
+.c-uhfh .brand-blue .c-me:not(.msame_open) .msame_Header_name,
+.theme_night .parameterName,
+.theme_night dl.parameterList dt,
+.theme_night .fyre-editor .fyre-editor-toolbar .goog-toolbar > div.fyre-button-right.fyre-post-button
 {
 	background-color: hsl(146, 100%, 60%) !important;
 	color: #000 !important;
@@ -1584,6 +1610,7 @@ nav.c-in-page-navigation.f-sticky
 
 /* Keywords */
 [style*="Blue"],
+font[color="#0000ff"],
 .kwd,
 .highlight-keyword,
 .codeSnippetContainerCode .keyword
@@ -1595,7 +1622,9 @@ nav.c-in-page-navigation.f-sticky
 /* Comments */
 [style*="Green"],
 .com,
-.highlight-comment
+.highlight-comment,
+font[color="#008000"],
+.gist .pl-c
 {
 	color: #5cbc5c !important
 }
@@ -1603,6 +1632,7 @@ nav.c-in-page-navigation.f-sticky
 
 /* String literals */
 [style*="A31515"],
+font[color="#a31515"],
 .str
 {
 	color: #d69d85 !important;
@@ -1616,6 +1646,7 @@ nav.c-in-page-navigation.f-sticky
 
 .code,
 .highlight-number,
+font[color="#2b91af"],
 span.selflink,
 .typ
 {
@@ -1642,18 +1673,31 @@ span.selflink,
 }
 
 .hljs-literal,
-.tag
+.tag,
+.gist .pl-s,
+.gist .pl-pds,
+.gist .pl-s .pl-pse .pl-s1,
+.gist .pl-sr,
+.gist .pl-sr .pl-cce,
+.gist .pl-sr .pl-sre,
+.gist .pl-sr .pl-sra
 {
 	color: hsl(180, 80%, 50%) !important;
 }
 
-.hljs-built_in
+.hljs-built_in,
+.gist .pl-smi,
+.gist .pl-s .pl-s1,
+.gist .pl-c1,
+.gist .pl-s .pl-v
 {
 	color: hsl(200, 100%, 50%) !important;
 }
 
 .hljs-number,
-.atn
+.atn,
+.gist .pl-e,
+.gist .pl-en
 {
 	color: hsl(280, 100%, 63%) !important
 }
@@ -1662,11 +1706,14 @@ span.selflink,
 /* JUNK ======*/
 #nrSurvey,
 #PrivacyBanner,
+.lf-mobile-thread-btn,
+.lf-thread-btn,
 #archiveDisclaimer,
 .sockWrapper,
 .stdr-container > .stdr-vote,
 .epb-container.active,
 .jumbotron,
+#vsBanner,
 .jumbotron-hero,
 [id='openFeedbackContainer'],
 .or-c-pf.or-o,
@@ -1705,7 +1752,11 @@ button#skylight-entry-chrome,
 #usbl-integrated-button,
 [data-vg="nonmwf-wfb-footnote-VG1"],
 .site-survey-opener-button,
-.survey-background
+.survey-background,
+#mainBody .alert,
+div#threadPageSidebarContainer,
+a#toggleSidebar,
+.site-footer
 {
 	display: none !important;
 }
@@ -1773,7 +1824,7 @@ blockquote,
 #answers.answers,
 .build-app
 {
-	background: #2d2d2d;
+	background: hsla(0, 0%, 5%, 0.48);
 }
 
 img.image-icon-large,
@@ -1796,6 +1847,12 @@ img.c-image.oneui-override
 .icon svg path
 {
 	fill: hsl(146, 100%, 60%) !important;
+}
+
+.Forums div#homePageContentContainer,
+.Forums div#msdn-technet-en-thread div#threadPageContentContainer
+{
+	width: 100% !important;
 }
 
 
