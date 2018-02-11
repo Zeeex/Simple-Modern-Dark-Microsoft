@@ -92,6 +92,7 @@ a,
 p,
 span,
 li,
+font[color="#000000"],
 .top-breadcrumbs,
 .ocpArticleContent p,
 td.titleColumn,
@@ -217,7 +218,11 @@ div.home-category-list > div > a,
 #threadMainContent .message-user-info .message-user-info-text .asking-text,
 #threadMainContent .message-user-info .message-user-info-text .message-user-info-link.message-user-info-link-history,
 #ux-header .logoText,
-.gist .gist-meta
+.gist .gist-meta,
+.pdfDownloadHolder a,
+.toc > ul a,
+.toc > ul span,
+#page-actions label
 {
 	color: #fff;
 }
@@ -588,6 +593,9 @@ div.sidebar.column,
 #tabBody,
 #tabSection,
 .tab,
+#HeaderSearchForm,
+#HeaderSearchTextBox,
+.header-top-bar-links li a,
 .ms-productpages .pp-section-header,
 #lia-body.CategoryPage .lia-quilt-row-banner-content .lia-panel-content,
 #lia-body.CommunityPage .lia-quilt-row-banner-content .lia-panel-content,
@@ -649,7 +657,26 @@ div.sidebar.column,
 .theme-light .c-search input[type=search]:focus,
 .form-searchbox input[type=text]:active,
 .form-searchbox input[type=text]:focus,
-.form-searchbox input[type=text]:hover
+.form-searchbox input[type=text]:hover,
+.alert-info,
+.btn-tab,
+.btn-tab:active,
+.btn-tab.active,
+.open > .dropdown-toggle.btn-tab,
+.btn-tab:active:hover,
+.btn-tab.active:hover,
+.open > .dropdown-toggle.btn-tab:hover,
+.btn-tab:active:focus,
+.btn-tab.active:focus,
+.open > .dropdown-toggle.btn-tab:focus,
+.btn-tab:active.focus,
+.btn-tab.active.focus,
+.open > .dropdown-toggle.btn-tab.focus,
+.internav,
+.leftcap,
+.header-top-bar,
+.m-blog-post,
+.m-preview .m-preview-content
 {
 	background: #000;
 }
@@ -693,7 +720,8 @@ li.message div.body blockquote,
 .fusion-content-boxes.content-boxes-icon-on-top .content-container,
 .accepted-reply,
 .post-content > #feature,
-.content-boxes .col
+.content-boxes .col,
+.ux-section-details-tabs .ms-Pivot
 {
 	background-color: #000 !important;
 }
@@ -788,7 +816,7 @@ textarea,
 }
 
 
-/* CS TxB*/
+/* CS TB*/
 input,
 optgroup,
 textarea,
@@ -805,9 +833,21 @@ ul.side-nav .selected-nav a,
 .c-uhfh .brand-neutral .c-uhf-menu a,
 .c-uhfh .brand-neutral .c-uhf-menu button,
 .c-uhfh .brand-neutral .c-me:not(.msame_open) .msame_Header_name,
-.fyre-editor .fyre-editor-toolbar .goog-toolbar > div.fyre-button-right.fyre-post-button .fyre-button-right-outer-box .fyre-button-right-inner-box
+.fyre-editor .fyre-editor-toolbar .goog-toolbar > div.fyre-button-right.fyre-post-button .fyre-button-right-outer-box .fyre-button-right-inner-box,
+.c-uhfh .brand-purple .c-action-trigger,
+.c-uhfh .brand-purple .c-logo,
+.c-uhfh .brand-purple .c-uhf-nav-link,
+.c-uhfh .brand-purple .c-uhf-menu a,
+.c-uhfh .brand-purple .c-uhf-menu button,
+.c-uhfh .brand-purple .c-me:not(.msame_open) .msame_Header_name
 {
 	color: #000;
+}
+
+#blog-logo a,
+#blog-logo-text .site-description
+{
+	color: #000 !important;
 }
 
 
@@ -1156,7 +1196,11 @@ body.wp-admin .sidebar a,
 .icon-share:before,
 a.c-call-to-action.c-glyph.f-lightweight,
 .fyre .fyre-comment a,
-.fyre a
+.fyre a,
+.header-nav li,
+.header-nav li a,
+.action-list a,
+.action-list a:link
 {
 	color: hsl(146, 100%, 60%);
 }
@@ -1178,7 +1222,8 @@ a.cHelpALink:hover,
 a.author span,
 a.author:hover span,
 .content-box-heading,
-.c-drawer > button
+.c-drawer > button,
+font[color="blue"]
 {
 	color: hsl(146, 100%, 60%) !important;
 }
@@ -1307,7 +1352,9 @@ a.btn.btn-primary:visited,
 .c-uhfh .brand-blue .c-me:not(.msame_open) .msame_Header_name,
 .theme_night .parameterName,
 .theme_night dl.parameterList dt,
-.theme_night .fyre-editor .fyre-editor-toolbar .goog-toolbar > div.fyre-button-right.fyre-post-button
+.theme_night .fyre-editor .fyre-editor-toolbar .goog-toolbar > div.fyre-button-right.fyre-post-button,
+.c-uhfh .brand-purple .c-uhf-menu > button[aria-expanded="true"],
+.c-uhfh .brand-purple .c-uhf-menu > ul
 {
 	background-color: hsl(146, 100%, 60%) !important;
 	color: #000 !important;
@@ -1328,6 +1375,13 @@ a:hover,
 {
 	color: hsl(146, 100%, 60%) !important;
 	background-color: #000 !important;
+}
+
+.navbar-inverse,
+.navbar-inverse .navbar-nav > li > a
+{
+	color: #000 !important;
+	background: hsl(146, 100%, 60%) !important;
 }
 
 
@@ -1756,7 +1810,12 @@ button#skylight-entry-chrome,
 #mainBody .alert,
 div#threadPageSidebarContainer,
 a#toggleSidebar,
-.site-footer
+.site-footer,
+.swim.swim-gray.pt-60.pb-60.mt-30,
+.swim.swim-purple.pt-40.pb-40.pt-60-sm.pb-60-sm,
+.c-hero,
+.m-hero-item,
+.feedback-section
 {
 	display: none !important;
 }
