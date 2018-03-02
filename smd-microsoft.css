@@ -222,7 +222,8 @@ div.home-category-list > div > a,
 .pdfDownloadHolder a,
 .toc > ul a,
 .toc > ul span,
-#page-actions label
+#page-actions label,
+.c-meta-text
 {
 	color: #fff;
 }
@@ -353,6 +354,13 @@ div#body ul#mobile-task-nav-list > li > a,
 }
 
 
+/* CS UNSET ============================== */
+.item-details-main-content
+{
+	background: unset !important;
+}
+
+
 /* CS NONE ============================== */
 .codeCaption,
 .codeSnippetContainer,
@@ -433,7 +441,8 @@ div#BrandLogo,
 .page,
 .div_grey,
 #main,
-.section
+.section,
+.bg-gray-1
 {
 	background: rgba(0, 0, 0, 0);
 }
@@ -676,11 +685,13 @@ div.sidebar.column,
 .leftcap,
 .header-top-bar,
 .m-blog-post,
-.m-preview .m-preview-content
+.m-preview .m-preview-content,
+.swim-gray
 {
 	background: #000;
 }
 
+p[style*="white"],
 .kb-sb,
 .main-navigation ul,
 .main-navigation li,
@@ -851,7 +862,7 @@ ul.side-nav .selected-nav a,
 }
 
 
-/* GRAY COLORS ============================== */
+/* GRAY COLORS */
 .tabHeaders div.current,
 #MainContent #msdn-technet-en-home a#seeAnnouncementsLink:hover,
 #MainContent #msdn-technet-en-thread a#seeAnnouncementsLink:hover,
@@ -874,7 +885,7 @@ ul.side-nav .selected-nav a,
 }
 
 
-/* BORDERS ============================== */
+/* CS BORDERS */
 .editorPickedItem > td
 {
 	border-top: 6px solid gray;
@@ -941,9 +952,10 @@ summary,
 	border-bottom: solid 1px #2e2e2e;
 }
 
-#ux-header header div.toc nav ul.navL1 > li.current > a:hover
+#ux-header header div.toc nav ul.navL1 > li.current > a:hover,
+.c-pivot:not(.f-disabled) > header > a.f-active
 {
-	border-bottom: solid 5px hsl(146, 100%, 60%);
+	border-bottom: solid 5px hsl(146, 100%, 60%) !important;
 }
 
 li.message div.voting,
@@ -988,7 +1000,9 @@ td,
 	color: #fff;
 }
 
-td[style*="rgb(247, 247, 247)"]
+td[style*="rgb(247, 247, 247)"],
+td[style*="background-color:#f7f7f7"],
+div[style*="background-color:white"]
 {
 	background-color: hsla(0, 0%, 17%, 1) !important;
 	color: #fff;
@@ -1200,7 +1214,15 @@ a.c-call-to-action.c-glyph.f-lightweight,
 .header-nav li,
 .header-nav li a,
 .action-list a,
-.action-list a:link
+.action-list a:link,
+.c-pivot:not(.f-disabled) > header > a.f-active,
+.c-pivot > div > a,
+.c-pivot > header > a,
+.article-container a:not(.c-button):link,
+.article-container a:not(.c-button):visited,
+.article-container a:not(.f-image):not(.btn):not(.c-button):focus,
+.article-container a:not(.f-image):not(.btn):not(.c-button):hover,
+.theme_night .doc-outline a:visited
 {
 	color: hsl(146, 100%, 60%);
 }
@@ -1667,6 +1689,7 @@ nav.c-in-page-navigation.f-sticky
 font[color="#0000ff"],
 .kwd,
 .highlight-keyword,
+.xaml__keyword,
 .codeSnippetContainerCode .keyword
 {
 	color: #53a1e2 !important;
@@ -1677,6 +1700,7 @@ font[color="#0000ff"],
 [style*="Green"],
 .com,
 .highlight-comment,
+.xaml__comment,
 font[color="#008000"],
 .gist .pl-c
 {
@@ -1693,7 +1717,9 @@ font[color="#a31515"],
 }
 
 [style*="Red"],
-.highlight-literal
+.highlight-literal,
+.xaml__tag_start,
+.xaml__tag_end
 {
 	color: #e44343 !important;
 }
@@ -1721,6 +1747,7 @@ span.selflink,
 
 .hljs-attribute,
 .hljs-attr,
+.xaml__attr_value,
 .atv
 {
 	color: hsl(50, 80%, 50%) !important;
@@ -1751,7 +1778,8 @@ span.selflink,
 .hljs-number,
 .atn,
 .gist .pl-e,
-.gist .pl-en
+.gist .pl-en,
+.css__element
 {
 	color: hsl(280, 100%, 63%) !important
 }
@@ -1798,6 +1826,7 @@ button#skylight-entry-chrome,
 #Fragment_HeroHeadlines,
 .docs .feedback .widget,
 .carousel.carousel-versatile .background,
+.c-carousel,
 .c-uhff > section,
 .c-uhff > div,
 .footerSubLinksContainer,
@@ -1813,9 +1842,12 @@ a#toggleSidebar,
 .site-footer,
 .swim.swim-gray.pt-60.pb-60.mt-30,
 .swim.swim-purple.pt-40.pb-40.pt-60-sm.pb-60-sm,
+.swimlane.social-proof,
 .c-hero,
 .m-hero-item,
-.feedback-section
+.feedback-section,
+.hero.theme-dark.image-middle-center.content-middle-center,
+.survey
 {
 	display: none !important;
 }
@@ -1903,7 +1935,8 @@ img.c-image.oneui-override
 	background: #333 !important;
 }
 
-.icon svg path
+.icon svg path,
+path[fill]
 {
 	fill: hsl(146, 100%, 60%) !important;
 }
